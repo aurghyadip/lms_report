@@ -1,13 +1,14 @@
 * TASKS
-** DONE Add abstract
-** DONE Add literature survey
-** DONE Add introduction
-** DONE Add Requirements
-** TODO Add diagrams
-** TODO Add User-Interfaces
-** TODO Add Conclusion
-** TODO Add License
-** TODO Add Acknowledgement
+*** TODO Re-format document DONE Add abstract[4/9]
+    - [X] Add Abstract
+    - [X] Add literature survey
+    - [X] Add introduction
+    - [X] Add Requirements
+    - [ ] Add diagrams
+    - [ ] Add User-Interfaces
+    - [ ] Add Conclusion
+    - [ ] Add License
+    - [ ] Add Acknowledgement
 
 * ABSTRACT
 Library Management System is a software used to manage the catalog of
