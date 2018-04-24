@@ -228,104 +228,143 @@ in hardware should not be a problem.
    - 1.2 GHz Dual Core Processor
 
 *** Software Requirements
-\begin{description}[leftmargin=6em,style=multiline]
-	\item[\textbf{Server Side}] The server should have ---
-	\begin{enumerate}
-		\item Ubuntu Server 16.04 LTS or up.
-		\item LAMP (Linux, Apache, MySQL and PHP)
-		\item Mail Server
-		\item UNIX DNS Manager (optional, for larger libraries)
-		\item Git (for automated updates)
-		\item OpenSSH (for remote administration)
-	\end{enumerate}
-	\item[\textbf{Client Side}] The client side should have Android 6.0 + (vanilla or almost vanilla OS is preferred)
-\end{description}
+1. Server Side :: The server should have -
+   - Ubuntu Server 16.04 LTS or up.
+   - LAMP (Linux, Apache, MySQL and PHP)
+   - Mail Server
+   - UNIX DNS Manager (optional, for larger libraries)
+   - Git (for automated updates)
+   - OpenSSH (for remote administration)
+2. Client Side :: The client side should have Android 6.0 + (vanilla
+                  or almost vanilla OS is preferred)
 
-\subsection{Communication Interfaces}
-\begin{description}[leftmargin=6em,style=multiline]
-	\item[\textbf{Server Side}] Minimum of Gigabit networking is required on the server side to handle multiple requests and send responses at the same time.
-	\item[\textbf{Client Side}] GSM HSPA+, Wi-Fi(bg/n/ac) or LTE is required. Minimum speed of 4 Mbps. 
-\end{description}
+*** Communication Interfaces}
+1. Server Side :: Minimum of Gigabit networking is required on the
+                  server side to handle multiple requests and send
+                  responses at the same time.
+2. Client Side :: GSM HSPA+, Wi-Fi(bg/n/ac) or LTE is
+                  required. Minimum speed of 4 Mbps.
 
-\section{Functional Requirements}
-\subsection{User Class 1 - The Borrower}
-\begin{description}[leftmargin=6em,style=multiline]
-	\item[\textbf{Request}]
-	\begin{enumerate}
-		\item Registration
-		\item Login
-		\item View book details
-		\item View book availability
-		\item View borrowed book details / fine details
-	\end{enumerate}
-	\item[\textbf{Response}]
-	\begin{enumerate}
-		\item Registration success or failure
-		\item Login success or failure.
-		\item Book details
-		\item Book availability
-		\item Borrowed book details / fine(if any)
-	\end{enumerate}
-\end{description}
-\subsection{User Class 2 - The Librarian}
-\begin{description}[leftmargin=6em,style=multiline]
-	\item[\textbf{Request}]
-	\begin{enumerate}
-		\item Login
-		\item View book details
-		\item View book availability
-		\item Rent a book to a student.
-		\item Deposit a book from the student.
-		\item View borrowed book details / fine details
-		\item Accept fine.
-	\end{enumerate}
-	\item[\textbf{Response}]
-	\begin{enumerate}
-		\item Login success or failure.
-		\item Book details
-		\item Book availability
-		\item Book rent success (due-date)
-		\item Borrowed book details.
-		\item Fine acknowledgment.
-	\end{enumerate}
-\end{description}
+** Functional Requirements
+*** User Class 1 - The Borrower
+**** Request
+1. Registration
+2. Login
+3. View book details
+4. View book availability
+5. View borrowed book details / fine details
+**** Response
+1. Registration success or failure
+2. Login success or failure.
+3. Book details
+4. Book availability
+5. Borrowed book details / fine(if any)
 
-\subsection{User Class 3 - The Administrator}
-The administrator is the super user of the system. The admin can do anything and modify the system in any way possible.
+*** User Class 2 - The Librarian
+**** Request
+1. Login
+2. View book details
+3. View book availability
+4. Rent a book to a student.
+5. Deposit a book from the student.
+6. View borrowed book details / fine details.
+7. Accept fine.
 
-\begin{enumerate}
-	\item Can edit details of users of any level
-	\item Can add librarian
-	\item Have full access to the back end of the system.
-\end{enumerate}
+**** Response
+1. Login success or failure.
+2. Book details
+3. Book availability
+4. Book rent success (due-date)
+5. Borrowed book details.
+6. Fine acknowledgment.
 
-\section{Performance Requirements}
-The performance requirement should not be an issue as it is a scalable system with the back end in the cloud.
+*** User Class 3 - The Administrator
+The administrator is the super user of the system. The admin can do
+anything and modify the system in any way possible.
 
-It is recommended to have a VPS server for the application to work smoothly, however, shared servers can also work but with occasional hiccups.
+1. Can edit details of users of any level
+2. Can add librarian
+3. Have full access to the back end of the system.
 
-For a small to medium sized library, DigitalOcean servers are considerable but larger libraries with bigger administrations require Amazon EC2 instances or Google Cloud Platform with Linux Server OS\footnote{The application can run on Windows based servers, but is not optimized for it.}. 
+*** Performance Requirements
+The performance requirement should not be an issue as it is a scalable
+system with the back end in the cloud.
 
-The validation and all the checks for the constraints happen on the server side and it's better to do so for preventing security exploits to the system at the cost of a few milliseconds of loss in response time.
+It is recommended to have a VPS server for the application to work
+smoothly, however, shared servers can also work but with occasional
+hiccups.
 
-\section{Design Constraints}
-There are a few points to consider when designing and developing the system.
-\begin{description}[leftmargin=6em,style=multiline]
-	\item[Database] The database should be normalized all the time. Maximum permissible redundancy should not be more than 10\% at any instance.
-	\item[Backups] Backups should be designed in such a way that it should be easy enough to replace the corrupted back end with a most recently backed up on withing 15 mins without any failure.
-	\item[User Interface] The Android user interface should follow the material design guidelines. Similarly the iOS\footnote{Future scope} should be done to match Apple's current design guidelines. The web interface\footnotemark[2] should follow the material guideline provided by Google too.
-\end{description}
+For a small to medium sized library, DigitalOcean servers are
+considerable but larger libraries with bigger administrations require
+Amazon EC2 instances or Google Cloud Platform with Linux Server
+OS. The application can run on Windows based servers, but is not
+optimized for it.
 
-\section{Software System Attributes}
-\begin{description}[leftmargin=4cm,style=multiline,align=parright, font=\bfseries]
-	\item[Availability:] Availability defines the proportion of time that the system is functional and working. It can be measured as a percentage of the total system downtime over a predefined period. Availability will be affected by system errors, infrastructure problems, malicious attacks, and system load.
-	\item[Conceptual Integrity:] Conceptual integrity defines the consistency and coherence of the overall design. This includes the way that components or modules are designed, as well as factors such as coding style and variable naming.
-	\item[Interoperability:] Interoperability is the ability of a system or different systems to operate successfully by communicating and exchanging information with other external systems written and run by external parties. An interoperable system makes it easier to exchange and reuse information internally as well as externally.
-	\item[Maintainability:] Maintainability is the ability of the system to undergo changes with a degree of ease. These changes could impact components, services, features, and interfaces when adding or changing the functionality, fixing errors, and meeting new business requirements.
-	\item[Manageability:] Manageability defines how easy it is for system administrators to manage the application, usually through sufficient and useful instrumentation exposed for use in monitoring systems and for debugging and performance tuning.
-	\item[Reliability:] Reliability is the ability of a system to remain operational over time. Reliability is measured as the probability that a system will not fail to perform its intended functions over a specified time interval.
-	\item[Reusability:] Reusability defines the capability for components and subsystems to be suitable for use in other applications and in other scenarios. Reusability minimizes the duplication of components and also the implementation time.
-	\item[Scalability:] Scalability is ability of a system to either handle increases in load without impact on the performance of the system, or the ability to be readily enlarged.
-	\item[Security:] Security is the capability of a system to prevent malicious or accidental actions outside of the designed usage, and to prevent disclosure or loss of information. A secure system aims to protect assets and prevent unauthorized modification of information.
-	\item[Usability:] Usability defines how well the application meets the requirements of the user and consumer by being intuitive, easy to localize and globalize, providing good access for disabled users, and resulting in a good overall user experience.
-\end{description}
+The validation and all the checks for the constraints happen on the
+server side and it's better to do so for preventing security exploits
+to the system at the cost of a few milliseconds of loss in response
+time.
+
+** Design Constraints
+There are a few points to consider when designing and developing the
+system.
+1. Database :: The database should be normalized all the time. Maximum
+               permissible redundancy should not be more than 10% at
+               any instance.
+2. Backups :: Backups should be designed in such a way that it should
+              be easy enough to replace the corrupted back end with a
+              most recently backed up on withing 15 mins without any
+              failure.
+3. User Interface :: The Android user interface should follow the
+     material design guidelines provided by Google Inc.
+
+** Software System Attributes
+- Availability :: Availability defines the proportion of time that the
+                  system is functional and working. It can be measured
+                  as a percentage of the total system downtime over a
+                  predefined period. Availability will be affected by
+                  system errors, infrastructure problems, malicious
+                  attacks, and system load.
+- Conceptual Integrity :: Conceptual integrity defines the consistency
+     and coherence of the overall design. This includes the way that
+     components or modules are designed, as well as factors such as
+     coding style and variable naming.
+- Interoperability :: Interoperability is the ability of a system or
+     different systems to operate successfully by communicating and
+     exchanging information with other external systems written and
+     run by external parties. An interoperable system makes it easier
+     to exchange and reuse information internally as well as
+     externally.
+- Maintainability :: Maintainability is the ability of the system to
+     undergo changes with a degree of ease. These changes could impact
+     components, services, features, and interfaces when adding or
+     changing the functionality, fixing errors, and meeting new
+     business requirements.
+- Manageability :: Manageability defines how easy it is for system
+                   administrators to manage the application, usually
+                   through sufficient and useful instrumentation
+                   exposed for use in monitoring systems and for
+                   debugging and performance tuning.
+- Reliability :: Reliability is the ability of a system to remain
+                 operational over time. Reliability is measured as the
+                 probability that a system will not fail to perform
+                 its intended functions over a specified time
+                 interval.
+- Reusability :: Reusability defines the capability for components and
+                 subsystems to be suitable for use in other
+                 applications and in other scenarios. Reusability
+                 minimizes the duplication of components and also the
+                 implementation time.
+- Scalability :: Scalability is ability of a system to either handle
+                 increases in load without impact on the performance
+                 of the system, or the ability to be readily enlarged.
+- Security :: Security is the capability of a system to prevent
+              malicious or accidental actions outside of the designed
+              usage, and to prevent disclosure or loss of
+              information. A secure system aims to protect assets and
+              prevent unauthorized modification of information.
+- Usability :: Usability defines how well the application meets the
+               requirements of the user and consumer by being
+               intuitive, easy to localize and globalize, providing
+               good access for disabled users, and resulting in a good
+               overall user experience.
