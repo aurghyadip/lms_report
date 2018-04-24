@@ -1,0 +1,189 @@
+* ABSTRACT
+Library Management Systems are needed in every school, college, or any
+type of institutions where there is a library present. As the
+technology around us is growing, the library management systems hasn’t
+improved that much since 2005. We have tried prototyping a simple
+android based application which can completely handle and (mostly)
+automate the process of managing a library. It’ll reduce the needs to
+have a counter full of people (thus slowing and manually doing the
+process) for issuing and/or depositing books.
+
+* INTRODUCTION
+Last (7th) semester, we proposed a project for a Library Management
+System based on the Android platform and with our mentor, we decided
+to give it a go.
+
+Let’s see what the project consisted of -
+  1. Two Android Based Native Apps
+  2. Backend with a real time database
+  3. Authentication.
+  4. Dependency on the cloud
+  5. Execution and practicality
+
+In this report, we’ll primarily discuss how we have implemented the
+project and prototyped. For the detailed SRS and Project Proposal,
+please refer to the Project Proposal attached at the end of this
+document.
+
+We’ll start from the backend and the explanation of how we managed to
+achieve a fast and real-time connection with the database.
+
+* THE BACKEND
+The most important part of a client-server application is the
+backend. Our criteria-s were following –
+  1. Simple API for easier accessibility.
+  2. Data Security.
+  3. NoSQL Database for easier granulation and best modularity.
+
+** SIMPLE API FOR EASIER ACCESSIBILITY
+Having a simple yet fully functional API is a difficult job. We have
+chosen not to develop an API from scratch and use something that is
+accepted as standard in Android Application Development. We have
+chosen Google Cloud Database as our database provider and some Lambda
+Functions to access the data that are in the database to act as our
+API.
+
+The main advantage of using Lambda Functions is that there is
+absolutely no overhead for developing a secure API, such as defining
+routes, controllers and models. Google Cloud Platform gives access to
+several useful lambda functions and libraries to help develop a
+complete REST consuming Android Application without having to meddle
+much with a full backend.
+
+** DATA SECURITY
+Data security is one of the most difficult things to do correctly when
+developing any application. Also it’s redundant to create new login
+and authorization system when there’s a better system already made
+available by Google Cloud Platform. We have used the authentication
+service provided by Google with a set of database access rules to
+prevent data from being misused in the database. As the database is a
+NoSQL database, we had to provide a JSON Schema that contained all the
+rules when someone is reading from / writing to the database.
+
+** NoSQL DATABASE FOR EASIER GRANULATION
+There are several advantages of a NoSQL database over a conventional
+SQL database. NoSQL database is able to handle –
+  1. Large volumes of structured, semi-structured, and unstructured
+     data.
+  2. Quick iteration, and frequent code pushes.
+  3. Object-oriented programming that is easy to use and flexible.
+  4. Efficient, scale-out architecture instead of expensive,
+     monolithic architecture.
+  5. Support for multiple data structures, like
+     - Simple binary values, lists, maps and strings can be handled at
+       high speed in key-value stores.
+     - Highly complex parent-child hierarchical data structures can be
+       managed within the database.
+We have designed our database in such a way that a query will take
+minimum time to complete in any case because of the highly structured
+data and mapping of lists as NoSQL databases generally comes with.
+
+* AUTHENTICATION
+Authentication has been a great challenge for the project. Most of the
+times were spent in where to implement authentication and where not to
+implement it. As this is a library management application and has a
+separate client side app, we decided to go for a more structured
+authentication system that will not hammer the user experience but at
+the same time provide a fair amount of control over what users
+actually see or can access.  This section is divided into two
+subsections –
+  1. User or patron authentication :: This section deals with how we
+       have implemented authentication systems for a patron of a
+       library that is functional, secure and at the same time, won’t
+       hammer the UI/UX as we have talked earlier.
+  2. Librarian or admin authentication :: In this section, we will see
+       how the admin app’s authentication functions and also we’ll see
+       some hints about why two apps were needed to complete the
+       project.
+** PATRON AUTHENTICATION
+Patron authentication is focused on how the patrons of the library are
+going to log in or sign up (in some cases) for the service and what
+they have access to once they are logged in. As the whole concept of
+the system is REST API based, a separate rule set for the
+authentications and user accounts were needed.
+
+A patron should have access to -
+  1) The detail of a single book (by name, author or ISBN)
+  2) The list of the books that the user has rented along with the
+     dates.
+
+For point (a), it’s redundant for the patron to logged in, the user is
+only required to log in to see if the book is available in the library
+or not or to request a book for reservation. Point (b) however,
+requires the patron to be logged in.
+
+Also, we have seen to the fact that a patron can’t get access to
+anyone else’s data (as the database is NoSQL, so the application
+receives chunks of data rather than column or row wise data) by
+setting up rules in the server side itself.
+
+** LIBRARIAN OR ADMIN AUTHENTICATION
+The authentication of librarians uses the same principle of user
+authentication. Although, as we have set the rules for what kind of
+users (patrons and librarians alike) can access which content. This
+took care of the security issue that a REST API based application
+possess.
+
+However, as the application for the librarians are meant to
+be stationary and secure, logging in is absolutely required. On the
+other hand, this solves the problem of someone illegally acquiring the
+application that is meant for the librarians and misusing it.
+
+* DEPENDENCY ON THE CLOUD
+The service and the applications, both are developed keeping in mind
+that technology is evolving and is equally fragile for a large library
+to lose all the data.
+
+The application uses several cloud based backup, storage and crash
+reporting systems which helps reducing the overhead that is required
+for maintenance of such an app.
+
+Features which the application includes, but not limited to, are –
+  1. Google Cloud Database :: It is a NoSQL database hosted at Google
+       Cloud Servers with mirrors national and international to reduce
+       data fetch and pushing latency. Also the service includes
+       options for daily, weekly, monthly etc. plans for automated
+       backup of the data.
+  2. Google Crash Reporting :: Applications crash, period. Solving the
+       bugs is a lengthy process when most of the users of the
+       application are non-technical and (mostly) do not understand
+       how to file a proper bug report. We have automated the crash
+       reporting process through Google Cloud’s automated crash
+       reporting service. Which, upon a crash of the applications,
+       submit a logcat and steps to reproduce the crash to the
+       developers.
+  3. Google Storage :: Google storage provides a very useful API for
+       storing images in the cloud. It can be useful if the scaled up
+       application has a facility for storage of book images when
+       entering a book. Or maybe directly fetching from Google Books
+       API for the available books.
+
+* THE TWO APPS
+We have developed two seperate apps to build the complete system
+  1. App for the Patrons
+  2. App for the Librarians
+
+The Patrons' app deals with things related to what a patron would be
+able to see.
+
+For e.g. -
+  - Checking book availability
+  - Checking due dates etc.
+
+The librarian app on the other hand deals with the system more.
+
+For e.g. -
+  - Renting a book
+  - Depositing a book
+  - Checking if fine is applicable etc.
+** APP FOR THE PATRONS
+The patrons' app include several important feature, we have divided
+the feature group into two parts, authenticated and non-authenticated.
+
+*** NON Authenticated
+  - Checking availability :: An user can check if the book is
+       available or not in the library even if the user is not
+       authenticated into the system. This follows the minimal USER-UI
+       interaction model that is being followed nowadays.
+*** Authenticated
+  - Checking availability with detailed view ::
