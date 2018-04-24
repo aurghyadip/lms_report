@@ -1,3 +1,14 @@
+* TASKS
+** DONE Add abstract
+** DONE Add literature survey
+** DONE Add introduction
+** DONE Add Requirements
+** TODO Add diagrams
+** TODO Add User-Interfaces
+** TODO Add Conclusion
+** TODO Add License
+** TODO Add Acknowledgement
+
 * ABSTRACT
 Library Management System is a software used to manage the catalog of
 a library. This helps to keep the records of all the transaction of
@@ -368,3 +379,5 @@ system.
                intuitive, easy to localize and globalize, providing
                good access for disabled users, and resulting in a good
                overall user experience.
+
+* DIAGRAMS
