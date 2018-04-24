@@ -1,14 +1,17 @@
-* TASKS
-*** TODO Re-format document DONE Add abstract[4/9]
+** TASKS
+*** TODO Re-format document [7/9]
+    SCHEDULED: <2018-04-26 Thu>
     - [X] Add Abstract
     - [X] Add literature survey
     - [X] Add introduction
     - [X] Add Requirements
     - [ ] Add diagrams
     - [ ] Add User-Interfaces
-    - [ ] Add Conclusion
-    - [ ] Add License
-    - [ ] Add Acknowledgement
+    - [X] Add Conclusion
+    - +[ ] Add License+
+    - [X] Add Acknowledgement
+*** TODO Merge with the current project report
+    SCHEDULED: <2018-04-02 Mon>
 
 * ABSTRACT
 Library Management System is a software used to manage the catalog of
@@ -382,3 +385,43 @@ system.
                overall user experience.
 
 * DIAGRAMS
+Diagrams to be added later.
+List of diagrams - 
+
+1. Data Flow Diagrams
+   1. Level 0
+   2. Level 1
+   3. Level 2
+2. Use Case Diagrams
+3. Entity Relationship Diagram
+4. Database Schema Diagram
+
+* USER INTERFACE DESIGN
+Include all the views here
+
+* CONCLUSION
+This is a topic that has never been touched before by any one
+developing systems for managing libraries. While the world is moving
+towards a more mobile and cloud based approach, why library management
+system should stick to the local database and application environment
+that dates back to the 90's.  This approach of library management
+system will solve problems like redundant information storage, loss of
+information in case of a natural disaster and also ease of access for
+the patrons of a library.
+
+** Future Scope
+1. Launching a platform independent system for reusing and using all the existing and future hardware.
+2. A greater portability and scalability so that the application can be mended to suit any need that the client wants.
+3. Developing a totally independent and open source API so that developers can easily use what we've developed and further improve that.
+
+* ACKNOWLEDGEMENT
+This project would not have been possible without the help of
+Ms. Shalini Mitra, Asst. Prof., Dept. of IT, CIEM and Mr. Samir
+Biswas, HOD, Dept. of IT, CIEM.
+
+However, we also thank Rajkumar Pramanik of Hybriona Labs, Gujrat for
+helping us when we were stuck in a loop of bad codes and ideas.
+
+Finally I would like to extend my deepest gratitude to all the
+teachers of the IT Department of CIEM without whose love, support and
+understanding we could never have completed this project proposal.
