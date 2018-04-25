@@ -69,6 +69,7 @@ books.
       - [X] Add Text
       - [X] Add Future Scope
     - [ ] Add Acknowledgement
+    
 *** TODO Merge with the current project report
     SCHEDULED: <2018-04-02 Mon>
 
