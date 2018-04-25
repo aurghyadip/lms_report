@@ -1,11 +1,19 @@
+#+TITLE: Library Management System Project Report
+
 ** TASKS
-*** TODO Re-format document [7/9]
+*** TODO Re-format document [6/8]
     SCHEDULED: <2018-04-26 Thu>
     - [X] Add Abstract
     - [X] Add literature survey
     - [X] Add introduction
     - [X] Add Requirements
-    - [ ] Add diagrams
+    - [-] Add diagrams[4/6]
+      - [X] Level 0 DFD
+      - [X] Level 1 DFD
+      - [X] Level 2 DFD
+      - [X] Use Case Diagram
+      - [ ] Entity Relationship Diagram
+      - [ ] Database Schema Diagram
     - [ ] Add User-Interfaces
     - [X] Add Conclusion
     - +[ ] Add License+
@@ -18,7 +26,15 @@ Library Management System is a software used to manage the catalog of
 a library. This helps to keep the records of all the transaction of
 books available in the library. Each patron and the item has a unique
 ID in the database that allows the Library Management System to track
-its activity.
+its activity.  Library Management Systems are needed in every school,
+college, or any type of institutions where there is a library
+present. As the technology around us is growing, the library
+management systems hasn’t improved that much since 2005. The goal is
+to make prototype of a simple android based application which can
+completely handle and (mostly) automate the process of managing a
+library. It’ll reduce the needs to have a counter full of people (thus
+slowing and manually doing the process) for issuing and/or depositing
+books.
 
 * LITERATURE SURVEY
 We've conducted a short survey/review on the works that has been done
@@ -142,6 +158,7 @@ also can be used as a boilerplate for developing solutions for paid
 and public libraries.
 
 *** Definitions
+**** Abbriviations
 |--------------+-----------------------------------|
 | Abbriviation | Full Form                         |
 |--------------+-----------------------------------|
@@ -154,6 +171,15 @@ and public libraries.
 | MVC          | Model, View and Controller        |
 | NIC          | Network Interface Card            |
 |--------------+-----------------------------------|
+
+**** Definitions
+- Admin :: The administrator of the whole system. Controls mainly the
+           backend and has unrestricted system access.
+- User/Patron :: An user or *Patron* is an end-user of the library who
+                 can issue a book from the library.
+- Librarian :: Librarians are the people who uses the system for
+               managing their work. As in, issuing and receiving a
+               book back.
 
 ** Product Description
 *** Product Description
@@ -188,13 +214,13 @@ Librarian and Student.
 *** Constraints
 There is virtually no constraint in terms of usability of the app in
 different environments, from small to very large libraries. As it is
-built on a semi modifiable API, different variables and queries can be
-added easily and the application can be reprogrammed accordingly.
+built on a semi modifiable API and a very scalable database, different
+variables and queries can be added easily and the application can be
+reprogrammed accordingly.
 
 The only real constraint can be the server and database hardaware, but
-with platforms like *Amazon AWS EC2, Digital Ocean, Heroku and Google
-Cloud Console* in play, the cost to performance ration and constraint
-in hardware should not be a problem.
+with platforms like *Google Cloud Console* in play, the cost to
+performance ration and constraint in hardware should not be a problem.
 
 *** Dependencies
 - Google Mobile Vision :: The Mobile Vision API provides a framework
@@ -216,6 +242,25 @@ in hardware should not be a problem.
                  access. All Java 7 language features are supported,
                  and some Java 8 language features (and additionally
                  some Java 9 code has been backported to work).
+- Google Cloud Database :: It is a NoSQL database hosted at Google
+     Cloud Servers with mirrors national and international to reduce
+     data fetch and pushing latency. Also the service includes options
+     for daily, weekly, monthly etc. plans for automated backup of the
+     data.
+- Google Crash Reporting :: Applications crash, period. Solving the
+     bugs is a lengthy process when most of the users of the
+     application are non-technical and (mostly) do not understand how
+     to file a proper bug report. We have automated the crash
+     reporting process through Google Cloud’s automated crash
+     reporting service. Which, upon a crash of the applications,
+     submit a logcat and steps to reproduce the crash to the
+     developers.
+- Google Storage :: Google storage provides a very useful API for
+                    storing images in the cloud. It can be useful if
+                    the scaled up application has a facility for
+                    storage of book images when entering a book. Or
+                    maybe directly fetching from Google Books API for
+                    the available books.
 
 *** Apportioning of Requirements
 - Server Side :: Most of the work is done on the server side, so the
@@ -244,8 +289,8 @@ in hardware should not be a problem.
 
 *** Software Requirements
 1. Server Side :: The server should have -
-   - Ubuntu Server 16.04 LTS or up.
-   - LAMP (Linux, Apache, MySQL and PHP)
+   - Ubuntu 16.04 LTS or up.
+   - NoSQL Server (MongoDB or Firebase)
    - Mail Server
    - UNIX DNS Manager (optional, for larger libraries)
    - Git (for automated updates)
@@ -263,17 +308,15 @@ in hardware should not be a problem.
 ** Functional Requirements
 *** User Class 1 - The Borrower
 **** Request
-1. Registration
-2. Login
-3. View book details
-4. View book availability
-5. View borrowed book details / fine details
+1. Login
+2. View book details
+3. View book availability
+4. View borrowed book details / fine details
 **** Response
-1. Registration success or failure
-2. Login success or failure.
-3. Book details
-4. Book availability
-5. Borrowed book details / fine(if any)
+1. Login success or failure.
+2. Book details
+3. Book availability
+4. Borrowed book details / fine(if any)
 
 *** User Class 2 - The Librarian
 **** Request
@@ -299,21 +342,17 @@ anything and modify the system in any way possible.
 
 1. Can edit details of users of any level
 2. Can add librarian
-3. Have full access to the back end of the system.
+3. Have full access to the back-end and front-end of the system.
 
 *** Performance Requirements
 The performance requirement should not be an issue as it is a scalable
 system with the back end in the cloud.
 
-It is recommended to have a VPS server for the application to work
-smoothly, however, shared servers can also work but with occasional
-hiccups.
-
-For a small to medium sized library, DigitalOcean servers are
-considerable but larger libraries with bigger administrations require
-Amazon EC2 instances or Google Cloud Platform with Linux Server
-OS. The application can run on Windows based servers, but is not
-optimized for it.
+For a small to medium sized library, small to medium subscription of
+Google Cloud Platform are considerable but larger libraries with
+bigger administrations require Enterprise Level Google Cloud Platform
+with Linux Server OS. The application can run on Windows based
+servers, but is not optimized for it.
 
 The validation and all the checks for the constraints happen on the
 server side and it's better to do so for preventing security exploits
@@ -385,17 +424,25 @@ system.
                overall user experience.
 
 * DIAGRAMS
-Diagrams to be added later.
-List of diagrams - 
 
-1. Data Flow Diagrams
-   1. Level 0
-   2. Level 1
-   3. Level 2
-2. Use Case Diagrams
-3. Entity Relationship Diagram
-4. Database Schema Diagram
+#+CAPTION: Level 0 DFD
+#+NAME: fig:level0dfd
+[[./diagrams/level0dfd.png]]
+#+CAPTION: Level 1 DFD
+#+NAME: level1dfd
+[[./diagrams/level1dfd.png]]
+#+CAPTION: Level 2 DFD
+#+NAME: level2dfd
+[[./diagrams/level2dfd.png]]
 
+#+CAPTION: Use Case Diagram
+#+NAME: usecasediag
+[[./diagrams/usecase.png]]
+
+** Entity Relationship Diagram
+*** TODO To be made anew
+** Database Schema
+*** TODO To be made anew from the JSON Structure
 * USER INTERFACE DESIGN
 Include all the views here
 
