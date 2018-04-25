@@ -19,12 +19,12 @@ books.
 #+TOC: headlines 3
 
 ** TASKS
-*** TODO Re-format document [5/8]
+*** TODO Re-format document [4/8]
     SCHEDULED: <2018-04-26 Thu>
     - [X] Add Abstract
     - [X] Add literature survey
     - [X] Add introduction
-    - [-] Add Requirements[3/8]
+    - [-] Add Requirements[2/8]
       - [X] Specific Requirements[3/3] 
 	- [X] Hardware Requirements
 	- [X] Software Requiements
@@ -54,7 +54,10 @@ books.
 	- [ ] Ease of Use
 	- [ ] Learning Curve
 	- [ ] Training
-      - [X] Software System Attributes
+      - [ ] Software System Attributes
+    - [ ] Add Design[0/2]
+      - [ ] System Design
+      - [ ] User Interface Design
     - [-] Add diagrams[4/6]
       - [X] Level 0 DFD
       - [X] Level 1 DFD
@@ -62,10 +65,10 @@ books.
       - [X] Use Case Diagram
       - [ ] Entity Relationship Diagram
       - [ ] Database Schema Diagram
-    - [ ] Add User-Interfaces
-    - [X] Add Conclusion
-    - +[ ] Add License+
-    - [X] Add Acknowledgement
+    - [X] Add Conclusion[2/2]
+      - [X] Add Text
+      - [X] Add Future Scope
+    - [ ] Add Acknowledgement
 *** TODO Merge with the current project report
     SCHEDULED: <2018-04-02 Mon>
 
