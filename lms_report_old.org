@@ -1,8 +1,51 @@
 #+TITLE: Library Management System Project Report
+#+AUTHOR: Aurghyadip Kundu, Shrestha Shaw, Rajdeep Saha, Sayanjit Das
 #+OPTIONS: toc:nil
 #+SETUPFILE: theme-readtheorg.setup
+#+name: setup
+#+begin_src emacs-lisp :results silent :exports none
 
-#+BEGIN_ABSTRACT
+  (add-to-list 'org-latex-classes
+	       '("per-file-class"
+		 "\\documentclass{thesis}
+		  [EXTRA]"
+		 ("\\chapter{%s}" . "\\chapter*{%s}")
+		 ("\\section{%s}" . "\\section*{%s}")
+		 ("\\subsection{%s}" . "\\subsection*{%s}")
+		 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+		 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+		 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+#+LaTeX_CLASS: per-file-class
+#+LaTeX_CLASS_OPTIONS: [11pt, a4paper]
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage[top = 1.2 in, left = 1.8in, bottom = 1in, right = 1in]{geometry}
+#+LaTeX_HEADER: \usepackage{amsmath}
+#+LaTeX_HEADER: \usepackage{multicol}
+#+LaTeX_HEADER: \usepackage{graphicx}
+#+LaTeX_HEADER: \usepackage{wrapfig}
+#+LaTeX_HEADER: \usepackage[raggedright]{titlesec}
+#+LaTeX_HEADER: \usepackage{color}
+#+LaTeX_HEADER: \usepackage{framed}
+#+LaTeX_HEADER: \usepackage{palatino}
+#+LaTeX_HEADER: \usepackage{shorttoc}
+#+LaTeX_HEADER: \usepackage{enumitem}
+#+LaTeX_HEADER: \usepackage{subfig}
+
+#+LaTeX_HEADER: \SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+
+#+LaTeX_HEADER: \hfuzz=20pt
+#+LaTeX_HEADER: \newcommand*{\rfrac}[2]{{}^{#1}\!/_{#2}}
+#+LaTeX_HEADER: \newcommand*{\definition}[2]{\noindent \textbf{#1 :} \textit{#2}}
+
+#+LaTeX_HEADER: \renewcommand*\contentsname{Contents}
+
+#+LaTeX_HEADER: \definecolor{gray75}{gray}{0.75}
+#+LaTeX_HEADER: \newcommand{\hsp}{\hspace{3pt}}
+#+LaTeX_HEADER: \titleformat{\chapter}{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+#+BEGIN_abstract
 Library Management System is a software used to manage the catalog of
 a library. This helps to keep the records of all the transaction of
 books available in the library. Each patron and the item has a unique
@@ -16,16 +59,16 @@ completely handle and (mostly) automate the process of managing a
 library. It’ll reduce the needs to have a counter full of people (thus
 slowing and manually doing the process) for issuing and/or depositing
 books.
-#+END_ABSTRACT
+#+END_abstract
 #+TOC: headlines 3
 
-** TASKS
+** TASKS                                                           :noexport:
 *** TODO Re-format document [5/8]
     SCHEDULED: <2018-04-26 Thu>
       - [X] Add Abstract
       - [X] Add literature survey
       - [X] Add introduction
-      - [-] Add Requirements[3/8]
+      - [-] Add Requirements[6/8]
 	- [X] Specific Requirements[3/3] 
 	  - [X] Hardware Requirements
 	  - [X] Software Requiements
@@ -34,30 +77,30 @@ books.
 	  - [X] The Borrower
 	  - [X] The Librarian
 	  - [X] The Administrator
-	- [ ] Performance Requirements[0/3]
-	  - [ ] Speed and Latency Requirements
-	  - [ ] Precision or Accuracy Requirements
-	  - [ ] Capacity Requirements
-	- [ ] Dependability Requiremnents[0/3]
-	  - [ ] Reliability
-	  - [ ] Availability
-	  - [ ] Robustness or Fault-Tolerance
+	- [X] Performance Requirements[2/2]
+	  - [X] Speed and Latency Requirements
+	  - +Precision or Accuracy Requirements+
+	  - [X] Capacity Requirements
+	- [X] Dependability Requiremnents[2/2]
+	  - [X] Reliability
+	  - +Availability+
+	  - [X] Robustness or Fault-Tolerance
 	- [ ] Maintainability and Supportability Requirements[0/4]
 	  - [ ] Maintainability
 	  - [ ] Supportability
 	  - [ ] Adaptability
 	  - [ ] Scalability
-	- [ ] Security Requirements[0/3]
-	  - [ ] Access
-	  - [ ] Integrity
-	  - [ ] Privacy
+	- [X] Security Requirements[3/3]
+	  - [X] Access
+	  - [X] Integrity
+	  - [X] Privacy
 	- [ ] Usability Requirements[0/3]
 	  - [ ] Ease of Use
 	  - [ ] Learning Curve
 	  - [ ] Training
 	- [X] Software System Attributes
-      - [ ] Add Design[0/2]
-	- [ ] System Design
+      - [-] Add Design[1/2]
+	- [X] System Design
 	- [ ] User Interface Design
       - [-] Add diagrams[4/6]
 	- [X] Level 0 DFD
@@ -384,27 +427,48 @@ anything and modify the system in any way possible.
 
 ** Non Functional Requirements
 *** Performance Requirements
-**** Speed and Latency Requirements
-**** Precision or Acccuracy Requirements
-**** Capacity Requirements
 The performance requirement should not be an issue as it is a scalable
 system with the back end in the cloud.
+**** Speed and Latency Requirements
+
+It is not an option for a library management system to be slow. The
+operations should be fast, minimal and should only transfer the data
+that is absolutely required.  
+
+In spite of all that the validation and all the checks for the
+security happen on the server side and it's better to do so for
+preventing security exploits to the system at the cost of a few
+milliseconds of loss in response time.
+
+**** Capacity Requirements
 
 For a small to medium sized library, small to medium subscription of
 Google Cloud Platform are considerable but larger libraries with
-bigger administrations require Enterprise Level Google Cloud Platform
-with Linux Server OS. The application can run on Windows based
-servers, but is not optimized for it.
+bigger administrations require Enterprise Level Google Cloud Platform.
 
-The validation and all the checks for the constraints happen on the
-server side and it's better to do so for preventing security exploits
-to the system at the cost of a few milliseconds of loss in response
-time.
+Any cloud platform offer excellent capacity requirements, plus as
+there are no set queries to the server, the overhead of the
+transaction is very low and the transfer of the data is done only when
+a datafield is in use and updated.
 
 *** Dependability Requirements
 **** Reliability Requirements
-**** Availability Requirements
+
+The system should be very reliable even for a large library, any cloud
+platform offers robust backup systems which can be modified to suit
+the needs of specific libraries. As for the App or the front end,
+there are options for over the air updates which can be pushed as soon
+as a bug is found.
+
 **** Robustness or Fault-Tolerance Requirements
+
+A fault tolerant system is one that is designed and built to continue
+working even when parts of it are unavailable or down. In a way, the
+app or the system is fault tolerant because parts of it can be
+modified without crashing the whole app down.
+
+Also, as the server is hosted in multiple systems, even if a system is
+down, the other hosts can provide service at a lesser capacity.
 
 *** Maintainability and Supportability Requirements
 **** Maintenance Requirements
@@ -414,8 +478,28 @@ time.
 
 *** Security Requirements
 **** Access Requirements
+
+Authentication has been a great challenge for the project. Most of the
+times were spent in where to implement authentication and where not to
+implement it. As this is a library management application and has a
+separate client side app, we decided to go for a more structured
+authentication system that will not hammer the user experience but at
+the same time provide a fair amount of control over what users
+actually see or can access.
+
 **** Integrity Requirements
+
+Data integrity is a big part of any Application or system. Managing
+the integrity of the database and controlling who accesses what is a
+major factor both from a security point of view and also from user
+experience point of view.
+
 **** Privacy Requirements
+
+To control the privacy requirements, the database has been locked via
+ruleset (standard procedure of access control and for REST API and
+NoSQL databases). Both *Librarians* and *Users* alike can't access the
+data of any other users which include personal informations.
 
 *** Usability Requirements
 **** Ease of Use
@@ -476,6 +560,8 @@ time.
 ** System Design
 *** Database Design
 **** Book Model
+#+ATTR_LaTeX: :align |r|c|l|
+|-------------+--------+------------------------------------------------------|
 | Field       | type   | Description                                          |
 |-------------+--------+------------------------------------------------------|
 | isbn        | string | Primary key (in this case, just the key) of the book |
@@ -483,38 +569,50 @@ time.
 | author      | string | Author of the book                                   |
 | copies      | int    | How many copies of the book are there in the library |
 | description | text   | Brief description of the book                        |
+|-------------+--------+------------------------------------------------------|
 
 **** Rent Model
+#+ATTR_LaTeX: :align |r|c|l|
+|-----------+--------+----------------------------------------|
 | Field     | type   | Description                            |
 |-----------+--------+----------------------------------------|
 | studentId | string | Level 1 Key : Unique ID of the student |
 | isbn      | string | Level 2 Key : Unique Id of the Book    |
 | date      | string | Level 2 Value : Date of rent           |
+|-----------+--------+----------------------------------------|
 
 **** Request Model
+#+ATTR_LaTeX: :align |r|c|l|
+|-----------+--------+----------------------------------------|
 | Field     | type   | Description                            |
 |-----------+--------+----------------------------------------|
 | studentId | string | Level 1 Key : Unique ID of the student |
 | isbn      | string | Level 2 Key : Unique Id of the Book    |
 | date      | string | Level 2 Value : Date of rent           |
+|-----------+--------+----------------------------------------|
 
 **** Students Model
+#+ATTR_LaTeX: :align |r|c|l|
+|------------+--------+------------------------------------------------|
 | Field      | Type   | Description                                    |
 |------------+--------+------------------------------------------------|
 | studentId  | string | Primary key (or just Key) of a student, unique |
 | department | string | Department of the student                      |
 | name       | string | name of the student                            |
+|------------+--------+------------------------------------------------|
 
 **** User Model
+#+ATTR_LaTeX: :align |r|c|l|
+|-------------+--------+--------------------------------------------------------|
 | Field       | Type   | Description                                            |
 |-------------+--------+--------------------------------------------------------|
 | id          | string | Auto generated id of the user                          |
 | accessLevel | string | Access level of the user (admin, student or librarian) |
 | uId         | string | Unique ID of the user (studentId or librarianId)       |
 | name        | string | Name of the user                                       |
+|-------------+--------+--------------------------------------------------------|
 
 *** Program Design
-
 ** User Interface Design
 The Android user interface should follow the material design
 guidelines provided by Google Inc.
