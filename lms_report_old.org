@@ -474,16 +474,19 @@ time.
 * DESIGN
 ** System Design
 *** Database Design
-There are a few points to consider when designing and developing the
-system.
-1. Database :: The database should be normalized all the time. Maximum
-               permissible redundancy should not be more than 10% at
-               any instance.
-2. Backups :: Backups should be designed in such a way that it should
-              be easy enough to replace the corrupted back end with a
-              most recently backed up on withing 15 mins without any
-              failure.
+**** Book Model
+| Field       | type   | Description                                          |
+|-------------+--------+------------------------------------------------------|
+| isbn        | string | Primary key (in this case, just the key) of the book |
+| title       | string | Title of the book                                    |
+| author      | string | Author of the book                                   |
+| copies      | int    | How many copies of the book are there in the library |
+| description | text   | Brief description of the book                        |
 
+**** Rent Model
+**** Request Model
+**** Students Model
+**** User Model
 *** Program Design
 
 ** User Interface Design
