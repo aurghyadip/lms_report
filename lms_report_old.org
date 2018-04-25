@@ -21,54 +21,54 @@ books.
 ** TASKS
 *** TODO Re-format document [4/8]
     SCHEDULED: <2018-04-26 Thu>
-    - [X] Add Abstract
-    - [X] Add literature survey
-    - [X] Add introduction
-    - [-] Add Requirements[2/8]
-      - [X] Specific Requirements[3/3] 
-	- [X] Hardware Requirements
-	- [X] Software Requiements
-	- [X] Communication Interfaces
-      - [X] Functional Requirements[3/3]
-            - [X] The Borrower
-            - [X] The Librarian
-            - [X] The Administrator
-      - [ ] Performance Requirements[0/3]
-            - [ ] Speed and Latency Requirements
-            - [ ] Precision or Accuracy Requirements
-            - [ ] Capacity Requirements
-      - [ ] Dependability Requiremnents[0/3]
-            - [ ] Reliability
-            - [ ] Availability
-            - [ ] Robustness or Fault-Tolerance
-      - [ ] Maintainability and Supportability Requirements[0/4]
-            - [ ] Maintainability
-            - [ ] Supportability
-            - [ ] Adaptability
-            - [ ] Scalability
-      - [ ] Security Requirements[0/3]
-            - [ ] Access
-            - [ ] Integrity
-            - [ ] Privacy
-      - [ ] Usability Requirements[0/3]
-            - [ ] Ease of Use
-            - [ ] Learning Curve
-            - [ ] Training
-      - [ ] Software System Attributes
-    - [ ] Add Design[0/2]
-      - [ ] System Design
-      - [ ] User Interface Design
-    - [-] Add diagrams[4/6]
-      - [X] Level 0 DFD
-      - [X] Level 1 DFD
-      - [X] Level 2 DFD
-      - [X] Use Case Diagram
-      - [ ] Entity Relationship Diagram
-      - [ ] Database Schema Diagram
-    - [X] Add Conclusion[2/2]
-      - [X] Add Text
-      - [X] Add Future Scope
-    - [ ] Add Acknowledgement
+      - [X] Add Abstract
+      - [X] Add literature survey
+      - [X] Add introduction
+      - [-] Add Requirements[2/8]
+            - [X] Specific Requirements[3/3] 
+                  - [X] Hardware Requirements
+                  - [X] Software Requiements
+                  - [X] Communication Interfaces
+            - [X] Functional Requirements[3/3]
+                  - [X] The Borrower
+                  - [X] The Librarian
+                  - [X] The Administrator
+            - [ ] Performance Requirements[0/3]
+                  - [ ] Speed and Latency Requirements
+                  - [ ] Precision or Accuracy Requirements
+                  - [ ] Capacity Requirements
+            - [ ] Dependability Requiremnents[0/3]
+                  - [ ] Reliability
+                  - [ ] Availability
+                  - [ ] Robustness or Fault-Tolerance
+            - [ ] Maintainability and Supportability Requirements[0/4]
+                  - [ ] Maintainability
+                  - [ ] Supportability
+                  - [ ] Adaptability
+                  - [ ] Scalability
+            - [ ] Security Requirements[0/3]
+                  - [ ] Access
+                  - [ ] Integrity
+                  - [ ] Privacy
+            - [ ] Usability Requirements[0/3]
+                  - [ ] Ease of Use
+                  - [ ] Learning Curve
+                  - [ ] Training
+            - [ ] Software System Attributes
+      - [ ] Add Design[0/2]
+            - [ ] System Design
+            - [ ] User Interface Design
+      - [-] Add diagrams[4/6]
+            - [X] Level 0 DFD
+            - [X] Level 1 DFD
+            - [X] Level 2 DFD
+            - [X] Use Case Diagram
+            - [ ] Entity Relationship Diagram
+            - [ ] Database Schema Diagram
+      - [X] Add Conclusion[2/2]
+            - [X] Add Text
+            - [X] Add Future Scope
+      - [X] Add Acknowledgement
     
 *** TODO Merge with the current project report
     SCHEDULED: <2018-04-02 Mon>
