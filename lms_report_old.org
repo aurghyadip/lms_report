@@ -1,5 +1,6 @@
 #+TITLE: Library Management System Project Report
 #+OPTIONS: toc:nil
+#+SETUPFILE: theme-readtheorg.setup
 
 #+BEGIN_ABSTRACT
 Library Management System is a software used to manage the catalog of
@@ -19,55 +20,55 @@ books.
 #+TOC: headlines 3
 
 ** TASKS
-*** TODO Re-format document [4/8]
+*** TODO Re-format document [5/8]
     SCHEDULED: <2018-04-26 Thu>
       - [X] Add Abstract
       - [X] Add literature survey
       - [X] Add introduction
-      - [-] Add Requirements[2/8]
-            - [X] Specific Requirements[3/3] 
-                  - [X] Hardware Requirements
-                  - [X] Software Requiements
-                  - [X] Communication Interfaces
-            - [X] Functional Requirements[3/3]
-                  - [X] The Borrower
-                  - [X] The Librarian
-                  - [X] The Administrator
-            - [ ] Performance Requirements[0/3]
-                  - [ ] Speed and Latency Requirements
-                  - [ ] Precision or Accuracy Requirements
-                  - [ ] Capacity Requirements
-            - [ ] Dependability Requiremnents[0/3]
-                  - [ ] Reliability
-                  - [ ] Availability
-                  - [ ] Robustness or Fault-Tolerance
-            - [ ] Maintainability and Supportability Requirements[0/4]
-                  - [ ] Maintainability
-                  - [ ] Supportability
-                  - [ ] Adaptability
-                  - [ ] Scalability
-            - [ ] Security Requirements[0/3]
-                  - [ ] Access
-                  - [ ] Integrity
-                  - [ ] Privacy
-            - [ ] Usability Requirements[0/3]
-                  - [ ] Ease of Use
-                  - [ ] Learning Curve
-                  - [ ] Training
-            - [ ] Software System Attributes
+      - [-] Add Requirements[3/8]
+	- [X] Specific Requirements[3/3] 
+	  - [X] Hardware Requirements
+	  - [X] Software Requiements
+	  - [X] Communication Interfaces
+	- [X] Functional Requirements[3/3]
+	  - [X] The Borrower
+	  - [X] The Librarian
+	  - [X] The Administrator
+	- [ ] Performance Requirements[0/3]
+	  - [ ] Speed and Latency Requirements
+	  - [ ] Precision or Accuracy Requirements
+	  - [ ] Capacity Requirements
+	- [ ] Dependability Requiremnents[0/3]
+	  - [ ] Reliability
+	  - [ ] Availability
+	  - [ ] Robustness or Fault-Tolerance
+	- [ ] Maintainability and Supportability Requirements[0/4]
+	  - [ ] Maintainability
+	  - [ ] Supportability
+	  - [ ] Adaptability
+	  - [ ] Scalability
+	- [ ] Security Requirements[0/3]
+	  - [ ] Access
+	  - [ ] Integrity
+	  - [ ] Privacy
+	- [ ] Usability Requirements[0/3]
+	  - [ ] Ease of Use
+	  - [ ] Learning Curve
+	  - [ ] Training
+	- [X] Software System Attributes
       - [ ] Add Design[0/2]
-            - [ ] System Design
-            - [ ] User Interface Design
+	- [ ] System Design
+	- [ ] User Interface Design
       - [-] Add diagrams[4/6]
-            - [X] Level 0 DFD
-            - [X] Level 1 DFD
-            - [X] Level 2 DFD
-            - [X] Use Case Diagram
-            - [ ] Entity Relationship Diagram
-            - [ ] Database Schema Diagram
+	- [X] Level 0 DFD
+	- [X] Level 1 DFD
+	- [X] Level 2 DFD
+	- [X] Use Case Diagram
+	- [ ] Entity Relationship Diagram
+	- [ ] Database Schema Diagram
       - [X] Add Conclusion[2/2]
-            - [X] Add Text
-            - [X] Add Future Scope
+	- [X] Add Text
+	- [X] Add Future Scope
       - [X] Add Acknowledgement
     
 *** TODO Merge with the current project report
@@ -175,7 +176,7 @@ case it's a computer station) using an EAN-13 code scanner. This can
 also be done for normal users who just want an information on a book.
 
 * INTRODUCTION
-*** Purpose
+** Purpose
 Library is considered as one of the most important things in an
 educational institute. However, managing a library is no simple
 task. This can be a primary reason for a communication disaster
@@ -183,7 +184,7 @@ between a student and the librarians. A more modern and streamlined
 approach is the sole purpose of this project by which, the
 communication failures can be avoided.
 
-*** Scope
+** Scope
 The scope of the project is a variable entity. Primarily, the system
 is targeted for the small and medium libraries but can be scaled
 easily and modified to run on any sized library.
@@ -194,8 +195,8 @@ educational institutions. Taken that into consideration, the project
 also can be used as a boilerplate for developing solutions for paid
 and public libraries.
 
-*** Definitions
-**** Abbriviations
+** Definitions
+*** Abbriviations
 |--------------+-----------------------------------|
 | Abbriviation | Full Form                         |
 |--------------+-----------------------------------|
@@ -209,7 +210,7 @@ and public libraries.
 | NIC          | Network Interface Card            |
 |--------------+-----------------------------------|
 
-**** Definitions
+*** Definitions
 - Admin :: The administrator of the whole system. Controls mainly the
            backend and has unrestricted system access.
 - User/Patron :: An user or *Patron* is an end-user of the library who
@@ -260,13 +261,6 @@ with platforms like *Google Cloud Console* in play, the cost to
 performance ration and constraint in hardware should not be a problem.
 
 *** Dependencies
-- Google Mobile Vision :: The Mobile Vision API provides a framework
-     for finding objects in photos and video. The framework includes
-     detectors, which locate and describe visual objects in images or
-     video frames, and an event driven API that tracks the position of
-     those objects in video. Currently, the Mobile Vision API includes
-     face, barcode, and text detectors, which can be applied
-     separately or together.
 - Android SDK :: Android software development is the process by which
                  new applications are created for devices running the
                  Android operating system. Applications are usually
@@ -279,6 +273,13 @@ performance ration and constraint in hardware should not be a problem.
                  access. All Java 7 language features are supported,
                  and some Java 8 language features (and additionally
                  some Java 9 code has been backported to work).
+- Google Mobile Vision :: The Mobile Vision API provides a framework
+     for finding objects in photos and video. The framework includes
+     detectors, which locate and describe visual objects in images or
+     video frames, and an event driven API that tracks the position of
+     those objects in video. Currently, the Mobile Vision API includes
+     face, barcode, and text detectors, which can be applied
+     separately or together.
 - Google Cloud Database :: It is a NoSQL database hosted at Google
      Cloud Servers with mirrors national and international to reduce
      data fetch and pushing latency. Also the service includes options
@@ -309,7 +310,7 @@ performance ration and constraint in hardware should not be a problem.
 * REQUIREMENTS
 ** Specific Requirements
 *** Hardware Interfaces
-1. Server Side :: Hardware requirements on the server side can be
+- Server Side :: Hardware requirements on the server side can be
                   considered as a variable. It can be changed to meet
                   the performance rating that is required. But the
                   bare minimum requirements are -
@@ -317,7 +318,7 @@ performance ration and constraint in hardware should not be a problem.
    - 512MB of RAM
    - 60 GB of HDD (for OS) & 10 GB of free space (for application)
    - NIC (10/100 Mbps minimum)
-2. Client Side :: The client side can use any Android phone. But the
+- Client Side :: The client side can use any Android phone. But the
                   phone should have -
    - At least 5.0 Megapixels Camera
    - Camera Flash
@@ -325,21 +326,21 @@ performance ration and constraint in hardware should not be a problem.
    - 1.2 GHz Dual Core Processor
 
 *** Software Requirements
-1. Server Side :: The server should have -
+- Server Side :: The server should have -
    - Ubuntu 16.04 LTS or up.
    - NoSQL Server (MongoDB or Firebase)
    - Mail Server
    - UNIX DNS Manager (optional, for larger libraries)
    - Git (for automated updates)
    - OpenSSH (for remote administration)
-2. Client Side :: The client side should have Android 6.0 + (vanilla
+- Client Side :: The client side should have Android 6.0 + (vanilla
                   or almost vanilla OS is preferred)
 
 *** Communication Interfaces
-1. Server Side :: Minimum of Gigabit networking is required on the
+- Server Side :: Minimum of Gigabit networking is required on the
                   server side to handle multiple requests and send
                   responses at the same time.
-2. Client Side :: GSM HSPA+, Wi-Fi(bg/n/ac) or LTE is
+- Client Side :: GSM HSPA+, Wi-Fi(bg/n/ac) or LTE is
                   required. Minimum speed of 4 Mbps.
 
 ** Functional Requirements
@@ -484,9 +485,34 @@ time.
 | description | text   | Brief description of the book                        |
 
 **** Rent Model
+| Field     | type   | Description                            |
+|-----------+--------+----------------------------------------|
+| studentId | string | Level 1 Key : Unique ID of the student |
+| isbn      | string | Level 2 Key : Unique Id of the Book    |
+| date      | string | Level 2 Value : Date of rent           |
+
 **** Request Model
+| Field     | type   | Description                            |
+|-----------+--------+----------------------------------------|
+| studentId | string | Level 1 Key : Unique ID of the student |
+| isbn      | string | Level 2 Key : Unique Id of the Book    |
+| date      | string | Level 2 Value : Date of rent           |
+
 **** Students Model
+| Field      | Type   | Description                                    |
+|------------+--------+------------------------------------------------|
+| studentId  | string | Primary key (or just Key) of a student, unique |
+| department | string | Department of the student                      |
+| name       | string | name of the student                            |
+
 **** User Model
+| Field       | Type   | Description                                            |
+|-------------+--------+--------------------------------------------------------|
+| id          | string | Auto generated id of the user                          |
+| accessLevel | string | Access level of the user (admin, student or librarian) |
+| uId         | string | Unique ID of the user (studentId or librarianId)       |
+| name        | string | Name of the user                                       |
+
 *** Program Design
 
 ** User Interface Design
