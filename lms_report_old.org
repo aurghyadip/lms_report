@@ -21,7 +21,7 @@
 *** TODO Merge with the current project report
     SCHEDULED: <2018-04-02 Mon>
 
-* ABSTRACT
+#+BEGIN_ABSTRACT
 Library Management System is a software used to manage the catalog of
 a library. This helps to keep the records of all the transaction of
 books available in the library. Each patron and the item has a unique
@@ -35,7 +35,8 @@ completely handle and (mostly) automate the process of managing a
 library. It’ll reduce the needs to have a counter full of people (thus
 slowing and manually doing the process) for issuing and/or depositing
 books.
-
+#+END_ABSTRACT
+#+TOC: headlines 2
 * LITERATURE SURVEY
 We've conducted a short survey/review on the works that has been done
 to improve the library management system of Medium and small
