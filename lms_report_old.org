@@ -1,25 +1,5 @@
 #+TITLE: Library Management System Project Report
-
-** TASKS
-*** TODO Re-format document [6/8]
-    SCHEDULED: <2018-04-26 Thu>
-    - [X] Add Abstract
-    - [X] Add literature survey
-    - [X] Add introduction
-    - [X] Add Requirements
-    - [-] Add diagrams[4/6]
-      - [X] Level 0 DFD
-      - [X] Level 1 DFD
-      - [X] Level 2 DFD
-      - [X] Use Case Diagram
-      - [ ] Entity Relationship Diagram
-      - [ ] Database Schema Diagram
-    - [ ] Add User-Interfaces
-    - [X] Add Conclusion
-    - +[ ] Add License+
-    - [X] Add Acknowledgement
-*** TODO Merge with the current project report
-    SCHEDULED: <2018-04-02 Mon>
+#+OPTIONS: toc:nil
 
 #+BEGIN_ABSTRACT
 Library Management System is a software used to manage the catalog of
@@ -36,7 +16,59 @@ library. It’ll reduce the needs to have a counter full of people (thus
 slowing and manually doing the process) for issuing and/or depositing
 books.
 #+END_ABSTRACT
-#+TOC: headlines 2
+#+TOC: headlines 3
+
+** TASKS
+*** TODO Re-format document [5/8]
+    SCHEDULED: <2018-04-26 Thu>
+    - [X] Add Abstract
+    - [X] Add literature survey
+    - [X] Add introduction
+    - [-] Add Requirements[3/8]
+      - [X] Specific Requirements[3/3] 
+	- [X] Hardware Requirements
+	- [X] Software Requiements
+	- [X] Communication Interfaces
+      - [X] Functional Requirements[3/3]
+	- [X] The Borrower
+	- [X] The Librarian
+	- [X] The Administrator
+      - [ ] Performance Requirements[0/3]
+	- [ ] Speed and Latency Requirements
+	- [ ] Precision or Accuracy Requirements
+	- [ ] Capacity Requirements
+      - [ ] Dependability Requiremnents[0/3]
+	- [ ] Reliability
+	- [ ] Availability
+	- [ ] Robustness or Fault-Tolerance
+      - [ ] Maintainability and Supportability Requirements[0/4]
+	- [ ] Maintainability
+	- [ ] Supportability
+	- [ ] Adaptability
+	- [ ] Scalability
+      - [ ] Security Requirements[0/3]
+	- [ ] Access
+	- [ ] Integrity
+	- [ ] Privacy
+      - [ ] Usability Requirements[0/3]
+	- [ ] Ease of Use
+	- [ ] Learning Curve
+	- [ ] Training
+      - [X] Software System Attributes
+    - [-] Add diagrams[4/6]
+      - [X] Level 0 DFD
+      - [X] Level 1 DFD
+      - [X] Level 2 DFD
+      - [X] Use Case Diagram
+      - [ ] Entity Relationship Diagram
+      - [ ] Database Schema Diagram
+    - [ ] Add User-Interfaces
+    - [X] Add Conclusion
+    - +[ ] Add License+
+    - [X] Add Acknowledgement
+*** TODO Merge with the current project report
+    SCHEDULED: <2018-04-02 Mon>
+
 * LITERATURE SURVEY
 We've conducted a short survey/review on the works that has been done
 to improve the library management system of Medium and small
@@ -299,7 +331,7 @@ performance ration and constraint in hardware should not be a problem.
 2. Client Side :: The client side should have Android 6.0 + (vanilla
                   or almost vanilla OS is preferred)
 
-*** Communication Interfaces}
+*** Communication Interfaces
 1. Server Side :: Minimum of Gigabit networking is required on the
                   server side to handle multiple requests and send
                   responses at the same time.
@@ -345,7 +377,11 @@ anything and modify the system in any way possible.
 2. Can add librarian
 3. Have full access to the back-end and front-end of the system.
 
+** Non Functional Requirements
 *** Performance Requirements
+**** Speed and Latency Requirements
+**** Precision or Acccuracy Requirements
+**** Capacity Requirements
 The performance requirement should not be an issue as it is a scalable
 system with the back end in the cloud.
 
@@ -360,18 +396,26 @@ server side and it's better to do so for preventing security exploits
 to the system at the cost of a few milliseconds of loss in response
 time.
 
-** Design Constraints
-There are a few points to consider when designing and developing the
-system.
-1. Database :: The database should be normalized all the time. Maximum
-               permissible redundancy should not be more than 10% at
-               any instance.
-2. Backups :: Backups should be designed in such a way that it should
-              be easy enough to replace the corrupted back end with a
-              most recently backed up on withing 15 mins without any
-              failure.
-3. User Interface :: The Android user interface should follow the
-     material design guidelines provided by Google Inc.
+*** Dependability Requirements
+**** Reliability Requirements
+**** Availability Requirements
+**** Robustness or Fault-Tolerance Requirements
+
+*** Maintainability and Supportability Requirements
+**** Maintenance Requirements
+**** Supportability Requirements
+**** Adaptability Requirements
+**** Scalability or Extensibility Requirements
+
+*** Security Requirements
+**** Access Requirements
+**** Integrity Requirements
+**** Privacy Requirements
+
+*** Usability Requirements
+**** Ease of Use
+**** Learning Curve
+**** Training Requirements
 
 ** Software System Attributes
 - Availability :: Availability defines the proportion of time that the
@@ -423,6 +467,24 @@ system.
                intuitive, easy to localize and globalize, providing
                good access for disabled users, and resulting in a good
                overall user experience.
+* DESIGN
+** System Design
+*** Database Design
+There are a few points to consider when designing and developing the
+system.
+1. Database :: The database should be normalized all the time. Maximum
+               permissible redundancy should not be more than 10% at
+               any instance.
+2. Backups :: Backups should be designed in such a way that it should
+              be easy enough to replace the corrupted back end with a
+              most recently backed up on withing 15 mins without any
+              failure.
+
+*** Program Design
+
+** User Interface Design
+The Android user interface should follow the material design
+guidelines provided by Google Inc.
 
 * DIAGRAMS
 
@@ -444,9 +506,6 @@ system.
 *** TODO To be made anew
 ** Database Schema
 *** TODO To be made anew from the JSON Structure
-* USER INTERFACE DESIGN
-Include all the views here
-
 * CONCLUSION
 This is a topic that has never been touched before by any one
 developing systems for managing libraries. While the world is moving
