@@ -68,7 +68,7 @@ books.
       - [X] Add Abstract
       - [X] Add literature survey
       - [X] Add introduction
-      - [-] Add Requirements[6/8]
+      - [-] Add Requirements[7/8]
 	- [X] Specific Requirements[3/3] 
 	  - [X] Hardware Requirements
 	  - [X] Software Requiements
@@ -85,11 +85,11 @@ books.
 	  - [X] Reliability
 	  - +Availability+
 	  - [X] Robustness or Fault-Tolerance
-	- [ ] Maintainability and Supportability Requirements[0/4]
-	  - [ ] Maintainability
-	  - [ ] Supportability
-	  - [ ] Adaptability
-	  - [ ] Scalability
+	- [X] Maintainability and Supportability Requirements[3/3]
+	  - [X] Maintainability
+	  - [X] Supportability
+	  - +Adaptability+
+	  - [X] Scalability
 	- [X] Security Requirements[3/3]
 	  - [X] Access
 	  - [X] Integrity
@@ -350,7 +350,7 @@ performance ration and constraint in hardware should not be a problem.
 - Client Side :: On the other hand, the client side can have any
                  normal android phone and operate flawlessly.
 
-* REQUIREMENTS
+* REQUIREMENTS ANALYSIS
 ** Specific Requirements
 *** Hardware Interfaces
 - Server Side :: Hardware requirements on the server side can be
@@ -472,9 +472,55 @@ down, the other hosts can provide service at a lesser capacity.
 
 *** Maintainability and Supportability Requirements
 **** Maintenance Requirements
+
+In any software engineering project, *maintainability* is the ease
+with which the product(s) can be maintained in order to - 
+- correct defects or their cause
+- prevent unexpected working condition
+- maximize the product life
+- maximize efficiency, reliability and safety
+- meet new requirements
+- make future maintenance easier
+- cope with an ever changing environment
+
+This particular project is done in such a way that continuous
+improvement or continuous integration systems won't have any problems
+pushing updates to the existing systems.
+
 **** Supportability Requirements
-**** Adaptability Requirements
+
+A *service tool* is defined as a facility or feature, closely tied to
+a product, that provides capabilities and data so as to service
+(analyze, monitor, debug, repair) that product. Service tools can
+provide broad range of capabilities. Regarding diagnosis, a proposed
+taxonomy of service tools is as follows:
+- *Level 1* :: Service tool that indicates if a product is functional
+               or non functional. Describing computer servers, the
+               states are often reffered to as /'up'/ or
+               /'down'/. This is a binary value.
+- *Level 2* :: Service tool that provides some detailed diagnostic
+               data (in this case *Google Crash Reporting*). Often the
+               diagnostic data is reffered to as a problem
+               /'signature'/, a representation of key values such as
+               system environment, running programs etc.
+- *Level 3* :: Provides detailed diagnostic data (a *stacktrace*)
+               sufficient to debug a problem.
+
 **** Scalability or Extensibility Requirements
+
+Scalability is the capability of the system to handle a growing amount
+of work, or its potential to be enlarged to accommodate that
+growth. Methods of adding more resources for a particular application
+fall into two broad categories: horizontal and vertical scaling.[ref:micheal_2007]
+
+- *Horizontal Scaling* :: Commonly refferred to as *scale out/in*. It
+     means to add (or remove) more nodes to (or from) a system, such
+     as adding a new computer to the distributed computing system. 
+- *Vertical Scaling* :: Commonly refferred to as *scale up/down*. It
+     means to add more resources (such as CPU, memory etc.) to a
+     single node in a system. Verical scaling enables the usage of
+     virtualization more effectively. Example of such systems would be
+     *Google Cloud Platform*, *Amazon Web Services* etc.
 
 *** Security Requirements
 **** Access Requirements
@@ -502,11 +548,28 @@ NoSQL databases). Both *Librarians* and *Users* alike can't access the
 data of any other users which include personal informations.
 
 *** Usability Requirements
-**** Ease of Use
-**** Learning Curve
-**** Training Requirements
+#+BEGIN_QUOTE
+"The extent to which a product can be used by specified users to
+achieve specified goals with effectiveness, efficiency, and
+satisfaction in a specified context of use." -- ISO Definition of Usability
+#+END_QUOTE
+
+The term intuitive is often listed as a desirable trait in usable
+interfaces, also often used as a synonym for learnable. An intuitive
+interface perceive the patterns of the users behavior and draw
+inferences.[ref:tognazzini_1996]
 
 ** Software System Attributes
+Quality attributes are the overall factors that affect run-time
+behavior, system design, and user experience. They represent areas of
+concern that have the potential for application wide impact across
+layers and tiers. Some of these attributes are related to the overall
+system design, while others are specific to run time, design time, or
+user centric issues. The extent to which the application possesses a
+desired combination of quality attributes such as usability,
+performance, reliability, and security indicates the success of the
+design and the overall quality of the software application.[ref:morgan_2007]
+
 - Availability :: Availability defines the proportion of time that the
                   system is functional and working. It can be measured
                   as a percentage of the total system downtime over a
@@ -557,9 +620,8 @@ data of any other users which include personal informations.
                good access for disabled users, and resulting in a good
                overall user experience.
 * DESIGN
-** System Design
-*** Database Design
-**** Book Model
+** Database Design
+*** Book Model
 #+ATTR_LaTeX: :align |r|c|l|
 |-------------+--------+------------------------------------------------------|
 | Field       | type   | Description                                          |
@@ -571,7 +633,7 @@ data of any other users which include personal informations.
 | description | text   | Brief description of the book                        |
 |-------------+--------+------------------------------------------------------|
 
-**** Rent Model
+*** Rent Model
 #+ATTR_LaTeX: :align |r|c|l|
 |-----------+--------+----------------------------------------|
 | Field     | type   | Description                            |
@@ -581,7 +643,7 @@ data of any other users which include personal informations.
 | date      | string | Level 2 Value : Date of rent           |
 |-----------+--------+----------------------------------------|
 
-**** Request Model
+*** Request Model
 #+ATTR_LaTeX: :align |r|c|l|
 |-----------+--------+----------------------------------------|
 | Field     | type   | Description                            |
@@ -591,7 +653,7 @@ data of any other users which include personal informations.
 | date      | string | Level 2 Value : Date of rent           |
 |-----------+--------+----------------------------------------|
 
-**** Students Model
+*** Students Model
 #+ATTR_LaTeX: :align |r|c|l|
 |------------+--------+------------------------------------------------|
 | Field      | Type   | Description                                    |
@@ -601,7 +663,7 @@ data of any other users which include personal informations.
 | name       | string | name of the student                            |
 |------------+--------+------------------------------------------------|
 
-**** User Model
+*** User Model
 #+ATTR_LaTeX: :align |r|c|l|
 |-------------+--------+--------------------------------------------------------|
 | Field       | Type   | Description                                            |
@@ -612,7 +674,6 @@ data of any other users which include personal informations.
 | name        | string | Name of the user                                       |
 |-------------+--------+--------------------------------------------------------|
 
-*** Program Design
 ** User Interface Design
 The Android user interface should follow the material design
 guidelines provided by Google Inc.
@@ -633,10 +694,10 @@ guidelines provided by Google Inc.
 #+NAME: usecasediag
 [[./diagrams/usecase.png]]
 
-** Entity Relationship Diagram
-*** TODO To be made anew
-** Database Schema
-*** TODO To be made anew from the JSON Structure
+#+CAPTION: Entity Relationship Diagram
+#+NAME: erdiag
+[[./diagrams/lmsER.png]]
+
 * CONCLUSION
 This is a topic that has never been touched before by any one
 developing systems for managing libraries. While the world is moving
