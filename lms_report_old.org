@@ -63,7 +63,7 @@ books.
 #+TOC: headlines 3
 
 ** TASKS                                                           :noexport:
-*** TODO Re-format document [5/8]
+*** TODO Re-format document [6/8]
     SCHEDULED: <2018-04-26 Thu>
       - [X] Add Abstract
       - [X] Add literature survey
@@ -102,20 +102,20 @@ books.
       - [-] Add Design[1/2]
 	- [X] System Design
 	- [ ] User Interface Design
-      - [-] Add diagrams[4/6]
+      - [X] Add diagrams[5/5]
 	- [X] Level 0 DFD
 	- [X] Level 1 DFD
 	- [X] Level 2 DFD
 	- [X] Use Case Diagram
-	- [ ] Entity Relationship Diagram
-	- [ ] Database Schema Diagram
+	- [X] Entity Relationship Diagram
+	- +Database Schema Diagram+
       - [X] Add Conclusion[2/2]
 	- [X] Add Text
 	- [X] Add Future Scope
       - [X] Add Acknowledgement
     
 *** TODO Merge with the current project report
-    SCHEDULED: <2018-04-02 Mon>
+    SCHEDULED: <2018-05-02 Mon>
 
 * LITERATURE SURVEY
 We've conducted a short survey/review on the works that has been done
@@ -724,3 +724,4 @@ helping us when we were stuck in a loop of bad codes and ideas.
 Finally I would like to extend my deepest gratitude to all the
 teachers of the IT Department of CIEM without whose love, support and
 understanding we could never have completed this project proposal.
+
