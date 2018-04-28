@@ -22,11 +22,11 @@ customer service. It is said to be the age of E-banking.
 #+END_abstract
 
 ** TASKS                                                           :noexport:
-*** TODO Draw proper diagrams [1/5]
+*** TODO Draw proper diagrams [4/5]
 - [X] ER Diagram
-- [ ] Level 0 DFD
-- [ ] Level 1 DFD
-- [ ] Level 2 DFD
+- [X] Level 0 DFD
+- [X] Level 1 DFD
+- [X] Level 2 DFD
 - [ ] Use Case Diagram
 * INTRODUCTION
 An Online Banking user is expected to perform at least one of the following
@@ -219,33 +219,33 @@ desired combination of quality attributes such as usability,
 performance, reliability, and security indicates the success of the
 design and the overall quality of the software application.
 
-- Availability :: Availability defines the proportion of time that the
+- *Availability* :: Availability defines the proportion of time that the
                   system is functional and working. It can be measured
                   as a percentage of the total system downtime over a
                   predefined period. Availability will be affected by
                   system errors, infrastructure problems, malicious
                   attacks, and system load.
-- Conceptual Integrity :: Conceptual integrity defines the consistency
+- *Conceptual Integrity* :: Conceptual integrity defines the consistency
      and coherence of the overall design. This includes the way that
      components or modules are designed, as well as factors such as
      coding style and variable naming.
-- Interoperability :: Interoperability is the ability of a system or
+- *Interoperability* :: Interoperability is the ability of a system or
      different systems to operate successfully by communicating and
      exchanging information with other external systems written and
      run by external parties. An interoperable system makes it easier
      to exchange and reuse information internally as well as
      externally.
-- Maintainability :: Maintainability is the ability of the system to
+- *Maintainability* :: Maintainability is the ability of the system to
      undergo changes with a degree of ease. These changes could impact
      components, services, features, and interfaces when adding or
      changing the functionality, fixing errors, and meeting new
      business requirements.
-- Manageability :: Manageability defines how easy it is for system
+- *Manageability* :: Manageability defines how easy it is for system
                    administrators to manage the application, usually
                    through sufficient and useful instrumentation
                    exposed for use in monitoring systems and for
                    debugging and performance tuning.
-- Reliability :: Reliability is the ability of a system to remain
+- *Reliability* :: Reliability is the ability of a system to remain
                  operational over time. Reliability is measured as the
                  probability that a system will not fail to perform
                  its intended functions over a specified time
@@ -255,22 +255,25 @@ design and the overall quality of the software application.
                  applications and in other scenarios. Reusability
                  minimizes the duplication of components and also the
                  implementation time.
-- Scalability :: Scalability is ability of a system to either handle
+- *Scalability* :: Scalability is ability of a system to either handle
                  increases in load without impact on the performance
                  of the system, or the ability to be readily enlarged.
-- Security :: Security is the capability of a system to prevent
+- *Security* :: Security is the capability of a system to prevent
               malicious or accidental actions outside of the designed
               usage, and to prevent disclosure or loss of
               information. A secure system aims to protect assets and
               prevent unauthorized modification of information.
-- Usability :: Usability defines how well the application meets the
+- *Usability* :: Usability defines how well the application meets the
                requirements of the user and consumer by being
                intuitive, easy to localize and globalize, providing
                good access for disabled users, and resulting in a good
                overall user experience.
 
 * DESIGN
-Though there are many online systems available on internet but this can compete with them with some advancement in its functionality and can be used by any bank organization to maintain their customer’s account and online transaction process.
+Though there are many online systems available on internet but this can compete
+with them with some advancement in its functionality and can be used by any bank
+organization to maintain their customer’s account and online transaction
+process.
 
 The basic functionalities of the system are:
 - Create Account
@@ -353,6 +356,7 @@ paper and finally the design is implemented.
 |----------+---------+------+---------------------|
 
 * DIAGRAMS
+
 #+CAPTION: Entity Relationship Diagram
 [[./diagrams/obsER.png]]
 
@@ -365,5 +369,8 @@ paper and finally the design is implemented.
 #+CAPTION: DFD Level 2
 [[./diagrams/obs/DFD2.png]]
 
+#+CAPTION: Use-Case Diagram
+
 
 * CONCLUSION
+To conclude the srs
