@@ -93,3 +93,6 @@
     COMPUTERS*) that today's libraries have.
     #+REVEAL:split
     *ALL THAT PLACE CAN BE USED TO STORE MORE BOOKS*
+
+* WHAT WE ACHIEVED!
+What we have proposed is not so much different from what we have achieved.
