@@ -1,0 +1,23 @@
+* Speaker Notes
+  Aurghyadip Kundu => Introduction
+** Rajdeep Saha
+   From ending of the introduction to the presentation to the end of the history
+** Sayanjit Das
+   1) Current systems and what we have proposed in the previous semester or in
+      the original project proposal.
+   2) Why we have revised the project and made a slight change into it (for good).
+   3) Why we haven't strictly followed what we have proposed.
+   4) What better we could have done when proposing the project.
+** Shrestha Shaw
+   1) How the workflow has been in the last two semesters of this project.
+   2) What have we achieved from the project.
+   3) The problems we faced with our concept that we have proposed.
+   4) How we have solved them.
+   5) What have we actually done.
+** Aurghyadip Kundu
+1) Talk about technicalities
+2) What are the technologies used
+3) How the things can be made better with the concept that we used.
+4) Why everything need an update sooner or later.
+
+* End of the Presentation
