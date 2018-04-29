@@ -1,4 +1,4 @@
-#+REVEAL_ROOT: file:///d:/reveal-js
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0
 #+REVEAL_HLEVEL: 2
 #+REVEAL_THEME: sky
 #+REVEAL_TRANS: zoom
