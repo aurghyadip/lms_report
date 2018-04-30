@@ -5,8 +5,7 @@
 #+name: setup
 #+begin_src emacs-lisp :results silent :exports none
 
-  (add-to-list 'org-latex-classes
-	       '("per-file-class"
+  (add-to-list 'org-latex-classes '("per-file-class"
 		 "\\documentclass{thesis}
 		  [EXTRA]"
 		 ("\\chapter{%s}" . "\\chapter*{%s}")
@@ -46,682 +45,648 @@
 #+LaTeX_HEADER: \titleformat{\chapter}{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 
 #+BEGIN_abstract
-Library Management System is a software used to manage the catalog of
-a library. This helps to keep the records of all the transaction of
-books available in the library. Each patron and the item has a unique
-ID in the database that allows the Library Management System to track
-its activity.  Library Management Systems are needed in every school,
-college, or any type of institutions where there is a library
-present. As the technology around us is growing, the library
-management systems hasn’t improved that much since 2005. The goal is
-to make prototype of a simple android based application which can
-completely handle and (mostly) automate the process of managing a
-library. It’ll reduce the needs to have a counter full of people (thus
-slowing and manually doing the process) for issuing and/or depositing
-books.
+Library Management System is a software used to manage the catalog of a
+library. This helps to keep the records of all the transaction of books
+available in the library. Each patron and the item has a unique ID in the
+database that allows the Library Management System to track its activity.
+Library Management Systems are needed in every school, college, or any type of
+institutions where there is a library present. As the technology around us is
+growing, the library management systems hasn’t improved that much
+since 2005. The goal is to make prototype of a simple android based application
+which can completely handle and (mostly) automate the process of managing a
+library. It’ll reduce the needs to have a counter full of people (thus slowing
+and manually doing the process) for issuing and/or depositing books.
 #+END_abstract
 #+TOC: headlines 3
 
 ** TASKS                                                           :noexport:
 *** TODO Re-format document [6/8]
     SCHEDULED: <2018-04-26 Thu>
-      - [X] Add Abstract
-      - [X] Add literature survey
-      - [X] Add introduction
-      - [-] Add Requirements[7/8]
-	- [X] Specific Requirements[3/3] 
-	  - [X] Hardware Requirements
-	  - [X] Software Requiements
-	  - [X] Communication Interfaces
-	- [X] Functional Requirements[3/3]
-	  - [X] The Borrower
-	  - [X] The Librarian
-	  - [X] The Administrator
-	- [X] Performance Requirements[2/2]
-	  - [X] Speed and Latency Requirements
-	  - +Precision or Accuracy Requirements+
-	  - [X] Capacity Requirements
-	- [X] Dependability Requiremnents[2/2]
-	  - [X] Reliability
-	  - +Availability+
-	  - [X] Robustness or Fault-Tolerance
-	- [X] Maintainability and Supportability Requirements[3/3]
-	  - [X] Maintainability
-	  - [X] Supportability
-	  - +Adaptability+
-	  - [X] Scalability
-	- [X] Security Requirements[3/3]
-	  - [X] Access
-	  - [X] Integrity
-	  - [X] Privacy
-	- [ ] Usability Requirements[0/3]
-	  - [ ] Ease of Use
-	  - [ ] Learning Curve
-	  - [ ] Training
-	- [X] Software System Attributes
-      - [-] Add Design[1/2]
-	- [X] System Design
-	- [ ] User Interface Design
-      - [X] Add diagrams[5/5]
-	- [X] Level 0 DFD
-	- [X] Level 1 DFD
-	- [X] Level 2 DFD
-	- [X] Use Case Diagram
-	- [X] Entity Relationship Diagram
-	- +Database Schema Diagram+
-      - [X] Add Conclusion[2/2]
-	- [X] Add Text
-	- [X] Add Future Scope
-      - [X] Add Acknowledgement
-    
+    - [X] Add Abstract
+    - [X] Add literature survey
+    - [X] Add introduction
+    - [-] Add Requirements[7/8]
+      - [X] Specific Requirements[3/3]
+	- [X] Hardware Requirements
+	- [X] Software Requiements
+	- [X] Communication Interfaces
+      - [X] Functional Requirements[3/3]
+	- [X] The Borrower
+	- [X] The Librarian
+	- [X] The Administrator
+      - [X] Performance Requirements[2/2]
+	- [X] Speed and Latency Requirements
+	- +Precision or Accuracy Requirements+
+	- [X] Capacity Requirements
+      - [X] Dependability Requiremnents[2/2]
+	- [X] Reliability
+	- +Availability+
+	- [X] Robustness or Fault-Tolerance
+      - [X] Maintainability and Supportability Requirements[3/3]
+	- [X] Maintainability
+	- [X] Supportability
+	- +Adaptability+
+	- [X] Scalability
+      - [X] Security Requirements[3/3]
+	- [X] Access
+	- [X] Integrity
+	- [X] Privacy
+      - [X] Software System Attributes
+    - [-] Add Design[1/2]
+      - [X] System Design
+      - [ ] User Interface Design
+    - [X] Add diagrams[5/5]
+      - [X] Level 0 DFD
+      - [X] Level 1 DFD
+      - [X] Level 2 DFD
+      - [X] Use Case Diagram
+      - [X] Entity Relationship Diagram
+      - +Database Schema Diagram+
+    - [X] Add Conclusion[2/2]
+      - [X] Add Text
+      - [X] Add Future Scope
+    - [X] Add Acknowledgement
+
 *** TODO Merge with the current project report
     SCHEDULED: <2018-05-02 Mon>
 
 * LITERATURE SURVEY
-We've conducted a short survey/review on the works that has been done
-to improve the library management system of Medium and small
-libraries. The review consists of a problem statement that has been
-surfaced during our investigation of previous systems and it also
-holds a proposition on how to solve the problem with a working
-model. The attached file also contains a detailed model and SRS of the
-solution that has been proposed for medium and small libraries.
+  We've conducted a short survey/review on the works that has been done to improve
+  the library management system of Medium and small libraries. The review consists
+  of a problem statement that has been surfaced during our investigation of
+  previous systems and it also holds a proposition on how to solve the problem
+  with a working model. The attached file also contains a detailed model and SRS
+  of the solution that has been proposed for medium and small libraries.
 	
-The review is based on the development that has been done in the last
-15 years and sees no reason to look further back than the said
-timespan because of obsolescence and the rapid development of
-technology.
+  The review is based on the development that has been done in the last 15 years
+  and sees no reason to look further back than the said timespan because of
+  obsolescence and the rapid development of technology.
 
 ** Introduction
-Automated Library Management Systems emerged in the 1970-s. Though
-started as a simple database to house and retrieve a library's
-holdings, with the inception of the Internet in 1990-2000 timespan, it
-has been evolved into a much bigger thing. A system that can retrieve
-data remotely and can hold large clusters of book data and serve them
-worldwide.
+   Automated Library Management Systems emerged in the 1970-s. Though started as a
+   simple database to house and retrieve a library's holdings, with the inception
+   of the Internet in 1990-2000 timespan, it has been evolved into a much bigger
+   thing. A system that can retrieve data remotely and can hold large clusters of
+   book data and serve them worldwide.
 ** Previous Works
-Any computer based system evolves with the evolution in computer
-technology itself. Library Management systems are no different.
+   Any computer based system evolves with the evolution in computer technology
+   itself. Library Management systems are no different.
 
-After the introduction of Web 1.0 (i.e. the Internet), the initial
-plan of action was to setup and deploy OPAC(Open Public Access
-Catalog),on a web server, some time after this, rich GUI building
-tools like VB or VC++ became available.
+   After the introduction of Web 1.0 (i.e. the Internet), the initial plan of
+   action was to setup and deploy OPAC(Open Public Access Catalog),on a web server,
+   some time after this, rich GUI building tools like VB or VC++ became available.
 	
-The web based transaction system for catalogs was first proposed and
-deployed in the 1990-s after JAVA and .NET became leader in web
-application development and could make use of the REST model.
+   The web based transaction system for catalogs was first proposed and deployed in
+   the 1990-s after JAVA and .NET became leader in web application development and
+   could make use of the REST model.
 	
-In 2000s, the Web 2.0 was introduced and the concept of OTA updates
-became popular. The web, by this time was fully capable of delivering
-rich content and reliable information delivery system. The APIs became
-popular and a lot of open web based REST services for getting
-information on books became available, such as Amazon and
-LibraryThing.
+   In 2000s, the Web 2.0 was introduced and the concept of OTA updates became
+   popular. The web, by this time was fully capable of delivering rich content and
+   reliable information delivery system. The APIs became popular and a lot of open
+   web based REST services for getting information on books became available, such
+   as Amazon and LibraryThing.
 	
-But the development somehow stopped after that, people failing to
-develop reliable cloud based library management system which could be
-a cost effective solution.
+   But the development somehow stopped after that, people failing to develop
+   reliable cloud based library management system which could be a cost effective
+   solution.
 
 ** Problems in Previous Works
-Everything when in a constant development cycle has some faults. The
-instance of Library Management Systems is no different. We try to
-build the problem statement based on the faults.
+   Everything when in a constant development cycle has some faults. The instance of
+   Library Management Systems is no different. We try to build the problem
+   statement based on the faults.
 
 *** Problems with the Evolution in Technology
-As already discussed, the Internet evolved to a more cloud based
-system for everything but Library Management Systems are not
-evolving. They are still storing all the data in a single database
-which is accessible only via the library and not directly by the
-patrons.
+    As already discussed, the Internet evolved to a more cloud based system for
+    everything but Library Management Systems are not evolving. They are still
+    storing all the data in a single database which is accessible only via the
+    library and not directly by the patrons.
 	
-For a small or medium library, it's not feasible to run a local server
-to hold the catalog data of the books that a library holds, let alone
-serving the data real time to multiple patrons.
+    For a small or medium library, it's not feasible to run a local server to hold
+    the catalog data of the books that a library holds, let alone serving the data
+    real time to multiple patrons.
 
 *** Changes in User Behaviors and Demands
-The most difficult problem to cope up with is the demands of the
-users(patrons in this particular case). They are ever increasing and
-system is far behind the time line which the evolution of Web Based
-systems are following. The few most common demands by the users are
-listed here -
+    The most difficult problem to cope up with is the demands of the users(patrons
+    in this particular case). They are ever increasing and system is far behind the
+    time line which the evolution of Web Based systems are following. The few most
+    common demands by the users are listed here -
     - Users want greater freedom in managing the access to information.
-	- Users want access to the information on a book, not just if
-          the library is holding a book or not.
-	- More simple UI and search interfaces are demanded.
+      - Users want access to the information on a book, not just if the
+	library is holding a book or not.
+      - More simple UI and search interfaces are demanded.
 
-The most important of all these is that users want everything on a
-mobile based platform. The current system that is in circulation, is
-incompetent to handle this problem and needs a refinement, a more
-flexible, economic and user friendly option.
+    The most important of all these is that users want everything on a mobile based
+    platform. The current system that is in circulation, is incompetent to handle
+    this problem and needs a refinement, a more flexible, economic and user friendly
+    option.
 
 ** Proposed Solution
-The solution of the above stated problems can be simplified
-and divided into two parts.
+   The solution of the above stated problems can be simplified and divided into two
+   parts.
 
 *** Upgrading the Current System with Cloud Computing
-The current system can be upgraded to cloud computing by simply
-converting the system to a REST API based data retrieval.
+    The current system can be upgraded to cloud computing by simply converting the
+    system to a REST API based data retrieval.
 	
-By this, we can send data to a server using AJAX requests from a web
-page or WebApp and get the data in JSON format. We can then parse the
-data and show it to the user as the user want.
+    By this, we can send data to a server using AJAX requests from a web page or
+    WebApp and get the data in JSON format. We can then parse the data and show it
+    to the user as the user want.
 
 *** User Experience Customization
-Using REST can grant high modularity on what
-the server sends to the user based on the request that has been
-done. For example, we can show the user a book is available or not
-along with the details of the book if the user wants.
+    Using REST can grant high modularity on what the server sends to the user based
+    on the request that has been done. For example, we can show the user a book is
+    available or not along with the details of the book if the user wants.
 
 *** More Features
-We can reduce a major portion of manual data entry by populating data
-fields based upon the entered ISBN using the camera of a phone or (in
-case it's a computer station) using an EAN-13 code scanner. This can
-also be done for normal users who just want an information on a book.
+    We can reduce a major portion of manual data entry by populating data fields
+    based upon the entered ISBN using the camera of a phone or (in case it's a
+    computer station) using an EAN-13 code scanner. This can also be done for normal
+    users who just want an information on a book.
 
 * INTRODUCTION
 ** Purpose
-Library is considered as one of the most important things in an
-educational institute. However, managing a library is no simple
-task. This can be a primary reason for a communication disaster
-between a student and the librarians. A more modern and streamlined
-approach is the sole purpose of this project by which, the
-communication failures can be avoided.
+   Library is considered as one of the most important things in an educational
+   institute. However, managing a library is no simple task. This can be a primary
+   reason for a communication disaster between a student and the librarians. A more
+   modern and streamlined approach is the sole purpose of this project by which,
+   the communication failures can be avoided.
 
 ** Scope
-The scope of the project is a variable entity. Primarily, the system
-is targeted for the small and medium libraries but can be scaled
-easily and modified to run on any sized library.
+   The scope of the project is a variable entity. Primarily, the system is targeted
+   for the small and medium libraries but can be scaled easily and modified to run
+   on any sized library.
 
-However, there are also some considerations to be taken, the primary
-one being that the project is solely focused and targeted on the
-educational institutions. Taken that into consideration, the project
-also can be used as a boilerplate for developing solutions for paid
-and public libraries.
+   However, there are also some considerations to be taken, the primary one being
+   that the project is solely focused and targeted on the educational
+   institutions. Taken that into consideration, the project also can be used as a
+   boilerplate for developing solutions for paid and public libraries.
 
 ** Definitions
 *** Abbriviations
-|--------------+-----------------------------------|
-| Abbriviation | Full Form                         |
-|--------------+-----------------------------------|
-| LMS          | Library Management System         |
-| UI           | User Interface                    |
-| DB           | Database                          |
-| API          | Application Programming Interface |
-| REST         | Representational State Transfer   |
-| CRUD         | Create, Read, Update and Delete   |
-| MVC          | Model, View and Controller        |
-| NIC          | Network Interface Card            |
-|--------------+-----------------------------------|
+    |--------------+-----------------------------------|
+    | Abbriviation | Full Form                         |
+    |--------------+-----------------------------------|
+    | LMS          | Library Management System         |
+    | UI           | User Interface                    |
+    | DB           | Database                          |
+    | API          | Application Programming Interface |
+    | REST         | Representational State Transfer   |
+    | CRUD         | Create, Read, Update and Delete   |
+    | MVC          | Model, View and Controller        |
+    | NIC          | Network Interface Card            |
+    |--------------+-----------------------------------|
 
 *** Definitions
-- Admin :: The administrator of the whole system. Controls mainly the
-           backend and has unrestricted system access.
-- User/Patron :: An user or *Patron* is an end-user of the library who
-                 can issue a book from the library.
-- Librarian :: Librarians are the people who uses the system for
-               managing their work. As in, issuing and receiving a
-               book back.
-
+    - Admin :: The administrator of the whole system. Controls mainly the backend
+	       and has unrestricted system access.
+    - User/Patron :: An user or *Patron* is an end-user of the library who can issue
+		     a book from the library.
+    - Librarian :: Librarians are the people who uses the system for managing their
+		   work. As in, issuing and receiving a book back.
 ** Product Description
 *** Product Description
-The product is a Library Management System based on REST, CRUD and a
-client-server standard MVC application model. Along with the Android
-application, the product can also have a web based interface as in the
-back-end of the application, there's an API that's controlling the
-requests and responses to and from the server.
+    The product is a Library Management System based on REST, CRUD and a
+    client-server standard MVC application model. Along with the Android
+    application, the product can also have a web based interface as in the back-end
+    of the application, there's an API that's controlling the requests and responses
+    to and from the server.
 
-The API can also be adopted to use for developing the same application
-for other platforms, namely /iOS, Windows Phone, Windows, Linux and
-macOS/.
+    The API can also be adopted to use for developing the same application for other
+    platforms, namely /iOS, Windows Phone, Windows, Linux and macOS/.
 
 *** Product Functions
-The product functions on a request and response model. The Application
-(hereinafter referred to as /'the client'/) sends an HTTP request and
-the server responses in according to it, sending back some data in
-JSON for parsing in the client side. The client then parses the data
-and generates a view for the user to see based on the data it
-recieved. Primarily, there are three authentication levels. Admin,
-Librarian and Student.
+    The product functions on a request and response model. The Application
+    (hereinafter referred to as /'the client'/) sends an HTTP request and the server
+    responses in according to it, sending back some data in JSON for parsing in the
+    client side. The client then parses the data and generates a view for the user
+    to see based on the data it recieved. Primarily, there are three authentication
+    levels. Admin, Librarian and Student.
 
-- Admin :: The admin is responsible for adding and removing librarians
-           and also the managing the API.
-- Librarian :: The librarian is responsible for adding and removing
-               students and also managing books.
-- Student :: The students can see the books that are in the library,
-             see if the books are available or not and also the due
-             date.
-
+    - Admin :: The admin is responsible for adding and removing librarians and also
+	       the managing the API.
+    - Librarian :: The librarian is responsible for adding and removing students and
+		   also managing books.
+    - Student :: The students can see the books that are in the library, see if the
+		 books are available or not and also the due date.
 ** Constraints
 *** Constraints
-There is virtually no constraint in terms of usability of the app in
-different environments, from small to very large libraries. As it is
-built on a semi modifiable API and a very scalable database, different
-variables and queries can be added easily and the application can be
-reprogrammed accordingly.
+    There is virtually no constraint in terms of usability of the app in different
+    environments, from small to very large libraries. As it is built on a semi
+    modifiable API and a very scalable database, different variables and queries can
+    be added easily and the application can be reprogrammed accordingly.
 
-The only real constraint can be the server and database hardaware, but
-with platforms like *Google Cloud Console* in play, the cost to
-performance ration and constraint in hardware should not be a problem.
+    The only real constraint can be the server and database hardaware, but with
+    platforms like *Google Cloud Console* in play, the cost to performance ration
+    and constraint in hardware should not be a problem.
 
 *** Dependencies
-- Android SDK :: Android software development is the process by which
-                 new applications are created for devices running the
-                 Android operating system. Applications are usually
-                 developed in Java (and/or Kotlin; or other such
-                 option) programming language using the Android
-                 software development kit (SDK), but other development
-                 environments are also available, some such as Kotlin
-                 support the exact same Android APIs (and bytecode),
-                 while others such as Go have restricted API
-                 access. All Java 7 language features are supported,
-                 and some Java 8 language features (and additionally
-                 some Java 9 code has been backported to work).
-- Google Mobile Vision :: The Mobile Vision API provides a framework
-     for finding objects in photos and video. The framework includes
-     detectors, which locate and describe visual objects in images or
-     video frames, and an event driven API that tracks the position of
-     those objects in video. Currently, the Mobile Vision API includes
-     face, barcode, and text detectors, which can be applied
-     separately or together.
-- Google Cloud Database :: It is a NoSQL database hosted at Google
-     Cloud Servers with mirrors national and international to reduce
-     data fetch and pushing latency. Also the service includes options
-     for daily, weekly, monthly etc. plans for automated backup of the
-     data.
-- Google Crash Reporting :: Applications crash, period. Solving the
-     bugs is a lengthy process when most of the users of the
-     application are non-technical and (mostly) do not understand how
-     to file a proper bug report. We have automated the crash
-     reporting process through Google Cloud’s automated crash
-     reporting service. Which, upon a crash of the applications,
-     submit a logcat and steps to reproduce the crash to the
-     developers.
-- Google Storage :: Google storage provides a very useful API for
-                    storing images in the cloud. It can be useful if
-                    the scaled up application has a facility for
-                    storage of book images when entering a book. Or
-                    maybe directly fetching from Google Books API for
-                    the available books.
+    - Android SDK :: Android software development is the process by which new
+		     applications are created for devices running the Android
+		     operating system. Applications are usually developed in Java
+		     (and/or Kotlin; or other such option) programming language
+		     using the Android software development kit (SDK), but other
+		     development environments are also available, some such as
+		     Kotlin support the exact same Android APIs (and bytecode),
+		     while others such as Go have restricted API access. All Java 7
+		     language features are supported, and some Java 8 language
+		     features (and additionally some Java 9 code has been backported
+		     to work).
+    - Google Mobile Vision :: The Mobile Vision API provides a framework for finding
+	 objects in photos and video. The framework includes detectors, which locate
+	 and describe visual objects in images or video frames, and an event driven
+	 API that tracks the position of those objects in video. Currently, the
+	 Mobile Vision API includes face, barcode, and text detectors, which can be
+	 applied separately or together.
+    - Google Cloud Database :: It is a NoSQL database hosted at Google Cloud Servers
+	 with mirrors national and international to reduce data fetch and pushing
+	 latency. Also the service includes options for daily, weekly, monthly
+	 etc. plans for automated backup of the data.
+    - Google Crash Reporting :: Applications crash, period. Solving the bugs is a
+	 lengthy process when most of the users of the application are non-technical
+	 and (mostly) do not understand how to file a proper bug report. We have
+	 automated the crash reporting process through Google Cloud’s automated
+	 crash reporting service. Which, upon a crash of the applications, submit a
+	 logcat and steps to reproduce the crash to the developers.
+    - Google Storage :: Google storage provides a very useful API for storing images
+			in the cloud. It can be useful if the scaled up application
+			has a facility for storage of book images when entering a
+			book. Or maybe directly fetching from Google Books API for
+			the available books.
 
 *** Apportioning of Requirements
-- Server Side :: Most of the work is done on the server side, so the
-                 server side needs to be good according to the
-                 requirement of the libary.
-- Client Side :: On the other hand, the client side can have any
-                 normal android phone and operate flawlessly.
+    - Server Side :: Most of the work is done on the server side, so the server side
+		     needs to be good according to the requirement of the libary.
+    - Client Side :: On the other hand, the client side can have any normal android
+		     phone and operate flawlessly.
+** Additional Notes
+   - *Student* is synonymous to /Patron/ of a library.
+   - The library management system is heavily focused on college (CIEM
+     Kolkata to be precise) for case studies that has been done during the literature
+     survey and feasibility studies.
+   - The project is in early prototype stage, the concept of the project is not
+     mature and may even be flawed in some statements.
+   - This project, if made public, shall fall under *Apache 2.0 License* of the
+     *Open Source* Software publishing licenses. Which prohibits the
+     modification of the main concept without the consent of the original
+     authors or developers of the project.
 
 * REQUIREMENTS ANALYSIS
 ** Specific Requirements
 *** Hardware Interfaces
-- Server Side :: Hardware requirements on the server side can be
-                  considered as a variable. It can be changed to meet
-                  the performance rating that is required. But the
-                  bare minimum requirements are -
-   - 1.4 GHz Single Core Processor (x64 Architecture)
-   - 512MB of RAM
-   - 60 GB of HDD (for OS) & 10 GB of free space (for application)
-   - NIC (10/100 Mbps minimum)
-- Client Side :: The client side can use any Android phone. But the
-                  phone should have -
-   - At least 5.0 Megapixels Camera
-   - Camera Flash
-   - 1GB of RAM
-   - 1.2 GHz Dual Core Processor
+    - Server Side :: Hardware requirements on the server side can be considered as a
+		     variable. It can be changed to meet the performance rating that
+		     is required. But the bare minimum requirements are -
+		     - 1.4 GHz Single Core Processor (x64 Architecture)
+		     - 512MB of RAM
+		     - 60 GB of HDD (for OS) & 10 GB of free space (for application)
+		     - NIC (10/100 Mbps minimum)
+    - Client Side :: The client side can use any Android phone. But the phone should
+		     have -
+		     - At least 5.0 Megapixels Camera
+		     - Camera Flash
+		     - 1GB of RAM
+		     - 1.2 GHz Dual Core Processor
 
 *** Software Requirements
-- Server Side :: The server should have -
-   - Ubuntu 16.04 LTS or up.
-   - NoSQL Server (MongoDB or Firebase)
-   - Mail Server
-   - UNIX DNS Manager (optional, for larger libraries)
-   - Git (for automated updates)
-   - OpenSSH (for remote administration)
-- Client Side :: The client side should have Android 6.0 + (vanilla
-                  or almost vanilla OS is preferred)
+    - Server Side :: The server should have -
+		     - Ubuntu 16.04 LTS or up.
+		     - NoSQL Server (MongoDB or Firebase)
+		     - Mail Server
+		     - UNIX DNS Manager (optional, for larger libraries)
+		     - Git (for automated updates)
+		     - OpenSSH (for remote administration)
+    - Client Side :: The client side should have Android 6.0 + (vanilla or almost
+		     vanilla OS is preferred)
 
 *** Communication Interfaces
-- Server Side :: Minimum of Gigabit networking is required on the
-                  server side to handle multiple requests and send
-                  responses at the same time.
-- Client Side :: GSM HSPA+, Wi-Fi(bg/n/ac) or LTE is
-                  required. Minimum speed of 4 Mbps.
+    - Server Side :: Minimum of Gigabit networking is required on the server side to
+		     handle multiple requests and send responses at the same time.
+    - Client Side :: GSM HSPA+, Wi-Fi(bg/n/ac) or LTE is required. Minimum speed of
+		     4 Mbps.
 
 ** Functional Requirements
 *** User Class 1 - The Borrower
 **** Request
-1. Login
-2. View book details
-3. View book availability
-4. View borrowed book details / fine details
+     1. Login
+     2. View book details
+     3. View book availability
+     4. View borrowed book details / fine details
 **** Response
-1. Login success or failure.
-2. Book details
-3. Book availability
-4. Borrowed book details / fine(if any)
+     1. Login success or failure.
+     2. Book details
+     3. Book availability
+     4. Borrowed book details / fine(if any)
 
 *** User Class 2 - The Librarian
 **** Request
-1. Login
-2. View book details
-3. View book availability
-4. Rent a book to a student.
-5. Deposit a book from the student.
-6. View borrowed book details / fine details.
-7. Accept fine.
+     1. Login
+     2. View book details
+     3. View book availability
+     4. Rent a book to a student.
+     5. Deposit a book from the student.
+     6. View borrowed book details / fine details.
+     7. Accept fine.
 
 **** Response
-1. Login success or failure.
-2. Book details
-3. Book availability
-4. Book rent success (due-date)
-5. Borrowed book details.
-6. Fine acknowledgment.
+     1. Login success or failure.
+     2. Book details
+     3. Book availability
+     4. Book rent success (due-date)
+     5. Borrowed book details.
+     6. Fine acknowledgment.
 
 *** User Class 3 - The Administrator
-The administrator is the super user of the system. The admin can do
-anything and modify the system in any way possible.
+    The administrator is the super user of the system. The admin can do anything and
+    modify the system in any way possible.
 
-1. Can edit details of users of any level
-2. Can add librarian
-3. Have full access to the back-end and front-end of the system.
+    1. Can edit details of users of any level
+    2. Can add librarian
+    3. Have full access to the back-end and front-end of the system.
 
 ** Non Functional Requirements
 *** Performance Requirements
-The performance requirement should not be an issue as it is a scalable
-system with the back end in the cloud.
+    The performance requirement should not be an issue as it is a scalable system
+    with the back end in the cloud.
 **** Speed and Latency Requirements
 
-It is not an option for a library management system to be slow. The
-operations should be fast, minimal and should only transfer the data
-that is absolutely required.  
+     It is not an option for a library management system to be slow. The operations
+     should be fast, minimal and should only transfer the data that is absolutely
+     required.
 
-In spite of all that the validation and all the checks for the
-security happen on the server side and it's better to do so for
-preventing security exploits to the system at the cost of a few
-milliseconds of loss in response time.
+     In spite of all that the validation and all the checks for the security happen
+     on the server side and it's better to do so for preventing security exploits to
+     the system at the cost of a few milliseconds of loss in response time.
 
 **** Capacity Requirements
 
-For a small to medium sized library, small to medium subscription of
-Google Cloud Platform are considerable but larger libraries with
-bigger administrations require Enterprise Level Google Cloud Platform.
+     For a small to medium sized library, small to medium subscription of Google
+     Cloud Platform are considerable but larger libraries with bigger administrations
+     require Enterprise Level Google Cloud Platform.
 
-Any cloud platform offer excellent capacity requirements, plus as
-there are no set queries to the server, the overhead of the
-transaction is very low and the transfer of the data is done only when
-a datafield is in use and updated.
+     Any cloud platform offer excellent capacity requirements, plus as there are no
+     set queries to the server, the overhead of the transaction is very low and the
+     transfer of the data is done only when a datafield is in use and updated.
 
 *** Dependability Requirements
 **** Reliability Requirements
 
-The system should be very reliable even for a large library, any cloud
-platform offers robust backup systems which can be modified to suit
-the needs of specific libraries. As for the App or the front end,
-there are options for over the air updates which can be pushed as soon
-as a bug is found.
+     The system should be very reliable even for a large library, any cloud platform
+     offers robust backup systems which can be modified to suit the needs of specific
+     libraries. As for the App or the front end, there are options for over the air
+     updates which can be pushed as soon as a bug is found.
 
 **** Robustness or Fault-Tolerance Requirements
 
-A fault tolerant system is one that is designed and built to continue
-working even when parts of it are unavailable or down. In a way, the
-app or the system is fault tolerant because parts of it can be
-modified without crashing the whole app down.
+     A fault tolerant system is one that is designed and built to continue working
+     even when parts of it are unavailable or down. In a way, the app or the system
+     is fault tolerant because parts of it can be modified without crashing the whole
+     app down.
 
-Also, as the server is hosted in multiple systems, even if a system is
-down, the other hosts can provide service at a lesser capacity.
+     Also, as the server is hosted in multiple systems, even if a system is down, the
+     other hosts can provide service at a lesser capacity.
 
 *** Maintainability and Supportability Requirements
 **** Maintenance Requirements
 
-In any software engineering project, *maintainability* is the ease
-with which the product(s) can be maintained in order to - 
-- correct defects or their cause
-- prevent unexpected working condition
-- maximize the product life
-- maximize efficiency, reliability and safety
-- meet new requirements
-- make future maintenance easier
-- cope with an ever changing environment
+     In any software engineering project, *maintainability* is the ease with which
+     the product(s) can be maintained in order to -
+     - correct defects or their cause
+     - prevent unexpected working condition
+     - maximize the product life
+     - maximize efficiency, reliability and safety
+     - meet new requirements
+     - make future maintenance easier
+     - cope with an ever changing environment
 
-This particular project is done in such a way that continuous
-improvement or continuous integration systems won't have any problems
-pushing updates to the existing systems.
+     This particular project is done in such a way that continuous improvement or
+     continuous integration systems won't have any problems pushing updates to the
+     existing systems.
 
 **** Supportability Requirements
 
-A *service tool* is defined as a facility or feature, closely tied to
-a product, that provides capabilities and data so as to service
-(analyze, monitor, debug, repair) that product. Service tools can
-provide broad range of capabilities. Regarding diagnosis, a proposed
-taxonomy of service tools is as follows:
-- *Level 1* :: Service tool that indicates if a product is functional
-               or non functional. Describing computer servers, the
-               states are often reffered to as /'up'/ or
-               /'down'/. This is a binary value.
-- *Level 2* :: Service tool that provides some detailed diagnostic
-               data (in this case *Google Crash Reporting*). Often the
-               diagnostic data is reffered to as a problem
-               /'signature'/, a representation of key values such as
-               system environment, running programs etc.
-- *Level 3* :: Provides detailed diagnostic data (a *stacktrace*)
-               sufficient to debug a problem.
+     A *service tool* is defined as a facility or feature, closely tied to a product,
+     that provides capabilities and data so as to service (analyze, monitor, debug,
+     repair) that product. Service tools can provide broad range of
+     capabilities. Regarding diagnosis, a proposed taxonomy of service tools is as
+     follows:
+     - *Level 1* :: Service tool that indicates if a product is functional or non
+		    functional. Describing computer servers, the states are often
+		    reffered to as /'up'/ or /'down'/. This is a binary value.
+     - *Level 2* :: Service tool that provides some detailed diagnostic data (in this
+		    case *Google Crash Reporting*). Often the diagnostic data is
+		    reffered to as a problem /'signature'/, a representation of key
+		    values such as system environment, running programs etc.
+     - *Level 3* :: Provides detailed diagnostic data (a *stacktrace*) sufficient to
+		    debug a problem.
 
 **** Scalability or Extensibility Requirements
 
-Scalability is the capability of the system to handle a growing amount
-of work, or its potential to be enlarged to accommodate that
-growth. Methods of adding more resources for a particular application
-fall into two broad categories: horizontal and vertical scaling.[ref:micheal_2007]
+     Scalability is the capability of the system to handle a growing amount of work,
+     or its potential to be enlarged to accommodate that growth. Methods of adding
+     more resources for a particular application fall into two broad categories:
+     horizontal and vertical scaling.[ref:micheal_2007]
 
-- *Horizontal Scaling* :: Commonly refferred to as *scale out/in*. It
-     means to add (or remove) more nodes to (or from) a system, such
-     as adding a new computer to the distributed computing system. 
-- *Vertical Scaling* :: Commonly refferred to as *scale up/down*. It
-     means to add more resources (such as CPU, memory etc.) to a
-     single node in a system. Verical scaling enables the usage of
-     virtualization more effectively. Example of such systems would be
-     *Google Cloud Platform*, *Amazon Web Services* etc.
+     - *Horizontal Scaling* :: Commonly refferred to as *scale out/in*. It means to
+	  add (or remove) more nodes to (or from) a system, such as adding a new
+	  computer to the distributed computing system.
+     - *Vertical Scaling* :: Commonly refferred to as *scale up/down*. It means to
+	  add more resources (such as CPU, memory etc.) to a single node in a
+	  system. Verical scaling enables the usage of virtualization more
+	  effectively. Example of such systems would be *Google Cloud Platform*,
+	  *Amazon Web Services* etc.
 
 *** Security Requirements
 **** Access Requirements
 
-Authentication has been a great challenge for the project. Most of the
-times were spent in where to implement authentication and where not to
-implement it. As this is a library management application and has a
-separate client side app, we decided to go for a more structured
-authentication system that will not hammer the user experience but at
-the same time provide a fair amount of control over what users
-actually see or can access.
+     Authentication has been a great challenge for the project. Most of the times
+     were spent in where to implement authentication and where not to implement
+     it. As this is a library management application and has a separate client side
+     app, we decided to go for a more structured authentication system that will not
+     hammer the user experience but at the same time provide a fair amount of control
+     over what users actually see or can access.
 
 **** Integrity Requirements
 
-Data integrity is a big part of any Application or system. Managing
-the integrity of the database and controlling who accesses what is a
-major factor both from a security point of view and also from user
-experience point of view.
+     Data integrity is a big part of any Application or system. Managing the
+     integrity of the database and controlling who accesses what is a major factor
+     both from a security point of view and also from user experience point of view.
 
 **** Privacy Requirements
 
-To control the privacy requirements, the database has been locked via
-ruleset (standard procedure of access control and for REST API and
-NoSQL databases). Both *Librarians* and *Users* alike can't access the
-data of any other users which include personal informations.
-
-*** Usability Requirements
-#+BEGIN_QUOTE
-"The extent to which a product can be used by specified users to
-achieve specified goals with effectiveness, efficiency, and
-satisfaction in a specified context of use." -- ISO Definition of Usability
-#+END_QUOTE
-
-The term intuitive is often listed as a desirable trait in usable
-interfaces, also often used as a synonym for learnable. An intuitive
-interface perceive the patterns of the users behavior and draw
-inferences.[ref:tognazzini_1996]
+     To control the privacy requirements, the database has been locked via ruleset
+     (standard procedure of access control and for REST API and NoSQL
+     databases). Both *Librarians* and *Users* alike can't access the data of any
+     other users which include personal informations.
 
 ** Software System Attributes
-Quality attributes are the overall factors that affect run-time
-behavior, system design, and user experience. They represent areas of
-concern that have the potential for application wide impact across
-layers and tiers. Some of these attributes are related to the overall
-system design, while others are specific to run time, design time, or
-user centric issues. The extent to which the application possesses a
-desired combination of quality attributes such as usability,
-performance, reliability, and security indicates the success of the
-design and the overall quality of the software application.[ref:morgan_2007]
+   Quality attributes are the overall factors that affect run-time behavior, system
+   design, and user experience. They represent areas of concern that have the
+   potential for application wide impact across layers and tiers. Some of these
+   attributes are related to the overall system design, while others are specific
+   to run time, design time, or user centric issues. The extent to which the
+   application possesses a desired combination of quality attributes such as
+   usability, performance, reliability, and security indicates the success of the
+   design and the overall quality of the software application.[ref:morgan_2007]
 
-- Availability :: Availability defines the proportion of time that the
-                  system is functional and working. It can be measured
-                  as a percentage of the total system downtime over a
-                  predefined period. Availability will be affected by
-                  system errors, infrastructure problems, malicious
-                  attacks, and system load.
-- Conceptual Integrity :: Conceptual integrity defines the consistency
-     and coherence of the overall design. This includes the way that
-     components or modules are designed, as well as factors such as
-     coding style and variable naming.
-- Interoperability :: Interoperability is the ability of a system or
-     different systems to operate successfully by communicating and
-     exchanging information with other external systems written and
-     run by external parties. An interoperable system makes it easier
-     to exchange and reuse information internally as well as
-     externally.
-- Maintainability :: Maintainability is the ability of the system to
-     undergo changes with a degree of ease. These changes could impact
-     components, services, features, and interfaces when adding or
-     changing the functionality, fixing errors, and meeting new
-     business requirements.
-- Manageability :: Manageability defines how easy it is for system
-                   administrators to manage the application, usually
-                   through sufficient and useful instrumentation
-                   exposed for use in monitoring systems and for
-                   debugging and performance tuning.
-- Reliability :: Reliability is the ability of a system to remain
-                 operational over time. Reliability is measured as the
-                 probability that a system will not fail to perform
-                 its intended functions over a specified time
-                 interval.
-- Reusability :: Reusability defines the capability for components and
-                 subsystems to be suitable for use in other
-                 applications and in other scenarios. Reusability
-                 minimizes the duplication of components and also the
-                 implementation time.
-- Scalability :: Scalability is ability of a system to either handle
-                 increases in load without impact on the performance
-                 of the system, or the ability to be readily enlarged.
-- Security :: Security is the capability of a system to prevent
-              malicious or accidental actions outside of the designed
-              usage, and to prevent disclosure or loss of
-              information. A secure system aims to protect assets and
-              prevent unauthorized modification of information.
-- Usability :: Usability defines how well the application meets the
-               requirements of the user and consumer by being
-               intuitive, easy to localize and globalize, providing
-               good access for disabled users, and resulting in a good
-               overall user experience.
+   - Availability :: Availability defines the proportion of time that the system is
+		     functional and working. It can be measured as a percentage of
+		     the total system downtime over a predefined
+		     period. Availability will be affected by system errors,
+		     infrastructure problems, malicious attacks, and system load.
+   - Conceptual Integrity :: Conceptual integrity defines the consistency and
+	coherence of the overall design. This includes the way that components or
+	modules are designed, as well as factors such as coding style and variable
+	naming.
+   - Interoperability :: Interoperability is the ability of a system or different
+	systems to operate successfully by communicating and exchanging information
+	with other external systems written and run by external parties. An
+	interoperable system makes it easier to exchange and reuse information
+	internally as well as externally.
+   - Maintainability :: Maintainability is the ability of the system to undergo
+	changes with a degree of ease. These changes could impact components,
+	services, features, and interfaces when adding or changing the
+	functionality, fixing errors, and meeting new business requirements.
+   - Manageability :: Manageability defines how easy it is for system
+		      administrators to manage the application, usually through
+		      sufficient and useful instrumentation exposed for use in
+		      monitoring systems and for debugging and performance tuning.
+   - Reliability :: Reliability is the ability of a system to remain operational
+		    over time. Reliability is measured as the probability that a
+		    system will not fail to perform its intended functions over a
+		    specified time interval.
+   - Reusability :: Reusability defines the capability for components and
+		    subsystems to be suitable for use in other applications and in
+		    other scenarios. Reusability minimizes the duplication of
+		    components and also the implementation time.
+   - Scalability :: Scalability is ability of a system to either handle increases
+		    in load without impact on the performance of the system, or the
+		    ability to be readily enlarged.
+   - Security :: Security is the capability of a system to prevent malicious or
+		 accidental actions outside of the designed usage, and to prevent
+		 disclosure or loss of information. A secure system aims to protect
+		 assets and prevent unauthorized modification of information.
+   - Usability :: Usability defines how well the application meets the requirements
+		  of the user and consumer by being intuitive, easy to localize and
+		  globalize, providing good access for disabled users, and
+		  resulting in a good overall user experience.
 * DESIGN
 ** Database Design
 *** Book Model
-#+ATTR_LaTeX: :align |r|c|l|
-|-------------+--------+------------------------------------------------------|
-| Field       | type   | Description                                          |
-|-------------+--------+------------------------------------------------------|
-| isbn        | string | Primary key (in this case, just the key) of the book |
-| title       | string | Title of the book                                    |
-| author      | string | Author of the book                                   |
-| copies      | int    | How many copies of the book are there in the library |
-| description | text   | Brief description of the book                        |
-|-------------+--------+------------------------------------------------------|
+    #+ATTR_LaTeX: :align |r|c|l|
+    |-------------+--------+------------------------------------------------------|
+    | Field       | type   | Description                                          |
+    |-------------+--------+------------------------------------------------------|
+    | isbn        | string | Primary key (in this case, just the key) of the book |
+    | title       | string | Title of the book                                    |
+    | author      | string | Author of the book                                   |
+    | copies      | int    | How many copies of the book are there in the library |
+    | description | text   | Brief description of the book                        |
+    |-------------+--------+------------------------------------------------------|
 
 *** Rent Model
-#+ATTR_LaTeX: :align |r|c|l|
-|-----------+--------+----------------------------------------|
-| Field     | type   | Description                            |
-|-----------+--------+----------------------------------------|
-| studentId | string | Level 1 Key : Unique ID of the student |
-| isbn      | string | Level 2 Key : Unique Id of the Book    |
-| date      | string | Level 2 Value : Date of rent           |
-|-----------+--------+----------------------------------------|
+    #+ATTR_LaTeX: :align |r|c|l|
+    |-----------+--------+----------------------------------------|
+    | Field     | type   | Description                            |
+    |-----------+--------+----------------------------------------|
+    | studentId | string | Level 1 Key : Unique ID of the student |
+    | isbn      | string | Level 2 Key : Unique Id of the Book    |
+    | date      | string | Level 2 Value : Date of rent           |
+    |-----------+--------+----------------------------------------|
 
 *** Request Model
-#+ATTR_LaTeX: :align |r|c|l|
-|-----------+--------+----------------------------------------|
-| Field     | type   | Description                            |
-|-----------+--------+----------------------------------------|
-| studentId | string | Level 1 Key : Unique ID of the student |
-| isbn      | string | Level 2 Key : Unique Id of the Book    |
-| date      | string | Level 2 Value : Date of rent           |
-|-----------+--------+----------------------------------------|
+    #+ATTR_LaTeX: :align |r|c|l|
+    |-----------+--------+----------------------------------------|
+    | Field     | type   | Description                            |
+    |-----------+--------+----------------------------------------|
+    | studentId | string | Level 1 Key : Unique ID of the student |
+    | isbn      | string | Level 2 Key : Unique Id of the Book    |
+    | date      | string | Level 2 Value : Date of rent           |
+    |-----------+--------+----------------------------------------|
 
 *** Students Model
-#+ATTR_LaTeX: :align |r|c|l|
-|------------+--------+------------------------------------------------|
-| Field      | Type   | Description                                    |
-|------------+--------+------------------------------------------------|
-| studentId  | string | Primary key (or just Key) of a student, unique |
-| department | string | Department of the student                      |
-| name       | string | name of the student                            |
-|------------+--------+------------------------------------------------|
+    #+ATTR_LaTeX: :align |r|c|l|
+    |------------+--------+------------------------------------------------|
+    | Field      | Type   | Description                                    |
+    |------------+--------+------------------------------------------------|
+    | studentId  | string | Primary key (or just Key) of a student, unique |
+    | department | string | Department of the student                      |
+    | name       | string | name of the student                            |
+    |------------+--------+------------------------------------------------|
 
 *** User Model
-#+ATTR_LaTeX: :align |r|c|l|
-|-------------+--------+--------------------------------------------------------|
-| Field       | Type   | Description                                            |
-|-------------+--------+--------------------------------------------------------|
-| id          | string | Auto generated id of the user                          |
-| accessLevel | string | Access level of the user (admin, student or librarian) |
-| uId         | string | Unique ID of the user (studentId or librarianId)       |
-| name        | string | Name of the user                                       |
-|-------------+--------+--------------------------------------------------------|
+    #+ATTR_LaTeX: :align |r|c|l|
+    |-------------+--------+--------------------------------------------------------|
+    | Field       | Type   | Description                                            |
+    |-------------+--------+--------------------------------------------------------|
+    | id          | string | Auto generated id of the user                          |
+    | accessLevel | string | Access level of the user (admin, student or librarian) |
+    | uId         | string | Unique ID of the user (studentId or librarianId)       |
+    | name        | string | Name of the user                                       |
+    |-------------+--------+--------------------------------------------------------|
 
 ** User Interface Design
-The Android user interface should follow the material design
-guidelines provided by Google Inc.
+   The Android user interface should follow the material design guidelines provided
+   by Google Inc.
 
 * DIAGRAMS
 
-#+CAPTION: Level 0 DFD
-#+NAME: fig:level0dfd
-[[./diagrams/level0dfd.png]]
-#+CAPTION: Level 1 DFD
-#+NAME: level1dfd
-[[./diagrams/level1dfd.png]]
-#+CAPTION: Level 2 DFD
-#+NAME: level2dfd
-[[./diagrams/level2dfd.png]]
+  #+CAPTION: Level 0 DFD
+  #+NAME: fig:level0dfd
+  [[./diagrams/level0dfd.png]]
+  #+CAPTION: Level 1 DFD
+  #+NAME: level1dfd
+  [[./diagrams/level1dfd.png]]
+  #+CAPTION: Level 2 DFD
+  #+NAME: level2dfd
+  [[./diagrams/level2dfd.png]]
 
-#+CAPTION: Use Case Diagram
-#+NAME: usecasediag
-[[./diagrams/usecase.png]]
+  #+CAPTION: Use Case Diagram
+  #+NAME: usecasediag
+  [[./diagrams/usecase.png]]
 
-#+CAPTION: Entity Relationship Diagram
-#+NAME: erdiag
-[[./diagrams/lmsER.png]]
+  #+CAPTION: Entity Relationship Diagram
+  #+NAME: erdiag
+  [[./diagrams/lmsER.png]]
 
 * CONCLUSION
-This is a topic that has never been touched before by any one
-developing systems for managing libraries. While the world is moving
-towards a more mobile and cloud based approach, why library management
-system should stick to the local database and application environment
-that dates back to the 90's.  This approach of library management
-system will solve problems like redundant information storage, loss of
-information in case of a natural disaster and also ease of access for
-the patrons of a library.
+** Conclusion
+   This is a topic that has never been touched before by any one developing systems
+   for managing libraries. While the world is moving towards a more mobile and
+   cloud based approach, why library management system should stick to the local
+   database and application environment that dates back to the 90's.  This approach
+   of library management system will solve problems like redundant information
+   storage, loss of information in case of a natural disaster and also ease of
+   access for the patrons of a library.
+
+   Libraries nowadays are slow, and people are not very much into reading the books
+   beacause of the complexity of the steps of issuing a book from a library. If
+   there's a way to streamline the process using some of the modern systems that
+   are available like Android API, NoSQL Realtime Database etc. then we should take
+   the chance of fixing the system. The digital life is constantly advancing and we
+   should not cling to a technology that dates back to 1960's, if we have modern
+   technologies available, then why should we not take the advantages of them?
 
 ** Future Scope
-1. Launching a platform independent system for reusing and using all the existing and future hardware.
-2. A greater portability and scalability so that the application can be mended to suit any need that the client wants.
-3. Developing a totally independent and open source API so that developers can easily use what we've developed and further improve that.
+   1. Launching a platform independent system for reusing and using all the
+      existing and future hardware.
+   2. A greater portability and scalability so that the application can be mended
+      to suit any need that the client wants.
+   3. Developing a totally independent and open source API so that developers can
+      easily use what we've developed and further improve that.
+   4. Full automation of the library management. The whole process can be automated.
+      - Android tablets with softwares can be installed throughout the library for
+	scanning and issuing the books.
+      - Payment of fine can be automated using the UPI that *Govt. of India* has
+	launched. (Or any other instant payment API)
 
 * ACKNOWLEDGEMENT
-This project would not have been possible without the help of
-Ms. Shalini Mitra, Asst. Prof., Dept. of IT, CIEM and Mr. Samir
-Biswas, HOD, Dept. of IT, CIEM.
+  This project would not have been possible without the help of Ms. Shalini Mitra,
+  Asst. Prof., Dept. of IT, CIEM and Mr. Samir Biswas, HOD, Dept. of IT, CIEM.
 
-However, we also thank Rajkumar Pramanik of Hybriona Labs, Gujrat for
-helping us when we were stuck in a loop of bad codes and ideas.
+  However, we also thank Rajkumar Pramanik of Hybriona Labs, Gujrat for helping us
+  when we were stuck in a loop of bad codes and ideas.
 
-Finally I would like to extend my deepest gratitude to all the
-teachers of the IT Department of CIEM without whose love, support and
-understanding we could never have completed this project proposal.
+  Finally I would like to extend my deepest gratitude to all the teachers of the
+  IT Department of CIEM without whose love, support and understanding we could
+  never have completed this project proposal.
 
