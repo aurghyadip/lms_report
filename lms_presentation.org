@@ -1,10 +1,10 @@
 #+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0
 #+REVEAL_HLEVEL: 2
-#+REVEAL_THEME: sky
+#+REVEAL_THEME: serif
 #+REVEAL_TRANS: zoom
 #+TITLE: Library Management with Android
 #+OPTIONS: timestamp:nil 
-#+OPTIONS: num:nil
+#+OPTIONS: num:nil author:nil
 #+OPTIONS: toc:nil
 
 * TASKS                                                           :noexport:
@@ -48,10 +48,10 @@
     computer based library management system, *which we still use*.
 
 * Current System
-** 
-   Nowadays ,The patron have to go and check in the library to get a book
-   issued.  This hassel of waiting in a queue to know the book
-   availability.
+*** 
+    Nowadays ,The patron have to go and check in the library to get a book
+    issued.  This hassel of waiting in a queue to know the book
+    availability.
 
 *** 
     To get a book issued the librarian have to the do a long process
@@ -75,14 +75,12 @@
     there isn't another way to know whether the book exits in the library.
 
 * WHAT WE PROPOSED!
-** 
-   We have proposed some solutions to the shortcomings in last sem's
-   presentations. Let's recap those once...
-
-** 
-   Phone based barcode scanning and directly fetching the book data from
-   Google Books API to automate the process of adding books.
-
+*** 
+    We have proposed some solutions to the shortcomings in last sem's
+    presentations. Let's recap those once...
+*** 
+    Phone based barcode scanning and directly fetching the book data from
+    Google Books API to automate the process of adding books.
 *** 
     A database in the cloud to solve the problems of realtime updates and
     data security of the library.
@@ -90,8 +88,7 @@
     A NoSQL database to solve the problems of structuring data and easier
     access control. And lastly,
     #+REVEAL:split
-    *A BETTER API for Everyhing*
-
+    *A BETTER API FOR EVERYHING*
 *** 
     Android based scanning to solve the automation problems and to remove
     those huge 80's chunks of things(that we generally referred to as
@@ -100,19 +97,32 @@
     *ALL THAT PLACE CAN BE USED TO STORE MORE BOOKS*
 
 * WHAT WE ACHIEVED 
-** 
-   The API designed , for librarian and the patron seperately which mostly 
-   focuses on the need of the user with more friendly UI , easy to acess
-   and understand .
 *** 
-    To ease the headaches of the librarian as well the patron , API which uses
-    Google Book API services  for retrieveing book information  with including barcode 
-    scaning  to facilitate the actions . 
+    The app is designed for librarians and the patrons seperately and mostly
+    focuses on the needs of the user with more friendly UI, easy to access and
+    understand.
 *** 
-    For effective data fetching , Google Firebase database is used which provides
-    a realtime database  which is a NoSQL Database and as the data is stored in Firebase cloud the stored
-    data is secured as compared to the backdated local database  .  
-***  
-    To save time and effort of everyday , This API is faster and better way 
-    of overcoming all the bunch of steps to get a book issued with a single click 
-    and moreover facilitates more library functions without moving anywhere!!
+    To ease the headaches of the librarians as well the patron, the program uses
+    Google Book API services for retrieveing book information with included
+    barcode scaning to facilitate the actions.
+*** 
+    For effective data fetching, Google Firebase database is used which
+    provides a realtime database which is a NoSQL Database and as the data is
+    stored in Firebase cloud the stored data is secured as compared to the
+    backdated local database.  
+*** 
+    To save time and effort of everyday, This API is faster and better way of
+    overcoming all the bunch of steps to get a book issued with a single click
+    and moreover facilitates more library functions without moving anywhere!
+* CONCLUSION
+*** 
+We want to thank *ALL THE FACULTIES OF CIEM IT DEPARTMENT* for gifting us the
+knowledge which made this project possible.
+*** 
+Also, we want to thank our mentor *Ms. Shalini Mitra* for helping us designing and
+chalking out the primary stages of this project.
+*** 
+Lastly, we want to thank *Mr. Samir Biswas(HOD, IT)* for unconditional help during the
+entire span of the project.
+* *THE END*
+*THANK YOU FOR YOUR TIME*
