@@ -1,5 +1,5 @@
 * Speaker Notes
-  Aurghyadip Kundu => Introduction
+  All four => Introduction
 ** Rajdeep Saha
    From ending of the introduction to the presentation to the end of the history
 ** Sayanjit Das
@@ -15,9 +15,10 @@
    4) How we have solved them.
    5) What have we actually done.
 ** Aurghyadip Kundu
-1) Talk about technicalities
-2) What are the technologies used
-3) How the things can be made better with the concept that we used.
-4) Why everything need an update sooner or later.
-
+   1) Describe the problem, again. But this time with technicalities.
+   2) Talk about technicalities of solution.
+   3) What are the technologies used
+   4) How the things can be made better with the concept that we used.
+   5) Why everything need an update sooner or later.
+   6) Conclusion
 * End of the Presentation
