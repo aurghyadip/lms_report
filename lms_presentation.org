@@ -1,4 +1,4 @@
-#+REVEAL_ROOT: file:///d:/reveal-js
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0
 #+REVEAL_HLEVEL: 2
 #+REVEAL_THEME: sky
 #+REVEAL_TRANS: zoom
@@ -7,47 +7,45 @@
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
 
-** TASKS                                                           :noexport:
-*** TODO Make atleast 20 slides [1/5]
-- [X] Include history
-- [ ] Include current systems
-- [ ] Include what we have planned
-- [ ] Include what we have achieved
-- [ ] Conclusion
+* TASKS                                                           :noexport:
+** TODO Make atleast 20 slides [2/5]
+    - [X] Include history
+    - [X] Include current systems
+    - [ ] Include what we have planned
+    - [ ] Include what we have achieved
+    - [ ] Conclusion
 
 * 
-Presentation By,
-- Aurghyadip Kundu
-- Shrestha Shaw
-- Rajdip Saha
-- Sayanjit Das
+  Presentation By,
+  - Aurghyadip Kundu
+  - Shrestha Shaw
+  - Rajdip Saha
+  - Sayanjit Das
 
-*** Beacause Android Devices Are Everywhere
-
+*** *BEACAUSE ANDROID DEVICES ARE EVERYWHERE*
 * INTRODUCTION
 ** WHY MOBILE FIRST?
-Maintaining a PC based system can be a robust solution, but often it leads to
-higher maintenance cost and more number of people to operate. 
-#+REVEAL:split 
-An Android based system can easily be automated, without even needing a single
-person to operate.
-#+REVEAL:split
-Also, scanning a book and automatic entry to the database takes lot less time
-than doing it the /1960's/ way.
+   Maintaining a PC based system can be a robust solution, but often it leads to
+   higher maintenance cost and more number of people to operate. 
+   #+REVEAL:split 
+   An Android based system can easily be automated, without even needing a single
+   person to operate.
+   #+REVEAL:split
+   Also, scanning a book and automatic entry to the database takes lot less time
+   than doing it the /1960's/ way.
 
 ** A BIT OF HISTORY
-Before the 60's, every single library tasks were performed independent of one
-another.
-#+REVEAL:split
-Selectors ordered materials with slips, catalogues were manually done by card
-catalog systems and patrons were required to sign book manually.
+   Before the 60's, every single library tasks were performed independent of one
+   another.
+   #+REVEAL:split
+   Selectors ordered materials with slips, catalogues were manually done by card
+   catalog systems and patrons were required to sign book manually.
 *** INTEGRATED LIBRARY MANAGEMENT SYSTEM
-In 1970's, the computer storage and telecommunications improved and turnkey
-systems on microcomputers were introduced.
-#+REVEAL:split
-This introduced the Integrated Library Management System or the first proper
-computer based library management system, *which we still use*.
-
+    In 1970's, the computer storage and telecommunications improved and turnkey
+    systems on microcomputers were introduced.
+    #+REVEAL:split
+    This introduced the Integrated Library Management System or the first proper
+    computer based library management system, *which we still use*.
 
 ** Current System
 Nowadays ,The patron have to go and check in the library to get a book
