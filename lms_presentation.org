@@ -8,11 +8,11 @@
 #+OPTIONS: toc:nil
 
 * TASKS                                                           :noexport:
-** TODO Make atleast 20 slides [2/5]
+** TODO Make atleast 20 slides [4/5]
    - [X] Include history
    - [X] Include current systems
-   - [ ] Include what we have planned
-   - [ ] Include what we have achieved
+   - [X] Include what we have planned
+   - [X] Include what we have achieved
    - [ ] Conclusion
 
 * 
@@ -108,7 +108,7 @@
     To ease the headaches of the librarian as well the patron , API which uses
     Google Book API services  for retrieveing book information  with including barcode 
     scaning  to facilitate the actions . 
-    **
+*** 
     For effective data fetching , Google Firebase database is used which provides
     a realtime database  which is a NoSQL Database and as the data is stored in Firebase cloud the stored
     data is secured as compared to the backdated local database  .  
