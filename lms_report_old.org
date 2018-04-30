@@ -1,6 +1,6 @@
 #+TITLE: Library Management System Project Report
 #+AUTHOR: Aurghyadip Kundu, Shrestha Shaw, Rajdeep Saha, Sayanjit Das
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil title:nil author:nil
 #+SETUPFILE: theme-readtheorg.setup
 #+name: setup
 #+begin_src emacs-lisp :results silent :exports none
@@ -57,15 +57,16 @@ which can completely handle and (mostly) automate the process of managing a
 library. It’ll reduce the needs to have a counter full of people (thus slowing
 and manually doing the process) for issuing and/or depositing books.
 #+END_abstract
+
 #+TOC: headlines 3
 
 ** TASKS                                                           :noexport:
-*** TODO Re-format document [6/8]
+*** TODO Re-format document [7/8]
     SCHEDULED: <2018-04-26 Thu>
     - [X] Add Abstract
     - [X] Add literature survey
     - [X] Add introduction
-    - [-] Add Requirements[7/8]
+    - [X] Add Requirements[7/7]
       - [X] Specific Requirements[3/3]
 	- [X] Hardware Requirements
 	- [X] Software Requiements
@@ -320,8 +321,8 @@ and manually doing the process) for issuing and/or depositing books.
 		     phone and operate flawlessly.
 ** Additional Notes
    - *Student* is synonymous to /Patron/ of a library.
-   - The library management system is heavily focused on college (CIEM
-     Kolkata to be precise) for case studies that has been done during the literature
+   - The library management system is heavily focused on college (CIEM Kolkata
+     to be precise) for case studies that has been done during the literature
      survey and feasibility studies.
    - The project is in early prototype stage, the concept of the project is not
      mature and may even be flawed in some statements.
