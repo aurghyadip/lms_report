@@ -662,10 +662,10 @@ and manually doing the process) for issuing and/or depositing books.
 [[./diagrams/UIdesign/bookpage.jpg]]
 
 #+NAME:userprofile
-[[./diagram/UIdesign/profilepage.jpg]]
+[[./diagrams/UIdesign/profilepage.jpg]]
 
 #+NAME:rentpage
-[[./diagram/UIdesign/rentpage.jpg]]
+[[./diagrams/UIdesign/rentpage.jpg]]
 
 * CONCLUSION
 ** Conclusion

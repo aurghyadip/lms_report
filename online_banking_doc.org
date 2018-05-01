@@ -391,7 +391,7 @@ paper and finally the design is implemented.
 [[./diagrams/obs/DFD2.png]]
 
 #+CAPTION: Use-Case Diagram
-[[./diagrams/obs/UseCaseBank.jpg]]
+[[./diagrams/obs/UsecaseBank.jpg]]
 
 
 * CONCLUSION
