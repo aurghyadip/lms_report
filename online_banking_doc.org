@@ -1,8 +1,8 @@
 #+TITLE: ONLINE BANKING SYSTEM SRS 
 #+AUTHOR: Aurghyadip Kundu, Shrestha Shaw, Rajdeep Saha, Sayanjit Das
 #+SETUPFILE: theme-readtheorg.setup
-#+OPTIONS: ^:{}
-
+#+OPTIONS: ^:{} toc:nil
+#+LATEX_CLASS: report
 #+BEGIN_abstract
 With the rapid globalization of the Indian economy, enterprises are facing with
 ever changing competitive environment. Enterprises are adopting strategies aimed
@@ -20,6 +20,7 @@ acquisitions, which have been driven by communication and technology. Technology
 is playing a major role in increasing the efficiency, courtesy and speed of
 customer service. It is said to be the age of E-banking.
 #+END_abstract
+#+TOC: headlines 2
 
 ** TASKS                                                           :noexport:
 *** TODO Draw proper diagrams [4/5]
@@ -91,6 +92,7 @@ customer service. It is said to be the age of E-banking.
    can compete with them with some advancement in its functionality and
    can be used by any bank organization to maintain their customer’s
    account and online transaction process.
+
 
    The basic functionalities of the system are:
    - Create Account
@@ -371,4 +373,9 @@ customer service. It is said to be the age of E-banking.
 
   #+CAPTION: Use-Case Diagram
   [[./diagrams/obs/usecaseBank.jpg]]
+
 * CONCLUSION
+Online banking system has been evolved significantly in the last couple of
+years. It's a stable market, so it has some kind of slow growth compared to
+other significatly unstable markets. Although, security is always an issue when
+designing and developing a banking system that is online.
