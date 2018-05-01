@@ -665,7 +665,7 @@ and manually doing the process) for issuing and/or depositing books.
 [[./diagrams/UIdesign/profilepage.jpg]]
 
 #+NAME:rentpage
-[[./diagrams/UIdesign/rentpage.jpg]]
+[[./diagrams/UIdesign/rentedpage.jpg]]
 
 * CONCLUSION
 ** Conclusion
