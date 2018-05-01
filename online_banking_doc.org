@@ -23,353 +23,359 @@ customer service. It is said to be the age of E-banking.
 
 ** TASKS                                                           :noexport:
 *** TODO Draw proper diagrams [4/5]
-    - [X] ER Diagram
-    - [X] Level 0 DFD
-    - [X] Level 1 DFD
-    - [X] Level 2 DFD
-    - [ ] Use Case Diagram
+- [X] ER Diagram
+- [X] Level 0 DFD
+- [X] Level 1 DFD
+- [X] Level 2 DFD
+- [ ] Use Case Diagram
 * INTRODUCTION
-  An Online Banking user is expected to perform at least one of the following
-  transactions online -
+An Online Banking user is expected to perform at least one of the following
+transactions online -
 
-  1. Checking account balance
-  2. Transaction 
-  3. Paying bills 
-  4. Transferring funds between accounts  
-  5. Calculate EMI and Loan interests 
+1. Checking account balance
+2. Transaction 
+3. Paying bills 
+4. Transferring funds between accounts  
+5. Calculate EMI and Loan interests 
 
-  From a bank’s perspective, using the Internet is more efficient than using other
-  distribution mediums because banks are looking for an increased customer
-  base. Using multiple distribution channels increases effective market coverage
-  by enabling different products to be targeted at different demographic
-  segments. Also Banks cannot risk losing customers to competitors within the
-  aggressive competition in the banking industry around the world. Moreover
-  Internet delivery offers customized service to suit the needs and the likes of
-  each user. Mass customization happens effectively through Online Banking. It
-  reduces cost and replaces time spent on routine errands with spending time on
-  business errands. Online Banking means less staff members, smaller
-  infrastructure demands, compared with other banking channels. From the
-  customers’ perspective, Online Banking provides a convenient and effective way
-  to manage finances that is easily accessible 24 hours a day, seven days a
-  week. In addition information is up to date. Nevertheless Online Banking has
-  disadvantages for banks like how to work the technology, set-up cost, legal
-  issues, and lack of personal contact with customers. And for customers there are
-  security and privacy issues.
+From a bank’s perspective, using the Internet is more efficient than using other
+distribution mediums because banks are looking for an increased customer
+base. Using multiple distribution channels increases effective market coverage
+by enabling different products to be targeted at different demographic
+segments. Also Banks cannot risk losing customers to competitors within the
+aggressive competition in the banking industry around the world. Moreover
+Internet delivery offers customized service to suit the needs and the likes of
+each user. Mass customization happens effectively through Online Banking. It
+reduces cost and replaces time spent on routine errands with spending time on
+business errands. Online Banking means less staff members, smaller
+infrastructure demands, compared with other banking channels. From the
+customers’ perspective, Online Banking provides a convenient and effective way
+to manage finances that is easily accessible 24 hours a day, seven days a
+week. In addition information is up to date. Nevertheless Online Banking has
+disadvantages for banks like how to work the technology, set-up cost, legal
+issues, and lack of personal contact with customers. And for customers there are
+security and privacy issues.
 
 ** Introduction
-   Internet banking is a product of e-commerce in the field of banking and
-   financial services. In what can be described as business to customer domain for
-   banking industry, Internet banking offers different online services like balance
-   enquiry, balance transfer, opening account, calculate EMI’s etc. Mostly, these
-   are traditional services offered through internet as a new delivery
-   channel. Banks are also offering payment services on the behalf of their
-   customers who shop in different e-shops, e-malls etc. Further, different banks
-   have different levels of such services offered, starting from level-1 where only
-   information is disseminated through internet to level-3 where online
-   transactions are put through.
+Internet banking is a product of e-commerce in the field of banking and
+financial services. In what can be described as business to customer domain for
+banking industry, Internet banking offers different online services like balance
+enquiry, balance transfer, opening account, calculate EMI’s etc. Mostly, these
+are traditional services offered through internet as a new delivery
+channel. Banks are also offering payment services on the behalf of their
+customers who shop in different e-shops, e-malls etc. Further, different banks
+have different levels of such services offered, starting from level-1 where only
+information is disseminated through internet to level-3 where online
+transactions are put through.
 
 ** Purpose of the System
-   - SECURITY :: There is a lot of security of data on this content
-		 management system.  One cannot open our system without
-		 knowing the password.  Immediately after opening login
-		 screen will appear on screen.  Only after entering the
-		 correct username and password user can operate our
-		 system.
-   - REFERENTIAL INTEGRITY :: User cannot change the date in the
-	transaction files.  Addition of data can be done only on the
-	master files date in transaction files cannot be entered until
-	addition is done on the master files.
-   - EASY RETRIEVAL OF DATA :: Data is retrieved easily and quick using
-	sql commands.  On line commands are used to retrieve huge amount
-	of data.
-   - GENERATION OF AUTOMATIC VALUES :: In project in some screen some
-	fields generated automatically like Profile detail, Account
-	number, etc.
+- SECURITY :: There is a lot of security of data on this content
+              management system.  One cannot open our system without
+              knowing the password.  Immediately after opening login
+              screen will appear on screen.  Only after entering the
+              correct username and password user can operate our
+              system.
+- REFERENTIAL INTEGRITY :: User cannot change the date in the
+     transaction files.  Addition of data can be done only on the
+     master files date in transaction files cannot be entered until
+     addition is done on the master files.
+- EASY RETRIEVAL OF DATA :: Data is retrieved easily and quick using
+     sql commands.  On line commands are used to retrieve huge amount
+     of data.
+- GENERATION OF AUTOMATIC VALUES :: In project in some screen some
+     fields generated automatically like Profile detail, Account
+     number, etc.
 
 ** Scope of the Proposed System
-   Though there are many online systems available on internet but this
-   can compete with them with some advancement in its functionality and
-   can be used by any bank organization to maintain their customer’s
-   account and online transaction process.
+Though there are many online systems available on internet but this
+can compete with them with some advancement in its functionality and
+can be used by any bank organization to maintain their customer’s
+account and online transaction process.
 
-   The basic functionalities of the system are:
-   - Create Account
-   - Login 
-   - Update Profile
-   - Password Recovery
-   - View Profile
-   - ATM and Bank finder
-   - Contact Form
-   - Amount Transaction
-   - EMI and Loan Calculator
-   - Delete account
-   - Logout
+The basic functionalities of the system are:
+- Create Account
+- Login 
+- Update Profile
+- Password Recovery
+- View Profile
+- ATM and Bank finder
+- Contact Form
+- Amount Transaction
+- EMI and Loan Calculator
+- Delete account
+- Logout
 
 ** Overview of Proposed System
-   - *Menu Driven* :: The project uses menu throughout which we can
-		      choose required options. Menus are
-		      self-explanatory, as they are very easy to use and
-		      user can go to any other web page using the menu.
-   - *User Confirmation* :: Whenever the user tries to delete or edit the
-	data, the system asks for the confirmation. This is used to avoid
-	the accidental changes to the database. A confirmation is also
-	provided for the exit of the application.
-   - *Graphical User Interface* :: User is provided with a graphical
-	interface in which user can select from various options and can
-	perform desired operations with perfect understanding of the menu
-	selected.
-   - *Multiple Document Interface* :: The package provides a multiple
-	document interface to the user. The user can view more than one
-	entry form or pages at the same time.
-   - *Security and Access* :: A password form has been provided at the
-	beginning of the package. Entering the correct password will take
-	user to the main user page.
+- *Menu Driven* :: The project uses menu throughout which we can
+                   choose required options. Menus are
+                   self-explanatory, as they are very easy to use and
+                   user can go to any other web page using the menu.
+- *User Confirmation* :: Whenever the user tries to delete or edit the
+     data, the system asks for the confirmation. This is used to avoid
+     the accidental changes to the database. A confirmation is also
+     provided for the exit of the application.
+- *Graphical User Interface* :: User is provided with a graphical
+     interface in which user can select from various options and can
+     perform desired operations with perfect understanding of the menu
+     selected.
+- *Multiple Document Interface* :: The package provides a multiple
+     document interface to the user. The user can view more than one
+     entry form or pages at the same time.
+- *Security and Access* :: A password form has been provided at the
+     beginning of the package. Entering the correct password will take
+     user to the main user page.
 ** Business Context
-   Existing banking system is a manual system, which leads to a number of
-   problems in maintaining proper records. These are:
+Existing banking system is a manual system, which leads to a number of
+problems in maintaining proper records. These are:
 
-   - PAPER WORK :: All the activities that are performed by Management
-		   involve a lot of paper work involving register
-		   consultations and entries. A separate file has to be
-		   maintained for each kind of activity and for different
-		   periods of time.
-   - TIME CONSUMPTION :: A lot of time is consumed in referencing the
-	registers involved for particular activities and a lot of
-	computation as well as report verification activity is also paper
-	based and time consuming.
-   - COMPLEXITY :: Complexity of information handling and the gathering
-		   and determination of information is usually the most
-		   difficult problem faced.
-   - REDUNDANCY :: Maintaining separate files for each department can
-		   lead to duplication of data present in files. This can
-		   lead to:
-		   1. Inconsistencies
-		   2. Update anomalies
-		   3. Decentralization problems
-   - HUMAN ERRORS ::  Human kind of errors may be generated in typing
-		     errors and slow arithmetic calculations, fatigue and
-		     boredom.
-   - ILLEGAL ACCESS ::  The security of a lot of documents, which are
-		       paper, based if difficult may be in terms of
-		       illegal access or manipulation by malicious
-		       personals either intentionally or by accident.
-   - DYNAMIC ENVIRONMENT :: As the working environment is dynamic and
-	company policies change time and again, changing the way of
-	working will be difficult.
+- PAPER WORK :: All the activities that are performed by Management
+                involve a lot of paper work involving register
+                consultations and entries. A separate file has to be
+                maintained for each kind of activity and for different
+                periods of time.
+- TIME CONSUMPTION :: A lot of time is consumed in referencing the
+     registers involved for particular activities and a lot of
+     computation as well as report verification activity is also paper
+     based and time consuming.
+- COMPLEXITY :: Complexity of information handling and the gathering
+                and determination of information is usually the most
+                difficult problem faced.
+- REDUNDANCY :: Maintaining separate files for each department can
+                lead to duplication of data present in files. This can
+                lead to:
+  1. Inconsistencies
+  2. Update anomalies
+  3. Decentralization problems
+- HUMAN ERRORS ::  Human kind of errors may be generated in typing
+                  errors and slow arithmetic calculations, fatigue and
+                  boredom.
+- ILLEGAL ACCESS ::  The security of a lot of documents, which are
+                    paper, based if difficult may be in terms of
+                    illegal access or manipulation by malicious
+                    personals either intentionally or by accident.
+- DYNAMIC ENVIRONMENT :: As the working environment is dynamic and
+     company policies change time and again, changing the way of
+     working will be difficult.
 
 * REQUIREMENTS
 ** Specific Requirements
 *** Server Side Requirements
-    - LAMP (Linux, Apache MySQL and PHP) stack
-    - 1 GB of Minimum Free System Memory (More if number of users is greater)
-    - 10 GB of Hard Drive Space
+- LAMP (Linux, Apache MySQL and PHP) stack
+- 1 GB of Minimum Free System Memory (More if number of users is greater)
+- 10 GB of Hard Drive Space
 
 *** Client Side Requirements 
-    - Any operating system
-    - Browser with JS Enabled
+- Any operating system
+- Browser with JS Enabled
 ** Functional Requirements
 *** Create Account 
-    This module is used by the user to create a new account to join services of
-    online banking. The user is required to fill in a few details and is
-    automatically assigned as an user at the end of process.
+This module is used by the user to create a new account to join services of
+online banking. The user is required to fill in a few details and is
+automatically assigned as an user at the end of process.
 *** Login
-    This module is used by all the users to log into the account. The user is
-    required enter his/her user name and password. After login user will be
-    redirected to the user’s home page.
+This module is used by all the users to log into the account. The user is
+required enter his/her user name and password. After login user will be
+redirected to the user’s home page.
 *** Update Profile 
-    Update profile module will be used to update or change any detail of user such
-    as address, phone number, city, state, etc.
+Update profile module will be used to update or change any detail of user such
+as address, phone number, city, state, etc.
 *** Password Recovery 
-    This module is used to recover the lost password by the user by entering his/her
-    valid email address. This email address will be matched from database and
-    automatically generated email will be sent to the user containing his/her user
-    name and password.
+This module is used to recover the lost password by the user by entering his/her
+valid email address. This email address will be matched from database and
+automatically generated email will be sent to the user containing his/her user
+name and password.
 *** View Profile
-    This module is the automatically generated page when user clicks the view
-    profile button. This contain the user account detail such as name, account
-    balance, email id, address, city.
+This module is the automatically generated page when user clicks the view
+profile button. This contain the user account detail such as name, account
+balance, email id, address, city.
 *** Atm and Bank Locator
-    This module is used to find the address and location of ATM and banks in the
-    selected city.
+This module is used to find the address and location of ATM and banks in the
+selected city.
 *** Amount Transaction
-    This module is the user view page after login where he/she can transfer the
-    amount to other account by providing the amount to be transferred and the
-    account number where to be transferred.
+This module is the user view page after login where he/she can transfer the
+amount to other account by providing the amount to be transferred and the
+account number where to be transferred.
 *** Contact Form
-    This module is used by both registered and non-registered user to contact bank
-    or to give any feedback trough message. His/her message will be saved into the
-    database and further bank can contact him/her.
+This module is used by both registered and non-registered user to contact bank
+or to give any feedback trough message. His/her message will be saved into the
+database and further bank can contact him/her.
 *** EMI and Loan Interest Calculator
-    This module is used to calculate the interest amount of EMI and load by proving
-    the interest rate, total amount and duration.
+This module is used to calculate the interest amount of EMI and load by proving
+the interest rate, total amount and duration.
 *** Delete Account
-    This module is used to delete the user’s account by the confirmation of user.
+This module is used to delete the user’s account by the confirmation of user.
 *** Logout
-    This module is used to logout from the user’s session and redirected to the home
-    page of website.
+This module is used to logout from the user’s session and redirected to the home
+page of website.
 
 ** Non Functional Requirements 
-   Quality attributes are the overall factors that affect run-time
-   behavior, system design, and user experience. They represent areas of
-   concern that have the potential for application wide impact across
-   layers and tiers. Some of these attributes are related to the overall
-   system design, while others are specific to run time, design time, or
-   user centric issues. The extent to which the application possesses a
-   desired combination of quality attributes such as usability,
-   performance, reliability, and security indicates the success of the
-   design and the overall quality of the software application.
+Quality attributes are the overall factors that affect run-time
+behavior, system design, and user experience. They represent areas of
+concern that have the potential for application wide impact across
+layers and tiers. Some of these attributes are related to the overall
+system design, while others are specific to run time, design time, or
+user centric issues. The extent to which the application possesses a
+desired combination of quality attributes such as usability,
+performance, reliability, and security indicates the success of the
+design and the overall quality of the software application.
 
-   - *Availability* :: Availability defines the proportion of time that the
-		       system is functional and working. It can be measured
-		       as a percentage of the total system downtime over a
-		       predefined period. Availability will be affected by
-		       system errors, infrastructure problems, malicious
-		       attacks, and system load.
-   - *Conceptual Integrity* :: Conceptual integrity defines the consistency
-	and coherence of the overall design. This includes the way that
-	components or modules are designed, as well as factors such as
-	coding style and variable naming.
-   - *Interoperability* :: Interoperability is the ability of a system or
-	different systems to operate successfully by communicating and
-	exchanging information with other external systems written and
-	run by external parties. An interoperable system makes it easier
-	to exchange and reuse information internally as well as
-	externally.
-   - *Maintainability* :: Maintainability is the ability of the system to
-	undergo changes with a degree of ease. These changes could impact
-	components, services, features, and interfaces when adding or
-	changing the functionality, fixing errors, and meeting new
-	business requirements.
-   - *Manageability* :: Manageability defines how easy it is for system
-	administrators to manage the application, usually
-	through sufficient and useful instrumentation
-	exposed for use in monitoring systems and for
-	debugging and performance tuning.
-   - *Reliability* :: Reliability is the ability of a system to remain
-		      operational over time. Reliability is measured as the
-		      probability that a system will not fail to perform
-		      its intended functions over a specified time
-		      interval.
-   - Reusability :: Reusability defines the capability for components and
-		    subsystems to be suitable for use in other
-		    applications and in other scenarios. Reusability
-		    minimizes the duplication of components and also the
-		    implementation time.
-   - *Scalability* :: Scalability is ability of a system to either handle
-		      increases in load without impact on the performance
-		      of the system, or the ability to be readily enlarged.
-   - *Security* :: Security is the capability of a system to prevent
-		   malicious or accidental actions outside of the designed
-		   usage, and to prevent disclosure or loss of
-		   information. A secure system aims to protect assets and
-		   prevent unauthorized modification of information.
-   - *Usability* :: Usability defines how well the application meets the
-		    requirements of the user and consumer by being
-		    intuitive, easy to localize and globalize, providing
-		    good access for disabled users, and resulting in a good
-		    overall user experience.
+- *Availability* :: Availability defines the proportion of time that the
+                  system is functional and working. It can be measured
+                  as a percentage of the total system downtime over a
+                  predefined period. Availability will be affected by
+                  system errors, infrastructure problems, malicious
+                  attacks, and system load.
+- *Conceptual Integrity* :: Conceptual integrity defines the consistency
+     and coherence of the overall design. This includes the way that
+     components or modules are designed, as well as factors such as
+     coding style and variable naming.
+- *Interoperability* :: Interoperability is the ability of a system or
+     different systems to operate successfully by communicating and
+     exchanging information with other external systems written and
+     run by external parties. An interoperable system makes it easier
+     to exchange and reuse information internally as well as
+     externally.
+- *Maintainability* :: Maintainability is the ability of the system to
+     undergo changes with a degree of ease. These changes could impact
+     components, services, features, and interfaces when adding or
+     changing the functionality, fixing errors, and meeting new
+     business requirements.
+- *Manageability* :: Manageability defines how easy it is for system
+                   administrators to manage the application, usually
+                   through sufficient and useful instrumentation
+                   exposed for use in monitoring systems and for
+                   debugging and performance tuning.
+- *Reliability* :: Reliability is the ability of a system to remain
+                 operational over time. Reliability is measured as the
+                 probability that a system will not fail to perform
+                 its intended functions over a specified time
+                 interval.
+- Reusability :: Reusability defines the capability for components and
+                 subsystems to be suitable for use in other
+                 applications and in other scenarios. Reusability
+                 minimizes the duplication of components and also the
+                 implementation time.
+- *Scalability* :: Scalability is ability of a system to either handle
+                 increases in load without impact on the performance
+                 of the system, or the ability to be readily enlarged.
+- *Security* :: Security is the capability of a system to prevent
+              malicious or accidental actions outside of the designed
+              usage, and to prevent disclosure or loss of
+              information. A secure system aims to protect assets and
+              prevent unauthorized modification of information.
+- *Usability* :: Usability defines how well the application meets the
+               requirements of the user and consumer by being
+               intuitive, easy to localize and globalize, providing
+               good access for disabled users, and resulting in a good
+               overall user experience.
 
 * DESIGN
-  Though there are many online systems available on internet but this can compete
-  with them with some advancement in its functionality and can be used by any bank
-  organization to maintain their customer’s account and online transaction
-  process.
+Though there are many online systems available on internet but this can compete
+with them with some advancement in its functionality and can be used by any bank
+organization to maintain their customer’s account and online transaction
+process.
 
-  The basic functionalities of the system are:
-  - Create Account
-  - Login 
-  - Update Profile
-  - Password Recovery
-  - View Profile
-  - ATM and Bank finder
-  - Contact Form
-  - Amount Transaction
-  - EMI and Loan Calculator
-  - Delete account
-  - Logout
+The basic functionalities of the system are:
+- Create Account
+- Login 
+- Update Profile
+- Password Recovery
+- View Profile
+- ATM and Bank finder
+- Contact Form
+- Amount Transaction
+- EMI and Loan Calculator
+- Delete account
+- Logout
 
 ** Database Design
-   Database design is required to manage the large bodies of information. The
-   management of data involves both the definition of structure of the storage of
-   information and provisions of mechanism for the manipulation of information. in
-   addition to the database system must provide for the safety of information
-   handled, despite the system crashes due to attempts art unauthorized access. For
-   developing an efficient data base, we will have to full fill certain condition
-   such as:
+Database design is required to manage the large bodies of information. The
+management of data involves both the definition of structure of the storage of
+information and provisions of mechanism for the manipulation of information. in
+addition to the database system must provide for the safety of information
+handled, despite the system crashes due to attempts art unauthorized access. For
+developing an efficient data base, we will have to full fill certain condition
+such as:
 
-   - Control Redundancy
-   - Ease of use
-   - Accuracy and integrity
-   - Avoiding inordinate delays
-   - Recovery from failure
-   - Privacy and security
-   - Performance
+- Control Redundancy
+- Ease of use
+- Accuracy and integrity
+- Avoiding inordinate delays
+- Recovery from failure
+- Privacy and security
+- Performance
 
-   There are 6 major steps in design process. The first 5 steps are usually done on
-   paper and finally the design is implemented.
-   - Identify the tables and relationship
-   - Identify the data that is needed for each table and relationship
-   - Resolve the relationship 
-   - Verify the design
-   - Implement the design
-
+There are 6 major steps in design process. The first 5 steps are usually done on
+paper and finally the design is implemented.
+- Identify the tables and relationship
+- Identify the data that is needed for each table and relationship
+- Resolve the relationship 
+- Verify the design
+- Implement the design
+  
 *** user
-    |-------------+--------------+------+---------------|
-    | name        | type         | null | key           |
-    |-------------+--------------+------+---------------|
-    | fname       | varchar      |    0 |               |
-    | lname       | varchar      |    0 |               |
-    | acc_no      | varchar      |    0 | pk            |
-    | userid      | varchar      |    0 |               |
-    | password    | varchar(255) |    0 |               |
-    | dob         | date         |    1 |               |
-    | email       | varchar      |    0 |               |
-    | home_branch | varchar      |    0 | fk(branch.id) |
-    |-------------+--------------+------+---------------|
+|-------------+--------------+------+---------------|
+| name        | type         | null | key           |
+|-------------+--------------+------+---------------|
+| fname       | varchar      |    0 |               |
+| lname       | varchar      |    0 |               |
+| acc_no      | varchar      |    0 | pk            |
+| userid      | varchar      |    0 |               |
+| password    | varchar(255) |    0 |               |
+| dob         | date         |    1 |               |
+| email       | varchar      |    0 |               |
+| home_branch | varchar      |    0 | fk(branch.id) |
+|-------------+--------------+------+---------------|
 
 *** account
-    |--------+---------+------+--------------------|
-    | name   | type    | null | key                |
-    |--------+---------+------+--------------------|
-    | acc_no | varchar |    0 | pk,fk(user.acc_no) |
-    | amount | longint |    0 |                    |
-    |--------+---------+------+--------------------|
+|--------+---------+------+--------------------|
+| name   | type    | null | key                |
+|--------+---------+------+--------------------|
+| acc_no | varchar |    0 | pk,fk(user.acc_no) |
+| amount | longint |    0 |                    |
+|--------+---------+------+--------------------|
 
 *** branch
-    |----------+---------+------+-----|
-    | name     | type    | null | key |
-    |----------+---------+------+-----|
-    | id       | varchar |    0 | pk  |
-    | name     | varchar |    0 |     |
-    | location | varchar |    0 |     |
-    |----------+---------+------+-----|
+|----------+---------+------+-----|
+| name     | type    | null | key |
+|----------+---------+------+-----|
+| id       | varchar |    0 | pk  |
+| name     | varchar |    0 |     |
+| location | varchar |    0 |     |
+|----------+---------+------+-----|
 
 *** transactions
-    |----------+---------+------+---------------------|
-    | name     | type    | null | key                 |
-    |----------+---------+------+---------------------|
-    | acc_to   | varchar |    0 | pk, fk(user.acc_no) |
-    | tran_id  | varchar |    0 | pk                  |
-    | acc_from | varchar |    0 | pk, fk(user.acc_no) |
-    | amount   | longint |    0 |                     |
-    | type     | varchar |    0 |                     |
-    |----------+---------+------+---------------------|
+|----------+---------+------+---------------------|
+| name     | type    | null | key                 |
+|----------+---------+------+---------------------|
+| acc_to   | varchar |    0 | pk, fk(user.acc_no) |
+| tran_id  | varchar |    0 | pk                  |
+| acc_from | varchar |    0 | pk, fk(user.acc_no) |
+| amount   | longint |    0 |                     |
+| type     | varchar |    0 |                     |
+|----------+---------+------+---------------------|
 
 * DIAGRAMS
 
-  #+CAPTION: Entity Relationship Diagram
-  [[./diagrams/obsER.png]]
+#+CAPTION: Entity Relationship Diagram
+[[./diagrams/obsER.png]]
 
-  #+CAPTION: DFD Level 0
-  [[./diagrams/obs/DFD0.png]]
+#+CAPTION: DFD Level 0
+[[./diagrams/obs/DFD0.png]]
 
-  #+CAPTION: DFD Level 1
-  [[./diagrams/obs/DFD1.png]]
+#+CAPTION: DFD Level 1
+[[./diagrams/obs/DFD1.png]]
 
-  #+CAPTION: DFD Level 2
-  [[./diagrams/obs/DFD2.png]]
+#+CAPTION: DFD Level 2
+[[./diagrams/obs/DFD2.png]]
 
-  #+CAPTION: Use-Case Diagram
-
+#+CAPTION: Use-Case Diagram
+[[./diagrams/UseCaseBank.jpg]]
 
 * CONCLUSION
+To conclude the srs
+Online Banking System helps to manage the daily activiites of the 
+bank with more effecient way for transactions and related queries. 
+Which  saves everyday's time and effort for everyone .Further with the evolving
+technologies this banking system can  further  be created for 
+phones , tablets for easy usage. 
