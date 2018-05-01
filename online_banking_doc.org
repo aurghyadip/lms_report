@@ -375,14 +375,10 @@ paper and finally the design is implemented.
 * DIAGRAMS
 
 <<<<<<< HEAD
-#+CAPTION: Entity Relationship Diagram
-[[./diagrams/obsER.png]]
 =======
   #+CAPTION: Entity Relationship Diagram
   [[./diagrams/obs/obsER.png]]
 
-  #+CAPTION: DFD Level 0
-  [[./diagrams/obs/DFD0.png]]
 >>>>>>> 455c3d39fbbbb73987dfafa4c1a81323d6ceed38
 
 #+CAPTION: DFD Level 0
@@ -398,16 +394,6 @@ paper and finally the design is implemented.
 #+CAPTION: Use-Case Diagram
 [[./diagrams/UseCaseBank.jpg]]
 
-* CONCLUSION
-To conclude the srs
-Online Banking System helps to manage the daily activiites of the 
-bank with more effecient way for transactions and related queries. 
-Which  saves everyday's time and effort for everyone .Further with the evolving
-technologies this banking system can  further  be created for 
-phones , tablets for easy usage. 
-=======
-  #+CAPTION: Use-Case Diagram
-  [[./diagrams/obs/usecaseBank.jpg]]
 
 * CONCLUSION
 Online banking system has been evolved significantly in the last couple of
