@@ -358,7 +358,7 @@ customer service. It is said to be the age of E-banking.
 * DIAGRAMS
 
   #+CAPTION: Entity Relationship Diagram
-  [[./diagrams/obsER.png]]
+  [[./diagrams/obs/obsER.png]]
 
   #+CAPTION: DFD Level 0
   [[./diagrams/obs/DFD0.png]]
@@ -370,5 +370,5 @@ customer service. It is said to be the age of E-banking.
   [[./diagrams/obs/DFD2.png]]
 
   #+CAPTION: Use-Case Diagram
-
+  [[./diagrams/obs/usecaseBank.jpg]]
 * CONCLUSION
