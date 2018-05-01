@@ -28,7 +28,7 @@ customer service. It is said to be the age of E-banking.
 - [X] Level 0 DFD
 - [X] Level 1 DFD
 - [X] Level 2 DFD
-- [ ] Use Case Diagram
+- [X] Use Case Diagram
 * INTRODUCTION
 An Online Banking user is expected to perform at least one of the following
 transactions online -
@@ -391,7 +391,7 @@ paper and finally the design is implemented.
 [[./diagrams/obs/DFD2.png]]
 
 #+CAPTION: Use-Case Diagram
-[[./diagrams/UseCaseBank.jpg]]
+[[./diagrams/obs/UseCaseBank.jpg]]
 
 
 * CONCLUSION

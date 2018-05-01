@@ -95,7 +95,7 @@ and manually doing the process) for issuing and/or depositing books.
       - [X] Software System Attributes
     - [-] Add Design[1/2]
       - [X] System Design
-      - [ ] User Interface Design
+      - [X] User Interface Design
     - [X] Add diagrams[5/5]
       - [X] Level 0 DFD
       - [X] Level 1 DFD
@@ -659,10 +659,13 @@ and manually doing the process) for issuing and/or depositing books.
 
 #+CAPTION:BOOK DETAILS
 #+NAME:bookdetails
-[[./diagrams/UIdesign/siginpage.jpg]]
+[[./diagrams/UIdesign/bookpage.jpg]]
 
 #+NAME:userprofile
-[[./diagram/UIdesign/profilepage.png]]
+[[./diagram/UIdesign/profilepage.jpg]]
+
+#+NAME:rentpage
+[[./diagram/UIdesign/rentpage.jpg]]
 
 * CONCLUSION
 ** Conclusion
