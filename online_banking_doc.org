@@ -93,7 +93,7 @@ can compete with them with some advancement in its functionality and
 can be used by any bank organization to maintain their customer’s
 account and online transaction process.
 
-<<<<<<< HEAD
+
 The basic functionalities of the system are:
 - Create Account
 - Login 
@@ -106,7 +106,7 @@ The basic functionalities of the system are:
 - EMI and Loan Calculator
 - Delete account
 - Logout
-=======
+
 
    The basic functionalities of the system are:
    - Create Account
@@ -120,7 +120,7 @@ The basic functionalities of the system are:
    - EMI and Loan Calculator
    - Delete account
    - Logout
->>>>>>> 455c3d39fbbbb73987dfafa4c1a81323d6ceed38
+
 
 ** Overview of Proposed System
 - *Menu Driven* :: The project uses menu throughout which we can
@@ -374,12 +374,11 @@ paper and finally the design is implemented.
 
 * DIAGRAMS
 
-<<<<<<< HEAD
-=======
+
   #+CAPTION: Entity Relationship Diagram
   [[./diagrams/obs/obsER.png]]
 
->>>>>>> 455c3d39fbbbb73987dfafa4c1a81323d6ceed38
+
 
 #+CAPTION: DFD Level 0
 [[./diagrams/obs/DFD0.png]]
@@ -387,7 +386,7 @@ paper and finally the design is implemented.
 #+CAPTION: DFD Level 1
 [[./diagrams/obs/DFD1.png]]
 
-<<<<<<< HEAD
+
 #+CAPTION: DFD Level 2
 [[./diagrams/obs/DFD2.png]]
 
@@ -400,4 +399,4 @@ Online banking system has been evolved significantly in the last couple of
 years. It's a stable market, so it has some kind of slow growth compared to
 other significatly unstable markets. Although, security is always an issue when
 designing and developing a banking system that is online.
->>>>>>> 455c3d39fbbbb73987dfafa4c1a81323d6ceed38
+
