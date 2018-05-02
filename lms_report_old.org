@@ -95,7 +95,7 @@ and manually doing the process) for issuing and/or depositing books.
       - [X] Software System Attributes
     - [-] Add Design[1/2]
       - [X] System Design
-      - [ ] User Interface Design
+      - [X] User Interface Design
     - [X] Add diagrams[5/5]
       - [X] Level 0 DFD
       - [X] Level 1 DFD
@@ -648,6 +648,24 @@ and manually doing the process) for issuing and/or depositing books.
   #+CAPTION: Entity Relationship Diagram
   #+NAME: erdiag
   [[./diagrams/lmsER.png]]
+
+#+CAPTION: User Interface Design 
+#+NAME:mainpage
+[[./diagrams/UIdesign/mainpage.jpg]]
+
+#+CAPTION:Student Login 
+#+NAME:signin
+[[./diagrams/UIdesign/signinpage.jpg]]
+
+#+CAPTION:BOOK DETAILS
+#+NAME:bookdetails
+[[./diagrams/UIdesign/bookpage.jpg]]
+
+#+NAME:userprofile
+[[./diagrams/UIdesign/profilepage.jpg]]
+
+#+NAME:rentpage
+[[./diagrams/UIdesign/rentedbook.jpg]]
 
 * CONCLUSION
 ** Conclusion
