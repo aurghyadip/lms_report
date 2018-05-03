@@ -61,55 +61,55 @@ and manually doing the process) for issuing and/or depositing books.
 #+TOC: headlines 3
 
 ** TASKS                                                           :noexport:
-*** TODO Re-format document [7/8]
-    SCHEDULED: <2018-04-26 Thu>
+*** DONE Re-format document [44/44]
+    CLOSED: [2018-05-03 Thu 17:27] SCHEDULED: <2018-04-26 Thu>
     - [X] Add Abstract
     - [X] Add literature survey
     - [X] Add introduction
-    - [X] Add Requirements[7/7]
-      - [X] Specific Requirements[3/3]
+    - [X] Add Requirements[1/1]
+      - [X] Specific Requirements[0/0]
 	- [X] Hardware Requirements
 	- [X] Software Requiements
 	- [X] Communication Interfaces
-      - [X] Functional Requirements[3/3]
+    - [X] Functional Requirements[0/0]
 	- [X] The Borrower
 	- [X] The Librarian
 	- [X] The Administrator
-      - [X] Performance Requirements[2/2]
+    - [X] Performance Requirements[0/0]
 	- [X] Speed and Latency Requirements
 	- +Precision or Accuracy Requirements+
 	- [X] Capacity Requirements
-      - [X] Dependability Requiremnents[2/2]
+    - [X] Dependability Requiremnents[0/0]
 	- [X] Reliability
 	- +Availability+
 	- [X] Robustness or Fault-Tolerance
-      - [X] Maintainability and Supportability Requirements[3/3]
+    - [X] Maintainability and Supportability Requirements[0/0]
 	- [X] Maintainability
 	- [X] Supportability
 	- +Adaptability+
 	- [X] Scalability
-      - [X] Security Requirements[3/3]
+    - [X] Security Requirements[0/0]
 	- [X] Access
 	- [X] Integrity
 	- [X] Privacy
-      - [X] Software System Attributes
-    - [-] Add Design[1/2]
-      - [X] System Design
-      - [X] User Interface Design
-    - [X] Add diagrams[5/5]
-      - [X] Level 0 DFD
-      - [X] Level 1 DFD
-      - [X] Level 2 DFD
-      - [X] Use Case Diagram
-      - [X] Entity Relationship Diagram
-      - +Database Schema Diagram+
-    - [X] Add Conclusion[2/2]
-      - [X] Add Text
-      - [X] Add Future Scope
-    - [X] Add Acknowledgement
+    - [X] Software System Attributes
+  - [X] Add Design[2/2]
+    - [X] System Design
+    - [X] User Interface Design
+  - [X] Add diagrams[5/5]
+    - [X] Level 0 DFD
+    - [X] Level 1 DFD
+    - [X] Level 2 DFD
+    - [X] Use Case Diagram
+    - [X] Entity Relationship Diagram
+    - +Database Schema Diagram+
+  - [X] Add Conclusion[2/2]
+    - [X] Add Text
+    - [X] Add Future Scope
+  - [X] Add Acknowledgement
 
-*** TODO Merge with the current project report
-    SCHEDULED: <2018-05-02 Mon>
+*** DONE Merge with the current project report
+    CLOSED: [2018-05-03 Thu 17:27] SCHEDULED: <2018-05-02 Mon>
 
 * LITERATURE SURVEY
   We've conducted a short survey/review on the works that has been done to improve
