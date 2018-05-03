@@ -626,8 +626,24 @@ and manually doing the process) for issuing and/or depositing books.
     |-------------+--------+--------------------------------------------------------|
 
 ** User Interface Design
-   The Android user interface should follow the material design guidelines provided
-   by Google Inc.
+   
+   #+CAPTION: User Interface Design 
+   #+NAME:mainpage
+   [[./diagrams/UIdesign/mainpage.jpg]]
+
+   #+CAPTION:Student Login 
+   #+NAME:signin
+   [[./diagrams/UIdesign/signinpage.jpg]]
+
+   #+CAPTION:BOOK DETAILS
+   #+NAME:bookdetails
+   [[./diagrams/UIdesign/bookpage.jpg]]
+
+   #+NAME:userprofile
+   [[./diagrams/UIdesign/profilepage.jpg]]
+
+   #+NAME:rentpage
+   [[./diagrams/UIdesign/rentedbook.jpg]]
 
 * DIAGRAMS
 
@@ -648,24 +664,6 @@ and manually doing the process) for issuing and/or depositing books.
   #+CAPTION: Entity Relationship Diagram
   #+NAME: erdiag
   [[./diagrams/lmsER.png]]
-
-#+CAPTION: User Interface Design 
-#+NAME:mainpage
-[[./diagrams/UIdesign/mainpage.jpg]]
-
-#+CAPTION:Student Login 
-#+NAME:signin
-[[./diagrams/UIdesign/signinpage.jpg]]
-
-#+CAPTION:BOOK DETAILS
-#+NAME:bookdetails
-[[./diagrams/UIdesign/bookpage.jpg]]
-
-#+NAME:userprofile
-[[./diagrams/UIdesign/profilepage.jpg]]
-
-#+NAME:rentpage
-[[./diagrams/UIdesign/rentedbook.jpg]]
 
 * CONCLUSION
 ** Conclusion
