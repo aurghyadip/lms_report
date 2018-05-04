@@ -1,5 +1,7 @@
 *.pdf
-*.tex
 /auto
 *.odt
 *.zip
+
+lms_report.tex
+online_banking_doc.tex
