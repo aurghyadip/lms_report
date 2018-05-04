@@ -55,7 +55,7 @@ growing, the library management systems hasn’t improved that much
 since 2005. The goal is to make prototype of a simple android based application
 which can completely handle and (mostly) automate the process of managing a
 library. It’ll reduce the needs to have a counter full of people (thus slowing
-and manually doing the process) for issuing and/or depositing books.
+-and manually doing the process) for issuing and/or depositing books.
 #+END_abstract
 
 #+TOC: headlines 3
