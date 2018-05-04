@@ -152,8 +152,8 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
    solution.
 
 ** Problems in Previous Works
-   Everything when in a constant development cycle has some faults. The instance of
-   Library Management Systems is no different. We try to build the problem
+   Everything when in a constant development cycle has some faults. The instance
+   of Library Management Systems is no different. We try to build the problem
    statement based on the faults.
 
 *** Problems with the Evolution in Technology
@@ -167,60 +167,61 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
     real time to multiple patrons.
 
 *** Changes in User Behaviors and Demands
-    The most difficult problem to cope up with is the demands of the users(patrons
-    in this particular case). They are ever increasing and system is far behind the
-    time line which the evolution of Web Based systems are following. The few most
-    common demands by the users are listed here -
+    The most difficult problem to cope up with is the demands of the
+    users(patrons in this particular case). They are ever increasing and system
+    is far behind the time line which the evolution of Web Based systems are
+    following. The few most common demands by the users are listed here -
     - Users want greater freedom in managing the access to information.
-      - Users want access to the information on a book, not just if the
-	library is holding a book or not.
+      - Users want access to the information on a book, not just if the library
+        is holding a book or not.
       - More simple UI and search interfaces are demanded.
 
-    The most important of all these is that users want everything on a mobile based
-    platform. The current system that is in circulation, is incompetent to handle
-    this problem and needs a refinement, a more flexible, economic and user friendly
-    option.
+    The most important of all these is that users want everything on a mobile
+    based platform. The current system that is in circulation, is incompetent to
+    handle this problem and needs a refinement, a more flexible, economic and
+    user friendly option.
 
 ** Proposed Solution
    The solution of the above stated problems can be simplified and divided into two
    parts.
 
 *** Upgrading the Current System with Cloud Computing
-    The current system can be upgraded to cloud computing by simply converting the
-    system to a REST API based data retrieval.
+    The current system can be upgraded to cloud computing by simply converting
+    the system to a REST API based data retrieval.
 	
     By this, we can send data to a server using AJAX requests from a web page or
-    WebApp and get the data in JSON format. We can then parse the data and show it
-    to the user as the user want.
+    WebApp and get the data in JSON format. We can then parse the data and show
+    it to the user as the user want.
 
 *** User Experience Customization
-    Using REST can grant high modularity on what the server sends to the user based
-    on the request that has been done. For example, we can show the user a book is
-    available or not along with the details of the book if the user wants.
+    Using REST can grant high modularity on what the server sends to the user
+    based on the request that has been done. For example, we can show the user a
+    book is available or not along with the details of the book if the user
+    wants.
 
 *** More Features
     We can reduce a major portion of manual data entry by populating data fields
     based upon the entered ISBN using the camera of a phone or (in case it's a
-    computer station) using an EAN-13 code scanner. This can also be done for normal
-    users who just want an information on a book.
+    computer station) using an EAN-13 code scanner. This can also be done for
+    normal users who just want an information on a book.
 
 * INTRODUCTION
 ** Purpose
    Library is considered as one of the most important things in an educational
-   institute. However, managing a library is no simple task. This can be a primary
-   reason for a communication disaster between a student and the librarians. A more
-   modern and streamlined approach is the sole purpose of this project by which,
-   the communication failures can be avoided.
+   institute. However, managing a library is no simple task. This can be a
+   primary reason for a communication disaster between a student and the
+   librarians. A more modern and streamlined approach is the sole purpose of
+   this project by which, the communication failures can be avoided.
 
 ** Scope
-   The scope of the project is a variable entity. Primarily, the system is targeted
-   for the small and medium libraries but can be scaled easily and modified to run
-   on any sized library.
+   The scope of the project is a variable entity. Primarily, the system is
+   targeted for the small and medium libraries but can be scaled easily and
+   modified to run on any sized library.
 
-   However, there are also some considerations to be taken, the primary one being
-   that the project is solely focused and targeted on the educational
-   institutions. Taken that into consideration, the project also can be used as a
-   boilerplate for developing solutions for paid and public libraries.
+   However, there are also some considerations to be taken, the primary one
+   being that the project is solely focused and targeted on the educational
+   institutions. Taken that into consideration, the project also can be used as
+   a boilerplate for developing solutions for paid and public libraries.
 
 ** Definitions
 *** Abbriviations
@@ -281,38 +282,39 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
     and constraint in hardware should not be a problem.
 
 *** Dependencies
-    - Android SDK :: Android software development is the process by which new
-		     applications are created for devices running the Android
-		     operating system. Applications are usually developed in Java
-		     (and/or Kotlin; or other such option) programming language
-		     using the Android software development kit (SDK), but other
-		     development environments are also available, some such as
-		     Kotlin support the exact same Android APIs (and bytecode),
-		     while others such as Go have restricted API access. All Java 7
-		     language features are supported, and some Java 8 language
-		     features (and additionally some Java 9 code has been backported
-		     to work).
-    - Google Mobile Vision :: The Mobile Vision API provides a framework for finding
-	 objects in photos and video. The framework includes detectors, which locate
-	 and describe visual objects in images or video frames, and an event driven
-	 API that tracks the position of those objects in video. Currently, the
-	 Mobile Vision API includes face, barcode, and text detectors, which can be
-	 applied separately or together.
-    - Google Cloud Database :: It is a NoSQL database hosted at Google Cloud Servers
-	 with mirrors national and international to reduce data fetch and pushing
-	 latency. Also the service includes options for daily, weekly, monthly
-	 etc. plans for automated backup of the data.
-    - Google Crash Reporting :: Applications crash, period. Solving the bugs is a
-	 lengthy process when most of the users of the application are non-technical
-	 and (mostly) do not understand how to file a proper bug report. We have
-	 automated the crash reporting process through Google Cloud’s automated
-	 crash reporting service. Which, upon a crash of the applications, submit a
-	 logcat and steps to reproduce the crash to the developers.
-    - Google Storage :: Google storage provides a very useful API for storing images
-			in the cloud. It can be useful if the scaled up application
-			has a facility for storage of book images when entering a
-			book. Or maybe directly fetching from Google Books API for
-			the available books.
+    - *ANDROID SDK* :: Android software development is the process by which new
+                     applications are created for devices running the Android
+                     operating system. Applications are usually developed in
+                     Java (and/or Kotlin; or other such option) programming
+                     language using the Android software development kit (SDK),
+                     but other development environments are also available, some
+                     such as Kotlin support the exact same Android APIs (and
+                     bytecode), while others such as Go have restricted API
+                     access. All Java 7 language features are supported, and
+                     some Java 8 language features (and additionally some Java 9
+                     code has been back-ported to work).
+    - *GOOGLE MOBILE VISION* :: The Mobile Vision API provides a framework for
+         finding objects in photos and video. The framework includes detectors,
+         which locate and describe visual objects in images or video frames, and
+         an event driven API that tracks the position of those objects in video.
+         Currently, the Mobile Vision API includes face, barcode, and text
+         detectors, which can be applied separately or together.
+    - *GOOGLE CLOUD DATABASE* :: It is a NoSQL database hosted at Google Cloud
+         Servers with mirrors national and international to reduce data fetch
+         and pushing latency. Also the service includes options for daily,
+         weekly, monthly etc. plans for automated backup of the data.
+    - *GOOGLE CRASH REPORTING* :: Applications crash, period. Solving the bugs is
+         a lengthy process when most of the users of the application are
+         non-technical and (mostly) do not understand how to file a proper bug
+         report. We have automated the crash reporting process through Google
+         Cloud’s automated crash reporting service. Which, upon a crash of the
+         applications, submit a logcat and steps to reproduce the crash to the
+         developers.
+    - *GOOGLE STORAGE* :: Google storage provides a very useful API for storing
+                        images in the cloud. It can be useful if the scaled up
+                        application has a facility for storage of book images
+                        when entering a book. Or maybe directly fetching from
+                        Google Books API for the available books.
 
 *** Apportioning of Requirements
     - Server Side :: Most of the work is done on the server side, so the server side
@@ -485,16 +487,16 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
      Scalability is the capability of the system to handle a growing amount of work,
      or its potential to be enlarged to accommodate that growth. Methods of adding
      more resources for a particular application fall into two broad categories:
-     horizontal and vertical scaling.[ref:micheal_2007]
+     horizontal and vertical scaling.
 
-     - *Horizontal Scaling* :: Commonly refferred to as *scale out/in*. It means to
-	  add (or remove) more nodes to (or from) a system, such as adding a new
-	  computer to the distributed computing system.
-     - *Vertical Scaling* :: Commonly refferred to as *scale up/down*. It means to
-	  add more resources (such as CPU, memory etc.) to a single node in a
-	  system. Verical scaling enables the usage of virtualization more
-	  effectively. Example of such systems would be *Google Cloud Platform*,
-	  *Amazon Web Services* etc.
+     - *Horizontal Scaling* :: Commonly refferred to as *scale out/in*. It means
+          to add (or remove) more nodes to (or from) a system, such as adding a
+          new computer to the distributed computing system.
+     - *Vertical Scaling* :: Commonly refferred to as *scale up/down*. It means
+          to add more resources (such as CPU, memory etc.) to a single node in a
+          system. Vertical scaling enables the usage of virtualization more
+          effectively. Example of such systems would be *Google Cloud Platform*,
+          *Amazon Web Services* etc.
 
 *** Security Requirements
 **** Access Requirements
@@ -529,47 +531,50 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
    usability, performance, reliability, and security indicates the success of the
    design and the overall quality of the software application.[ref:morgan_2007]
 
-   - Availability :: Availability defines the proportion of time that the system is
-		     functional and working. It can be measured as a percentage of
-		     the total system downtime over a predefined
-		     period. Availability will be affected by system errors,
-		     infrastructure problems, malicious attacks, and system load.
+   - Availability :: Availability defines the proportion of time that the system
+                     is functional and working. It can be measured as a
+                     percentage of the total system downtime over a predefined
+                     period. Availability will be affected by system errors,
+                     infrastructure problems, malicious attacks, and system
+                     load.
    - Conceptual Integrity :: Conceptual integrity defines the consistency and
-	coherence of the overall design. This includes the way that components or
-	modules are designed, as well as factors such as coding style and variable
-	naming.
-   - Interoperability :: Interoperability is the ability of a system or different
-	systems to operate successfully by communicating and exchanging information
-	with other external systems written and run by external parties. An
-	interoperable system makes it easier to exchange and reuse information
-	internally as well as externally.
+        coherence of the overall design. This includes the way that components
+        or modules are designed, as well as factors such as coding style and
+        variable naming.
+   - Interoperability :: Interoperability is the ability of a system or
+        different systems to operate successfully by communicating and
+        exchanging information with other external systems written and run by
+        external parties. An interoperable system makes it easier to exchange
+        and reuse information internally as well as externally.
    - Maintainability :: Maintainability is the ability of the system to undergo
-	changes with a degree of ease. These changes could impact components,
-	services, features, and interfaces when adding or changing the
-	functionality, fixing errors, and meeting new business requirements.
+        changes with a degree of ease. These changes could impact components,
+        services, features, and interfaces when adding or changing the
+        functionality, fixing errors, and meeting new business requirements.
    - Manageability :: Manageability defines how easy it is for system
-		      administrators to manage the application, usually through
-		      sufficient and useful instrumentation exposed for use in
-		      monitoring systems and for debugging and performance tuning.
+                      administrators to manage the application, usually through
+                      sufficient and useful instrumentation exposed for use in
+                      monitoring systems and for debugging and performance
+                      tuning.
    - Reliability :: Reliability is the ability of a system to remain operational
-		    over time. Reliability is measured as the probability that a
-		    system will not fail to perform its intended functions over a
-		    specified time interval.
+                    over time. Reliability is measured as the probability that a
+                    system will not fail to perform its intended functions over
+                    a specified time interval.
    - Reusability :: Reusability defines the capability for components and
-		    subsystems to be suitable for use in other applications and in
-		    other scenarios. Reusability minimizes the duplication of
-		    components and also the implementation time.
-   - Scalability :: Scalability is ability of a system to either handle increases
-		    in load without impact on the performance of the system, or the
-		    ability to be readily enlarged.
+                    subsystems to be suitable for use in other applications and
+                    in other scenarios. Reusability minimizes the duplication of
+                    components and also the implementation time.
+   - Scalability :: Scalability is ability of a system to either handle
+                    increases in load without impact on the performance of the
+                    system, or the ability to be readily enlarged.
    - Security :: Security is the capability of a system to prevent malicious or
-		 accidental actions outside of the designed usage, and to prevent
-		 disclosure or loss of information. A secure system aims to protect
-		 assets and prevent unauthorized modification of information.
-   - Usability :: Usability defines how well the application meets the requirements
-		  of the user and consumer by being intuitive, easy to localize and
-		  globalize, providing good access for disabled users, and
-		  resulting in a good overall user experience.
+                 accidental actions outside of the designed usage, and to
+                 prevent disclosure or loss of information. A secure system aims
+                 to protect assets and prevent unauthorized modification of
+                 information.
+   - Usability :: Usability defines how well the application meets the
+                  requirements of the user and consumer by being intuitive, easy
+                  to localize and globalize, providing good access for disabled
+                  users, and resulting in a good overall user experience.
 * DESIGN
 ** Database Design
 *** Book Model
@@ -691,10 +696,10 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
    3. Developing a totally independent and open source API so that developers can
       easily use what we've developed and further improve that.
    4. Full automation of the library management. The whole process can be automated.
-      - Android tablets with softwares can be installed throughout the library for
-	scanning and issuing the books.
+      - Android tablets with software can be installed throughout the library
+        for scanning and issuing the books.
       - Payment of fine can be automated using the UPI that *Govt. of India* has
-	launched. (Or any other instant payment API)
+        launched. (Or any other instant payment API)
 
 * ACKNOWLEDGEMENT
   This project would not have been possible without the help of Ms. Shalini Mitra,
