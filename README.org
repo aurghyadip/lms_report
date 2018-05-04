@@ -1,6 +1,8 @@
 * Reports for Final Year Projects
 
-This repository contains the reports for the **Online Banking System (Design Lab IT891)** and also **Library Management System based on Android (Final Year Proeject 2 IT892)**
+This repository contains the reports for the *Online Banking System (Design Lab
+IT891)* and also *Library Management System based on Android (Final Year
+Proeject 2 IT892)*
 
 Contents of the Repository is given below -
 
