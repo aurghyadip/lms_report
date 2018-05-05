@@ -65,15 +65,6 @@ customer service. It is said to be the age of E-banking.
 #+END_abstract
 #+TOC: headlines 2
 
-* TASKS                                                           :noexport:
-** TODO Draw proper diagrams [5/5]
-- [X] ER Diagram
-- [X] Level 0 DFD
-- [X] Level 1 DFD
-- [X] Level 2 DFD
-- [X] Use Case Diagram
-
-
 * INTRODUCTION
 ** Introduction
 An Online Banking user is expected to perform at least one of the following
