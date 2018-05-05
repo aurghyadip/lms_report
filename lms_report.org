@@ -60,57 +60,6 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
 
 #+TOC: headlines 3
 
-** TASKS                                                           :noexport:
-*** DONE Re-format document [44/44]
-    CLOSED: [2018-05-03 Thu 17:27] SCHEDULED: <2018-04-26 Thu>
-    - [X] Add Abstract
-    - [X] Add literature survey
-    - [X] Add introduction
-    - [X] Add Requirements[1/1]
-      - [X] Specific Requirements[0/0]
-	- [X] Hardware Requirements
-	- [X] Software Requiements
-	- [X] Communication Interfaces
-    - [X] Functional Requirements[0/0]
-	- [X] The Borrower
-	- [X] The Librarian
-	- [X] The Administrator
-    - [X] Performance Requirements[0/0]
-	- [X] Speed and Latency Requirements
-	- +Precision or Accuracy Requirements+
-	- [X] Capacity Requirements
-    - [X] Dependability Requiremnents[0/0]
-	- [X] Reliability
-	- +Availability+
-	- [X] Robustness or Fault-Tolerance
-    - [X] Maintainability and Supportability Requirements[0/0]
-	- [X] Maintainability
-	- [X] Supportability
-	- +Adaptability+
-	- [X] Scalability
-    - [X] Security Requirements[0/0]
-	- [X] Access
-	- [X] Integrity
-	- [X] Privacy
-    - [X] Software System Attributes
-  - [X] Add Design[2/2]
-    - [X] System Design
-    - [X] User Interface Design
-  - [X] Add diagrams[5/5]
-    - [X] Level 0 DFD
-    - [X] Level 1 DFD
-    - [X] Level 2 DFD
-    - [X] Use Case Diagram
-    - [X] Entity Relationship Diagram
-    - +Database Schema Diagram+
-  - [X] Add Conclusion[2/2]
-    - [X] Add Text
-    - [X] Add Future Scope
-  - [X] Add Acknowledgement
-
-*** DONE Merge with the current project report
-    CLOSED: [2018-05-03 Thu 17:27] SCHEDULED: <2018-05-02 Mon>
-
 * LITERATURE SURVEY
   We've conducted a short survey/review on the works that has been done to improve
   the library management system of Medium and small libraries. The review consists
@@ -519,7 +468,7 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
      To control the privacy requirements, the database has been locked via ruleset
      (standard procedure of access control and for REST API and NoSQL
      databases). Both *Librarians* and *Users* alike can't access the data of any
-     other users which include personal informations.
+     other users which include personal information.
 
 ** Software System Attributes
    Quality attributes are the overall factors that affect run-time behavior, system
@@ -529,7 +478,7 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
    to run time, design time, or user centric issues. The extent to which the
    application possesses a desired combination of quality attributes such as
    usability, performance, reliability, and security indicates the success of the
-   design and the overall quality of the software application.[ref:morgan_2007]
+   design and the overall quality of the software application.
 
    - Availability :: Availability defines the proportion of time that the system
                      is functional and working. It can be measured as a
