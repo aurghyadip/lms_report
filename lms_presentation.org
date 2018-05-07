@@ -7,15 +7,7 @@
 #+OPTIONS: num:nil author:nil
 #+OPTIONS: toc:nil
 
-* TASKS                                                           :noexport:
-** TODO Make atleast 20 slides [4/5]
-   - [X] Include history
-   - [X] Include current systems
-   - [X] Include what we have planned
-   - [X] Include what we have achieved
-   - [ ] Conclusion
-
-* 
+ 
   Presentation By,
   - Aurghyadip Kundu
   - Shrestha Shaw
