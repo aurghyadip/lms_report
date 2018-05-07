@@ -524,80 +524,107 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
                   requirements of the user and consumer by being intuitive, easy
                   to localize and globalize, providing good access for disabled
                   users, and resulting in a good overall user experience.
-* DESIGN
-** Database Design
-*** Book Model
-    #+ATTR_LaTeX: :align |r|c|l|
-    |-------------+--------+------------------------------------------------------|
-    | Field       | type   | Description                                          |
-    |-------------+--------+------------------------------------------------------|
-    | isbn        | string | Primary key (in this case, just the key) of the book |
-    | title       | string | Title of the book                                    |
-    | author      | string | Author of the book                                   |
-    | copies      | int    | How many copies of the book are there in the library |
-    | description | text   | Brief description of the book                        |
-    |-------------+--------+------------------------------------------------------|
 
-*** Rent Model
-    #+ATTR_LaTeX: :align |r|c|l|
-    |-----------+--------+----------------------------------------|
-    | Field     | type   | Description                            |
-    |-----------+--------+----------------------------------------|
-    | studentId | string | Level 1 Key : Unique ID of the student |
-    | isbn      | string | Level 2 Key : Unique Id of the Book    |
-    | date      | string | Level 2 Value : Date of rent           |
-    |-----------+--------+----------------------------------------|
+* DATABASE DESIGN
+** Book Model
+  #+ATTR_LaTeX: :align |r|c|l|
+   |-------------+--------+------------------------------------------------------|
+   | Field       | type   | Description                                          |
+   |-------------+--------+------------------------------------------------------|
+   | isbn        | string | Primary key (in this case, just the key) of the book |
+   | title       | string | Title of the book                                    |
+   | author      | string | Author of the book                                   |
+   | copies      | int    | How many copies of the book are there in the library |
+   | description | text   | Brief description of the book                        |
+   |-------------+--------+------------------------------------------------------|
 
-*** Request Model
-    #+ATTR_LaTeX: :align |r|c|l|
-    |-----------+--------+----------------------------------------|
-    | Field     | type   | Description                            |
-    |-----------+--------+----------------------------------------|
-    | studentId | string | Level 1 Key : Unique ID of the student |
-    | isbn      | string | Level 2 Key : Unique Id of the Book    |
-    | date      | string | Level 2 Value : Date of rent           |
-    |-----------+--------+----------------------------------------|
+** Rent Model
+   #+ATTR_LaTeX: :align |r|c|l|
+   |-----------+--------+----------------------------------------|
+   | Field     | type   | Description                            |
+   |-----------+--------+----------------------------------------|
+   | studentId | string | Level 1 Key : Unique ID of the student |
+   | isbn      | string | Level 2 Key : Unique Id of the Book    |
+   | date      | string | Level 2 Value : Date of rent           |
+   |-----------+--------+----------------------------------------|
 
-*** Students Model
-    #+ATTR_LaTeX: :align |r|c|l|
-    |------------+--------+------------------------------------------------|
-    | Field      | Type   | Description                                    |
-    |------------+--------+------------------------------------------------|
-    | studentId  | string | Primary key (or just Key) of a student, unique |
-    | department | string | Department of the student                      |
-    | name       | string | name of the student                            |
-    |------------+--------+------------------------------------------------|
+** Request Model
+   #+ATTR_LaTeX: :align |r|c|l|
+   |-----------+--------+----------------------------------------|
+   | Field     | type   | Description                            |
+   |-----------+--------+----------------------------------------|
+   | studentId | string | Level 1 Key : Unique ID of the student |
+   | isbn      | string | Level 2 Key : Unique Id of the Book    |
+   | date      | string | Level 2 Value : Date of rent           |
+   |-----------+--------+----------------------------------------|
 
-*** User Model
-    #+ATTR_LaTeX: :align |r|c|l|
-    |-------------+--------+--------------------------------------------------------|
-    | Field       | Type   | Description                                            |
-    |-------------+--------+--------------------------------------------------------|
-    | id          | string | Auto generated id of the user                          |
-    | accessLevel | string | Access level of the user (admin, student or librarian) |
-    | uId         | string | Unique ID of the user (studentId or librarianId)       |
-    | name        | string | Name of the user                                       |
-    |-------------+--------+--------------------------------------------------------|
+** Students Model
+   #+ATTR_LaTeX: :align |r|c|l|
+   |------------+--------+------------------------------------------------|
+   | Field      | Type   | Description                                    |
+   |------------+--------+------------------------------------------------|
+   | studentId  | string | Primary key (or just Key) of a student, unique |
+   | department | string | Department of the student                      |
+   | name       | string | name of the student                            |
+   |------------+--------+------------------------------------------------|
 
-** User Interface Design
-   
-   #+CAPTION: User Interface Design 
-   #+NAME:mainpage
-   [[./diagrams/UIdesign/mainpage.jpg]]
+** User Model
+   #+ATTR_LaTeX: :align |r|c|l|
+   |-------------+--------+--------------------------------------------------------|
+   | Field       | Type   | Description                                            |
+   |-------------+--------+--------------------------------------------------------|
+   | id          | string | Auto generated id of the user                          |
+   | accessLevel | string | Access level of the user (admin, student or librarian) |
+   | uId         | string | Unique ID of the user (studentId or librarianId)       |
+   | name        | string | Name of the user                                       |
+   |-------------+--------+--------------------------------------------------------|
 
-   #+CAPTION:Student Login 
-   #+NAME:signin
-   [[./diagrams/UIdesign/signinpage.jpg]]
 
-   #+CAPTION:BOOK DETAILS
-   #+NAME:bookdetails
-   [[./diagrams/UIdesign/bookpage.jpg]]
+* USER INTERFACE DESIGN
 
-   #+NAME:userprofile
-   [[./diagrams/UIdesign/profilepage.jpg]]
+** Student App Design
 
-   #+NAME:rentpage
-   [[./diagrams/UIdesign/rentedbook.jpg]]
+  #+CAPTION: User Interface Design 
+  #+NAME:mainpage
+  [[./diagrams/UIdesign/mainpage.jpg]]
+
+  #+CAPTION: Student Login 
+  #+NAME:signin
+  [[./diagrams/UIdesign/signinpage.jpg]]
+
+  #+CAPTION: Book Details
+  #+NAME:bookdetails
+  [[./diagrams/UIdesign/bookpage.jpg]]
+
+  #+CAPTION: Profile Page
+  #+NAME:userprofile
+  [[./diagrams/UIdesign/profilepage.jpg]]
+
+  #+CAPTION: Rented Book Page
+  #+NAME:rentpage
+  [[./diagrams/UIdesign/rentedbook.jpg]]
+
+** Librarian App Design
+  #+CAPTION: Landing Page
+  #+NAME: landingpade
+
+  #+CAPTION: ISBN Scan Page
+  #+NAME: isbncan
+
+  #+CAPTION: Add Book Page
+  #+NAME: addbook
+
+  #+CAPTION: Edit Book Page
+  #+NAME: editbook
+
+  #+CAPTION: Rent Book Page
+  #+NAME: rentbook
+
+  #+CAPTION: Deposit Book Page
+  #+NAME: depositbook
+
+  #+CAPTION: Book Details Page
+  #+NAME: bookdetails
 
 * DIAGRAMS
 
