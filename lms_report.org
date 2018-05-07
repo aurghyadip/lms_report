@@ -582,8 +582,6 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
 
 * USER INTERFACE DESIGN
 
-** Student App Design
-
   #+CAPTION: User Interface Design 
   #+NAME:mainpage
   [[./diagrams/UIdesign/mainpage.jpg]]
@@ -604,27 +602,34 @@ library. It’ll reduce the needs to have a counter full of people (thus slowing
   #+NAME:rentpage
   [[./diagrams/UIdesign/rentedbook.jpg]]
 
-** Librarian App Design
-  #+CAPTION: Landing Page
-  #+NAME: landingpade
 
-  #+CAPTION: ISBN Scan Page
-  #+NAME: isbncan
+   #+CAPTION: Landing Page
+   #+NAME: landingpade
+   [[./diagrams/ui_librarian/landing_page.jpg]]
 
-  #+CAPTION: Add Book Page
-  #+NAME: addbook
+   #+CAPTION: ISBN Scan Page
+   #+NAME: isbncan
+   [[./diagrams/ui_librarian/scan_isbn.jpg]]
 
-  #+CAPTION: Edit Book Page
-  #+NAME: editbook
+   #+CAPTION: Add Book Page
+   #+NAME: addbook
+   [[./diagrams/ui_librarian/add_book.jpg]]
 
-  #+CAPTION: Rent Book Page
-  #+NAME: rentbook
+   #+CAPTION: Edit Book Page
+   #+NAME: editbook
+   [[./diagrams/ui_librarian/edit_book.jpg]]
 
-  #+CAPTION: Deposit Book Page
-  #+NAME: depositbook
+   #+CAPTION: Rent Book Page
+   #+NAME: rentbook
+   [[./diagrams/ui_librarian/rent_book.jpg]]
 
-  #+CAPTION: Book Details Page
-  #+NAME: bookdetails
+   #+CAPTION: Deposit Book Page
+   #+NAME: depositbook
+   [[./diagrams/ui_librarian/deposit_book_details.jpg]]
+
+   #+CAPTION: Book Details Page
+   #+NAME: bookdetails
+   [[./diagrams/ui_librarian/book_details.jpg]]
 
 * DIAGRAMS
 
