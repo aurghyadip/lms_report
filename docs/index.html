@@ -3,13 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <title>Library Management with Android</title>
-<meta name="author" content="(Aurghyadip Kundu)"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css"/>
+<link rel="stylesheet" href="./reveal-js/css/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/serif.css" id="theme"/>
+<link rel="stylesheet" href="./reveal-js/css/theme/white.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +17,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.css';
+        link.href = './reveal-js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -30,34 +29,34 @@
 </section>
 
 <section>
-<section id="slide-org31fe84c">
-<h2 id="org31fe84c"></h2>
+<section id="slide-orgb7fdb26">
+<h2 id="orgb7fdb26"></h2>
 <p>
 Presentation By,
 </p>
 <ul>
 <li>Aurghyadip Kundu</li>
 <li>Shrestha Shaw</li>
-<li>Rajdip Saha</li>
+<li>Rajdeep Saha</li>
 <li>Sayanjit Das</li>
 
 </ul>
 
 </section>
-<section id="slide-org7b6e55c">
-<h4 id="org7b6e55c"><b>BEACAUSE ANDROID DEVICES ARE EVERYWHERE</b></h4>
+<section id="slide-org36d724b">
+<h4 id="org36d724b"><b>BEACAUSE ANDROID DEVICES ARE EVERYWHERE</b></h4>
 </section>
 </section>
 <section>
-<section id="slide-orgde4ad25">
-<h2 id="orgde4ad25">INTRODUCTION</h2>
-<div class="outline-text-2" id="text-orgde4ad25">
+<section id="slide-org0576f5a">
+<h2 id="org0576f5a">INTRODUCTION</h2>
+<div class="outline-text-2" id="text-org0576f5a">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orge7242f6">
-<h3 id="orge7242f6">WHY MOBILE FIRST?</h3>
+<section id="slide-org898666a">
+<h3 id="org898666a">WHY MOBILE FIRST?</h3>
 <p>
 Maintaining a PC based system can be a robust solution, but often it leads to
 higher maintenance cost and more number of people to operate. 
@@ -78,8 +77,8 @@ than doing it the <i>1960's</i> way.
 </section>
 </section>
 <section>
-<section id="slide-org9348706">
-<h3 id="org9348706">A BIT OF HISTORY</h3>
+<section id="slide-orga11d188">
+<h3 id="orga11d188">A BIT OF HISTORY</h3>
 <p>
 Before the 60's, every single library tasks were performed independent of one
 another.
@@ -91,8 +90,8 @@ Selectors ordered materials with slips, catalogues were manually done by card
 catalog systems and patrons were required to sign book manually.
 </p>
 </section>
-<section id="slide-org437e168">
-<h4 id="org437e168">INTEGRATED LIBRARY MANAGEMENT SYSTEM</h4>
+<section id="slide-orgfd65318">
+<h4 id="orgfd65318">INTEGRATED LIBRARY MANAGEMENT SYSTEM</h4>
 <p>
 In 1970's, the computer storage and telecommunications improved and turnkey
 systems on microcomputers were introduced.
@@ -107,32 +106,32 @@ computer based library management system, <b>which we still use</b>.
 </section>
 </section>
 <section>
-<section id="slide-org468534d">
-<h2 id="org468534d">Current System</h2>
-<div class="outline-text-2" id="text-org468534d">
+<section id="slide-org596de87">
+<h2 id="org596de87">Current System</h2>
+<div class="outline-text-2" id="text-org596de87">
 </div>
 </section>
-<section id="slide-orgd22d748">
-<h4 id="orgd22d748"></h4>
+<section id="slide-org81543a1">
+<h4 id="org81543a1"></h4>
 <p>
-Nowadays ,The patron have to go and check in the library to get a book
+Nowadays ,The patron has to go and check in the library to get a book
 issued.  This hassel of waiting in a queue to know the book
 availability.
 </p>
 
 </section>
-<section id="slide-org3f410bb">
-<h4 id="org3f410bb"></h4>
+<section id="slide-orgc41f6f3">
+<h4 id="orgc41f6f3"></h4>
 <p>
-To get a book issued the librarian have to the do a long process
+To get a book issued, the librarian has to do the long process
 of checking the patron and adding the book taken under that patron
 manually. There is always a possibility of mismatching the patron's
 identity.
 </p>
 
 </section>
-<section id="slide-org73ec0ac">
-<h4 id="org73ec0ac"></h4>
+<section id="slide-orgb5477e7">
+<h4 id="orgb5477e7"></h4>
 <p>
 Library System today use's local Database which can be accessed
 specifically and which is quite insecure when comes to the security
@@ -140,8 +139,8 @@ concern of the system.
 </p>
 
 </section>
-<section id="slide-orge080923">
-<h4 id="orge080923"></h4>
+<section id="slide-org21c7fe6">
+<h4 id="org21c7fe6"></h4>
 <p>
 Additional to the book issued, to return the book back in the
 library the patron have to wait for it's turn again and if there is
@@ -150,8 +149,8 @@ people.
 </p>
 
 </section>
-<section id="slide-orga562e44">
-<h4 id="orga562e44"></h4>
+<section id="slide-org71fd330">
+<h4 id="org71fd330"></h4>
 <p>
 The patron have to go the library to check the book availabilty
 there isn't another way to know whether the book exits in the library.
@@ -160,27 +159,27 @@ there isn't another way to know whether the book exits in the library.
 </section>
 </section>
 <section>
-<section id="slide-orga5b54dd">
-<h2 id="orga5b54dd">WHAT WE PROPOSED!</h2>
-<div class="outline-text-2" id="text-orga5b54dd">
+<section id="slide-org8edaf59">
+<h2 id="org8edaf59">WHAT WE PROPOSED!</h2>
+<div class="outline-text-2" id="text-org8edaf59">
 </div>
 </section>
-<section id="slide-orgd2f0967">
-<h4 id="orgd2f0967"></h4>
+<section id="slide-org88bf821">
+<h4 id="org88bf821"></h4>
 <p>
 We have proposed some solutions to the shortcomings in last sem's
 presentations. Let's recap those once&#x2026;
 </p>
 </section>
-<section id="slide-orgbbbf7d6">
-<h4 id="orgbbbf7d6"></h4>
+<section id="slide-org2b76576">
+<h4 id="org2b76576"></h4>
 <p>
 Phone based barcode scanning and directly fetching the book data from
 Google Books API to automate the process of adding books.
 </p>
 </section>
-<section id="slide-org692f6f2">
-<h4 id="org692f6f2"></h4>
+<section id="slide-orgf12b6ba">
+<h4 id="orgf12b6ba"></h4>
 <p>
 A database in the cloud to solve the problems of realtime updates and
 data security of the library.
@@ -197,8 +196,8 @@ access control. And lastly,
 <b>A BETTER API FOR EVERYHING</b>
 </p>
 </section>
-<section id="slide-org86fdc2d">
-<h4 id="org86fdc2d"></h4>
+<section id="slide-org9c04715">
+<h4 id="org9c04715"></h4>
 <p>
 Android based scanning to solve the automation problems and to remove
 those huge 80's chunks of things(that we generally referred to as
@@ -213,29 +212,29 @@ those huge 80's chunks of things(that we generally referred to as
 </section>
 </section>
 <section>
-<section id="slide-orgfd97564">
-<h2 id="orgfd97564">WHAT WE ACHIEVED</h2>
-<div class="outline-text-2" id="text-orgfd97564">
+<section id="slide-org79630ad">
+<h2 id="org79630ad">WHAT WE ACHIEVED</h2>
+<div class="outline-text-2" id="text-org79630ad">
 </div>
 </section>
-<section id="slide-org79cca39">
-<h4 id="org79cca39"></h4>
+<section id="slide-org7ad2e06">
+<h4 id="org7ad2e06"></h4>
 <p>
 The app is designed for librarians and the patrons seperately and mostly
 focuses on the needs of the user with more friendly UI, easy to access and
 understand.
 </p>
 </section>
-<section id="slide-org07087ff">
-<h4 id="org07087ff"></h4>
+<section id="slide-org17ba221">
+<h4 id="org17ba221"></h4>
 <p>
 To ease the headaches of the librarians as well the patron, the program uses
 Google Book API services for retrieveing book information with included
 barcode scaning to facilitate the actions.
 </p>
 </section>
-<section id="slide-org0b3d1cb">
-<h4 id="org0b3d1cb"></h4>
+<section id="slide-org7ead438">
+<h4 id="org7ead438"></h4>
 <p>
 For effective data fetching, Google Firebase database is used which
 provides a realtime database which is a NoSQL Database and as the data is
@@ -243,8 +242,8 @@ stored in Firebase cloud the stored data is secured as compared to the
 backdated local database.  
 </p>
 </section>
-<section id="slide-orgfcf281e">
-<h4 id="orgfcf281e"></h4>
+<section id="slide-org7eb9269">
+<h4 id="org7eb9269"></h4>
 <p>
 To save time and effort of everyday, This API is faster and better way of
 overcoming all the bunch of steps to get a book issued with a single click
@@ -253,27 +252,27 @@ and moreover facilitates more library functions without moving anywhere!
 </section>
 </section>
 <section>
-<section id="slide-org8566eb2">
-<h2 id="org8566eb2">CONCLUSION</h2>
-<div class="outline-text-2" id="text-org8566eb2">
+<section id="slide-org8c94da9">
+<h2 id="org8c94da9">CONCLUSION</h2>
+<div class="outline-text-2" id="text-org8c94da9">
 </div>
 </section>
-<section id="slide-org86e5215">
-<h4 id="org86e5215"></h4>
+<section id="slide-orga4c12f1">
+<h4 id="orga4c12f1"></h4>
 <p>
 We want to thank <b>ALL THE FACULTIES OF CIEM IT DEPARTMENT</b> for gifting us the
 knowledge which made this project possible.
 </p>
 </section>
-<section id="slide-org51434e7">
-<h4 id="org51434e7"></h4>
+<section id="slide-org0b9e31e">
+<h4 id="org0b9e31e"></h4>
 <p>
 Also, we want to thank our mentor <b>Ms. Shalini Mitra</b> for helping us designing and
 chalking out the primary stages of this project.
 </p>
 </section>
-<section id="slide-org48efeda">
-<h4 id="org48efeda"></h4>
+<section id="slide-org1a7053e">
+<h4 id="org1a7053e"></h4>
 <p>
 Lastly, we want to thank <b>Mr. Samir Biswas(HOD, IT)</b> for unconditional help during the
 entire span of the project.
@@ -281,8 +280,8 @@ entire span of the project.
 </section>
 </section>
 <section>
-<section id="slide-org3242dc9">
-<h2 id="org3242dc9"><b>THE END</b></h2>
+<section id="slide-orga3d929e">
+<h2 id="orga3d929e"><b>THE END</b></h2>
 <p>
 <b>THANK YOU FOR YOUR TIME</b>
 </p>
@@ -290,8 +289,8 @@ entire span of the project.
 </section>
 </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+<script src="./reveal-js/lib/js/head.min.js"></script>
+<script src="./reveal-js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -318,15 +317,12 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: './reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
-    <a class="fork-reveal" style="display: block;" href="https://github.com/aurghyadip/lms_report">
-        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork reveal.js on GitHub">
-    </a>
 </body>
 </html>

@@ -1,17 +1,17 @@
-#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0
+#+REVEAL_ROOT: ./reveal-js/
 #+REVEAL_HLEVEL: 2
-#+REVEAL_THEME: serif
+#+REVEAL_THEME: white
 #+REVEAL_TRANS: zoom
 #+TITLE: Library Management with Android
 #+OPTIONS: timestamp:nil 
 #+OPTIONS: num:nil author:nil
 #+OPTIONS: toc:nil
 
- 
+* 
   Presentation By,
   - Aurghyadip Kundu
   - Shrestha Shaw
-  - Rajdip Saha
+  - Rajdeep Saha
   - Sayanjit Das
 
 *** *BEACAUSE ANDROID DEVICES ARE EVERYWHERE*
@@ -41,12 +41,12 @@
 
 * Current System
 *** 
-    Nowadays ,The patron have to go and check in the library to get a book
-    issued.  This hassel of waiting in a queue to know the book
-    availability.
+      Nowadays ,The patron has to go and check in the library to get a book
+      issued.  This hassel of waiting in a queue to know the book
+      availability.
 
 *** 
-    To get a book issued the librarian have to the do a long process
+    To get a book issued, the librarian has to do the long process
     of checking the patron and adding the book taken under that patron
     manually. There is always a possibility of mismatching the patron's
     identity.
