@@ -41,6 +41,7 @@
 
 * Current System
 *** 
+
       Nowadays ,The patron has to go and check in the library to get a book
       issued.  This hassel of waiting in a queue to know the book
       availability.
@@ -52,18 +53,18 @@
     identity.
 
 *** 
-    Library System today use's local Database which can be accessed
-    specifically and which is quite insecure when comes to the security
+    Library System today uses local Database which can be accessed
+    specifically and is quite insecure when comes to the data security
     concern of the system.
 
 *** 
     Additional to the book issued, to return the book back in the
-    library the patron have to wait for it's turn again and if there is
+    library the patron has to wait for his/her turn again and if there is
     any fine to be deposited the patron has to go through another queue of
     people.
 
 *** 
-    The patron have to go the library to check the book availabilty
+    The patron has to go the library to check the book availabilty
     there isn't another way to know whether the book exits in the library.
 
 * WHAT WE PROPOSED!
@@ -78,7 +79,7 @@
     data security of the library.
     #+REVEAL:split
     A NoSQL database to solve the problems of structuring data and easier
-    access control. And lastly,
+    access control. Also,
     #+REVEAL:split
     *A BETTER API FOR EVERYHING*
 *** 
@@ -91,21 +92,19 @@
 * WHAT WE ACHIEVED 
 *** 
     The app is designed for librarians and the patrons seperately and mostly
-    focuses on the needs of the user with more friendly UI, easy to access and
-    understand.
+    focuses on the needs of the user with more friendly UI and ease of access.
 *** 
-    To ease the headaches of the librarians as well the patron, the program uses
-    Google Book API services for retrieveing book information with included
+    To ease the headaches of the librarians as well the patrons, the program
+    uses Google Book API services for retrieveing book information with included
     barcode scaning to facilitate the actions.
 *** 
-    For effective data fetching, Google Firebase database is used which
-    provides a realtime database which is a NoSQL Database and as the data is
-    stored in Firebase cloud the stored data is secured as compared to the
-    backdated local database.  
+    For effective data fetching, Google Firebase database is used which provides
+    a realtime NoSQL Database and as the data is stored in cloud the
+    stored data is mostly secured as compared to the backdated local database.
 *** 
-    To save time and effort of everyday, This API is faster and better way of
-    overcoming all the bunch of steps to get a book issued with a single click
-    and moreover facilitates more library functions without moving anywhere!
+    This API is faster and better way of overcoming all the bunch of steps to
+    get a book issued with a single click and moreover facilitates more library
+    functions without moving anywhere!
 * CONCLUSION
 *** 
 We want to thank *ALL THE FACULTIES OF CIEM IT DEPARTMENT* for gifting us the

@@ -1,0 +1,199 @@
+                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    LIBRARY MANAGEMENT WITH ANDROID
+                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+
+
+
+
+  Presentation By,
+  • Aurghyadip Kundu
+  • Shrestha Shaw
+  • Rajdeep Saha
+  • Sayanjit Das
+
+
+*BEACAUSE ANDROID DEVICES ARE EVERYWHERE*
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+INTRODUCTION
+════════════
+
+WHY MOBILE FIRST?
+─────────────────
+
+  Maintaining a PC based system can be a robust solution, but often it
+  leads to higher maintenance cost and more number of people to operate.
+  An Android based system can easily be automated, without even needing
+  a single person to operate.
+  Also, scanning a book and automatic entry to the database takes lot
+  less time than doing it the /1960's/ way.
+
+
+A BIT OF HISTORY
+────────────────
+
+  Before the 60's, every single library tasks were performed independent
+  of one another.
+  Selectors ordered materials with slips, catalogues were manually done
+  by card catalog systems and patrons were required to sign book
+  manually.
+
+
+INTEGRATED LIBRARY MANAGEMENT SYSTEM
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  In 1970's, the computer storage and telecommunications improved and
+  turnkey systems on microcomputers were introduced.
+  This introduced the Integrated Library Management System or the first
+  proper computer based library management system, *which we still use*.
+
+
+Current System
+══════════════
+
+
+
+
+  Nowadays ,The patron has to go and check in the library to get a book
+  issued. This hassel of waiting in a queue to know the book
+  availability.
+
+
+
+
+
+  To get a book issued, the librarian has to do the long process of
+  checking the patron and adding the book taken under that patron
+  manually. There is always a possibility of mismatching the patron's
+  identity.
+
+
+
+
+
+  Library System today use's local Database which can be accessed
+  specifically and which is quite insecure when comes to the security
+  concern of the system.
+
+
+
+
+
+  Additional to the book issued, to return the book back in the library
+  the patron have to wait for it's turn again and if there is any fine
+  to be deposited the patron has to go through another queue of people.
+
+
+
+
+
+  The patron have to go the library to check the book availabilty there
+  isn't another way to know whether the book exits in the library.
+
+
+WHAT WE PROPOSED!
+═════════════════
+
+
+
+
+  We have proposed some solutions to the shortcomings in last sem's
+  presentations. Let's recap those once…
+
+
+
+
+
+  Phone based barcode scanning and directly fetching the book data from
+  Google Books API to automate the process of adding books.
+
+
+
+
+
+  A database in the cloud to solve the problems of realtime updates and
+  data security of the library.
+  A NoSQL database to solve the problems of structuring data and easier
+  access control. And lastly,
+  *A BETTER API FOR EVERYHING*
+
+
+
+
+
+  Android based scanning to solve the automation problems and to remove
+  those huge 80's chunks of things(that we generally referred to as
+  *DESKTOP COMPUTERS*) that today's libraries have.
+  *ALL THAT PLACE CAN BE USED TO STORE MORE BOOKS*
+
+
+WHAT WE ACHIEVED
+════════════════
+
+
+
+
+  The app is designed for librarians and the patrons seperately and
+  mostly focuses on the needs of the user with more friendly UI, easy to
+  access and understand.
+
+
+
+
+
+  To ease the headaches of the librarians as well the patron, the
+  program uses Google Book API services for retrieveing book information
+  with included barcode scaning to facilitate the actions.
+
+
+
+
+
+  For effective data fetching, Google Firebase database is used which
+  provides a realtime database which is a NoSQL Database and as the data
+  is stored in Firebase cloud the stored data is secured as compared to
+  the backdated local database.
+
+
+
+
+
+  To save time and effort of everyday, This API is faster and better way
+  of overcoming all the bunch of steps to get a book issued with a
+  single click and moreover facilitates more library functions without
+  moving anywhere!
+
+
+CONCLUSION
+══════════
+
+
+
+
+  We want to thank *ALL THE FACULTIES OF CIEM IT DEPARTMENT* for gifting
+  us the knowledge which made this project possible.
+
+
+
+
+
+  Also, we want to thank our mentor *Ms. Shalini Mitra* for helping us
+  designing and chalking out the primary stages of this project.
+
+
+
+
+
+  Lastly, we want to thank *Mr. Samir Biswas(HOD, IT)* for unconditional
+  help during the entire span of the project.
+
+
+*THE END*
+═════════
+
+  *THANK YOU FOR YOUR TIME*
